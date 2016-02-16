@@ -5,8 +5,8 @@ permalink: /contact/
 ---
 
 Before applying, please read our [documentation on information that students
-should know and guidelines we expect you to follow](/guide/). We also require that you
-include certain information, listed below, under "[When you apply.](/guide/#when-you-apply)"
+should know and guidelines we expect you to follow](../guide/). We also require that you
+include certain information, listed below, under "[When you apply.](../guide/#when-you-apply)"
 
 ### Staff and Org Admins
 

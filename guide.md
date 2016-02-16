@@ -6,14 +6,14 @@ permalink: /guide/
 
 ### Before you apply
 *  Proposals should extend one of affiliated toolkits, not start a new project.
-*  If you want to apply with your own idea, it's best to [contact](/contact/) the OBF subproject
+*  If you want to apply with your own idea, it's best to [contact](../contact/) the OBF subproject
    you're interested in well before the application deadline, so we can work with you
    to find a mentor and solidify your project idea and application.
-*  [Ask us questions](/contact/) on the subproject mailing lists about the project idea you have in mind.
+*  [Ask us questions](../contact/) on the subproject mailing lists about the project idea you have in mind.
 *  Write a project proposal draft, include a project plan (see below), and [send it
-   to a project mailing list](/contact/) for comments before submitting it.
+   to a project mailing list](../contact/) for comments before submitting it.
 
-Again, students are strongly encouraged to [contact us](/contact/) as early as possible.
+Again, students are strongly encouraged to [contact us](../contact/) as early as possible.
 Frequent and early communication is extremely valuable for putting together
 successful projects.
 
