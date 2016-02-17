@@ -68,3 +68,4 @@ https://github.com/common-workflow-language/common-workflow-language/issues/175#
 #### Mentors
 [Roman Valls Guimera](https://github.com/brainstorm)
 [Michael R. Crusoe](https://github.com/mr-c)
+[Oliver Hofmann](https://github.com/ohofmann)
