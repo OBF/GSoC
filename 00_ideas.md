@@ -51,7 +51,7 @@ the case of the original code base) is requested, it builds up the tool definiti
 Another small proof of concept within the python ecosystem involves the docopt package and 
 [rabixator](https://github.com/stefanristeski/rabixator). Furthermore, other similar instrumentation 
 is being discussed to, for example, explore and optimize the parameter/flag space of i.e, bioinformatic
-aligners with [Teaser](http://biorxiv.org/content/early/2015/09/01/025858).
+aligners with [Teaser](http://dx.doi.org/10.1186/s13059-015-0803-1).
 
 Last but not least, if this approach could be generalized to tools written in other languages such as Java, 
 C, Perl, among others, it would not only ease the migration of (bioinformatics) tools to newer workflow
