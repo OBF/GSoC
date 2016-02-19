@@ -64,16 +64,19 @@ C, Perl, among others, it would not only ease the migration of (bioinformatics) 
 systems, but for instance test the quality and robustness of several bioinformatics tools automatically.
 
 #### Languages and skills
-Python
-Python troubleshooting
+* Python
+* Python troubleshooting
 
 #### Code
-https://github.com/common-workflow-language/gxargparse
-https://github.com/common-workflow-language/common-workflow-language/issues/175#issuecomment-183332827
+* [https://github.com/common-workflow-language/gxargparse](https://github.com/common-workflow-language/gxargparse)
+* [https://github.com/common-workflow-language/common-workflow-language/issues/175#issuecomment-183332827](https://github.com/common-workflow-language/common-workflow-language/issues/175#issuecomment-183332827)
+
+#### Difficulty
+<span class="medium">medium</span>
 
 #### Mentors
-[Roman Valls Guimera](https://github.com/brainstorm)
-[Michael R. Crusoe](https://github.com/mr-c)
+[Roman Valls Guimera](https://github.com/brainstorm),
+[Michael R. Crusoe](https://github.com/mr-c),
 [Oliver Hofmann](https://github.com/ohofmann)
 
 ### Nextflow integration with NCBI Sequence Read Archive (SRA) 
@@ -99,6 +102,9 @@ Student is required to have a good knowledge of the Java/C++ programming languag
 * [Nextflow source code repository](https://github.com/nextflow-io/nextflow)
 * [NCBI SRA toolkit](https://github.com/ncbi/ncbi-vdb)
 * [NCBI NGS language binding](https://github.com/ncbi/ngs)
+
+#### Difficulty
+<span class="medium">medium</span>
 
 #### Mentors
 Evan Floden, Maria Chatzou, Paolo Di Tommaso
@@ -168,6 +174,9 @@ knowledge of the Groovy/Java programming languages.
 
 * [Nextflow source code repository](https://github.com/nextflow-io/nextflow)
 
+#### Difficulty
+<span class="medium">medium</span>
+
 #### Mentors 
 
 Emilio Palumbo, Paolo Di Tommaso
@@ -207,7 +216,7 @@ Skills required:
 * familiarity with Next Generation Sequencing (NGS) datasets is a plus
 
 #### Difficulty
-_Easy_ to _hard_, depending on the student's familiarity with the tools to be
+<span class="easy">easy</span> to <span class="hard">hard</span>, depending on the student's familiarity with the tools to be
 used.
 
 #### Mentors
@@ -240,7 +249,8 @@ concept](http://github.com/cjfields/bioperl6)
 
 #### Difficulty
 
-_Project-dependent_
+_Project-dependent_, <span class="easy">easy</span> to <span
+class="hard">hard</span>
 
 #### Mentors
 Chris Fields, Mark Jensen
@@ -292,7 +302,7 @@ Some components and proof of concepts required for this project are
 available at [http://github.com/bionode](http://github.com/bionode)
 
 #### Difficulty
-_medium_
+<span class="medium">medium</span>
 
 #### Mentors
 Max Ogden, Mathias Buus, Bruno Vieira, Yannik Wurm
