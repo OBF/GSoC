@@ -165,3 +165,76 @@ knowledge of the Groovy/Java programming languages.
 #### Mentors 
 
 Emilio Palumbo, Paolo Di Tommaso
+
+
+## BioPerl
+
+* [Mailing lists](http://bioperl.org/wiki/Mailing_lists)
+* IRC: `#bioperl` on [Freenode](http://freenode.net/)
+* [Information for new developers](http://bioperl.org/wiki/Becoming_a_developer)
+* Source code browser for [bioperl-live](https://github.com/bioperl/bioperl-live)
+  (the main BioPerl code base) and [all BioPerl sub-projects](https://github.com/bioperl)
+* [Priority list](http://bioperl.org/wiki/Project_priority_list) of things that need work,
+  as another source for student-conceived project ideas
+
+### NGS-friendly BioPerl code
+
+#### Rationale
+BioPerl is known to be slow re: any data sets, but particularly when dealing
+with very large data (e.g. anything related to NGS analysis. Can we make it
+better? Where should we focus our efforts?
+
+#### Approach
+Under the supervision of their mentor(s), the GSoC student will:
+
+* Benchmark bottlenecks that lead to loss in performance for NGS analyses
+* Refactor old classes or develop new optimized code for NGS analysis
+
+#### Languages and skills
+The main part of the project is going to be in Perl, some C knowledge might be
+helpful if C library bindings can be used.
+
+Skills required:
+
+* excellent Perl programming skills
+* knowledge of modern Perl practices
+* familiarity with Next Generation Sequencing (NGS) datasets is a plus
+
+#### Difficulty
+_Easy_ to _hard_, depending on the student's familiarity with the tools to be
+used.
+
+#### Mentors
+Chris Fields, Mark Jensen
+
+
+### BioPerl 2.0 / BioPerl6
+
+#### Rationale
+Design or reimplement BioPerl classes without API constraint, using Modern Perl
+tools or Perl 6.
+
+#### Approach 1
+Perl6 was released late last year. This gives us an enormous opportunity to
+redesign fundamental aspects of BioPerl without the necessity for development
+hindered by a requirement for backwards compatibility.
+
+See also: [BioPerl6 proof of concept](http://github.com/cjfields/bioperl6)
+
+#### Approach 2
+
+Most BioPerl code is over 6 years old and doesn't take advantage of Modern Perl
+tools, such as new methods in later versions of perl, Template:CPAN/MooseX,
+Template:CPAN, and more. Set up the basic core classes that allow mingling of
+Modern Perl with older BioPerl classes; propose and benchmark variations of
+specific core classes utilizing Modern Perl tools.
+
+See also [Biome (Moose-based BioPerl) proof of
+concept](http://github.com/cjfields/bioperl6)
+
+#### Difficulty
+
+_Project-dependent_
+
+#### Mentors
+Chris Fields, Mark Jensen
