@@ -189,6 +189,19 @@
 }
 
 
+h3:before {
+    display: block;
+    background-color: #aaa;
+    content: '';
+    height: 1px;
+}
+
+h2:before {
+    display: block;
+    background-color: #aaa;
+    content: '';
+    height: 2px;
+}
 
 /**
  * Posts

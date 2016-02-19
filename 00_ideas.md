@@ -13,6 +13,12 @@ mailing list and announce their interest.
 See the [main OBF Google Summer of Code page](../) for more information about the GSoC
 program and additional ways to get in touch with us.
 
+
+#### Quick links
+
+* Table of Contents
+{:toc}
+
 ## Cross-project ideas
 
 OBF is an umbrella organization which represents many different programming

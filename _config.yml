@@ -12,3 +12,7 @@ twitter_username: OBF_news
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+    auto_ids:   true
+    toc_levels: 2..3
