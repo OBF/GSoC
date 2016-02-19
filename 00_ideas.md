@@ -308,3 +308,85 @@ available at [http://github.com/bionode](http://github.com/bionode)
 
 #### Mentors
 Max Ogden, Mathias Buus, Bruno Vieira, Yannik Wurm
+
+## antiSMASH
+
+[antiSMASH](http://antismash.secondarymetabolites.org) is a tool to mine the
+genomes of micro-organisms for biologically interesting gene clusters, so-called
+secondary metabolites, to help find new antibiotics. It is a python-based  open
+source tool that is developed at the Danish Technical University and Wageningen
+University.
+
+Project ideas around antiSMASH range from very close to applied biology to more
+general software engineering projects.
+
+### Improve the prediction for RiPP clusters
+
+#### Rationale
+Ribosomally synthesised and post-translationally modified peptides (RiPPs) are a
+class of secondary metabolites that are produced from a precursor gene encoded
+on the genome of a microorganism. It is translated to a peptide by the ribosome,
+and then further modified to give the active final product.
+
+#### Approach
+
+In this project, prediction modules for a number of RiPP clusters will be
+developed. Working together with the mentors, who can provide advice both from
+the technical as well as scientific side of the project, the student will create
+antiSMMASH plug-ins.
+
+Each plug-in handles three distinct steps:
+
+1. Detect the RiPP precursor gene
+2. Identify where the leader/tail peptitdes are cleaved from the core peptide
+3. Predict any further modifications to the core peptide.
+
+Additionally, plug-ins also handle creating html output to optimally present
+their predictions to researchers.
+
+#### Languages and skill
+antiSMASH is written in Python 2.7. Some basic genetics/molecular biology
+background will make this project easier, but is not a requirement.
+
+#### Code
+* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
+* Code will work similar to the [lantipeptide
+  module](https://bitbucket.org/antismash/antismash/src/088f2a9cf7742b7ff79333dfecab5e4f86d3319e/antismash/specific_modules/lantipeptides/?at=master)
+
+#### Difficulty
+* <span class="easy">easy</span> if the biological background is known already
+* <span class="medium">medium</span> otherwise
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), Tilmann Weber
+
+
+### SeqRecord access abstraction layer
+
+#### Rationale
+Internally, antiSMASH uses BioPython SeqRecord objects to handle the data. A lot
+of the annotations are in custom feature entries or in free-text qualifiers of
+"gene"3 or "CDS" features. Code for handling this access is duplicated in parts
+of the code base. Additionally, directly using the SeqRecord object is a bit
+fragile.
+
+#### Approach
+Code for accessing the antiSMASH-specific features/qualifiers should be hidden
+behind an API layer that unifies the access. The new abstraction layer should
+then be utilized to reduce the code duplication and fagility of acessing the
+SeqRecord object special fields.
+
+#### Languages and skill
+antiSMASH is written in Python 2.7. Knowledge of unit testing in Python are a
+plus. Biological knowledge is not required.
+
+#### Code
+* [Initial implementation of the abstraction
+  library](https://github.com/kblin/python-secmet)
+* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
+
+#### Difficulty
+<span class="easy">easy</span>
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), Tilmann Weber
