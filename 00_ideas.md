@@ -244,3 +244,55 @@ _Project-dependent_
 
 #### Mentors
 Chris Fields, Mark Jensen
+
+
+## Bionode
+
+### Bionode workflow engine for streamed data analysis
+
+#### Rationale
+
+Researchers should be able to:
+
+* Perform analyses while data are generated (i.e., with “data streams”);
+* Easily and rapidly update results if input data or analysis
+  approaches/parameters change (with minimal recomputation);
+* Effortlessly change and scale underlying computing platforms while
+  pipeline is running;
+* Easily visualise results.
+
+This is largely impossible because current approaches were developed
+when datasets were simpler and smaller. The student will take
+advantage of recent improvements in generic analysis tools (Node.js
+Streams & asynchronous concurrency) to attain the above objectives.
+
+#### Approach
+The student will create a workflow engine for streamed data analysis
+with concurrent pipelining. The main mentors will be Max Ogden and
+Mathias Buus, top Node.js contributors and founders of Dat-data.com,
+for their experience with streaming interfaces. Bruno Vieira
+(founder of Bionode.io) and Yannick Wurm (lecturer in Bioinformatics
+at QMUL) will co-supervise.
+
+Some work on the data structures and programming interfaces for
+commonly used data sources (e.g., NCBI, Uniprot, Ensembl/Biomart)
+and data types (e.g., VCF, BAM, FASTQ) will be required.
+
+The underlying computational architecture architecture should be
+abstracted. This means that analysis code will run identically using
+different traditional high performance computing system (e.g.,
+Torque, SGE) and modern systems (e.g., Hadoop MapReduce).
+
+#### Languages and skill
+JavaScript skills are required. Node.js and some biology knowledge
+is a plus. Difficulty is medium.
+
+#### Code
+Some components and proof of concepts required for this project are
+available at [http://github.com/bionode](http://github.com/bionode)
+
+#### Difficulty
+_medium_
+
+#### Mentors
+Max Ogden, Mathias Buus, Bruno Vieira, Yannik Wurm
