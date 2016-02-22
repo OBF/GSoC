@@ -401,7 +401,7 @@ focus on the analysis of phylogenic trees.
 * [Mailing lists](https://groups.google.com/forum/#!forum/etetoolkit)
 * Source code browser for [etetoolkit](https://github.com/etetoolkit/ete)
 
-### Regular-expression-like queries for tree structures and visual tree comparison
+### Tree searching using regular-expression-like queries
 
 #### Rationale
 
