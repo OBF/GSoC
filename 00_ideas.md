@@ -393,8 +393,10 @@ plus. Biological knowledge is not required.
 
 ## ETE Toolkit
 
-[ETE](http://etetoolkit.org) is a Python framework for the analysis and visualization of trees, with a
-focus on the analysis of [phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree). 
+[ETE](http://etetoolkit.org) is a Python framework for the analysis and
+visualization of trees, with a focus on the analysis of
+[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and
+commonly used in research.
 
 * [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
 * [Source code](https://github.com/etetoolkit/ete)
