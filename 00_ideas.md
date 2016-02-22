@@ -495,7 +495,7 @@ Skills required:
 #### Difficulty 
 
 <span class="medium">medium</span> to <span class="hard">hard</span>, depending on
-student's capabilities and the selected tasks.
+student's capabilities and the tasks selected.
 
 #### Mentors
 [Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alvés](http://github.com/unode), [Francois Serra](http://github.com/fransua)
