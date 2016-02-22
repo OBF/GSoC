@@ -394,9 +394,9 @@ plus. Biological knowledge is not required.
 ## ETE Toolkit
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and
-visualization of trees, with a focus on the analysis of
-[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and
-commonly used in research.
+visualization of trees, commonly used for the analysis of
+[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and in other research areas. 
+
 
 * [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
 * [Source code](https://github.com/etetoolkit/ete)
@@ -412,11 +412,11 @@ collections of trees using custom criteria. Searches should be flexible and
 allow for regular-expression-like queries, returning a list of all internal
 nodes in the matching trees where the criteria is fulfilled.
 
-Applications of a framework of this type would enable any user to perform
-complex queries on a variate of data types common in research, such as
-clustering results and phylogenetic trees. This will be **specially relevant**
-in research fields such as **Phylogenomics** (ETE focus), where thousands of
-phylogenetic trees are being generated and scanned trying search for specific
+Applications of the framework would enable any user to perform
+complex queries on a variate of tree-like data in research, such as
+clustering results and phylogenetic trees. This is **specially relevant**
+in the **Phylogenomics**  field (ETE focus), where thousands of
+phylogenetic trees are being generated and scanned for specific
 evolutionary patterns.
 
 Optional goal: Matches and differences between trees and queries could further be
@@ -445,8 +445,7 @@ Skills required:
 
 #### Difficulty 
 
-<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
-the student's familiarity with tree related algorithms and Qt4 drawing system.
+<span class="medium">medium</span>
 
 #### Mentors
 [Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alves](http://github.com/unode), [Francois Serra](http://github.com/fransua)
