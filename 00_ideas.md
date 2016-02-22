@@ -406,23 +406,21 @@ focus on the analysis of phylogenic trees.
 #### Rationale
 
 While several methods allow comparing trees using ETE, no search capabilities
-exist that permit to query tree topologies for specific patterns.
+exist that permit to query tree topologies for specific patterns. The goal of
+this project is to develop a new ETE module that allows querying large
+collections of trees using custom criteria. Searches should be flexible and
+allow for regular-expression-like queries.
 
-The goal of this project is to develop a new ETE module that allows querying
-large collections of trees using custom criteria. Searches should be flexible
-and allow for regular-expression-like queries.
+Applications of a framework of this type would enable any user to perform
+complex queries on a variate of data types common in research, such as
+clustering results and phylogenetic trees. This will be specially relevant in
+research fields such as Phylogenomics (ETE focus), where thousands of
+phylogenetic trees are being generated and scanned in search for specific
+evolutionary patterns.
 
 Optional goal: Matches and differences between trees and queries could further be
 visualized using ETE's rendering engine, which will involve the creation of
 custom visualization layouts.
-
-The applications of a framework of this type would enable any user to perform
-complex queries on a variate of data types common in research, such as
-clustering results and phylogenetic trees.
-
-The application of tree pattern search is specially relevant in research fields
-such as Phylogenomics (ETE focus), where thousands of phylogenetic trees are
-being generated and scanned in search for specific evolutionary patterns.
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will:
@@ -466,7 +464,7 @@ following features are currently missing and commonly requested by users. Mainly
 * Creating interactive SVG images (Web integration)
 * and [other](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
 
-This project aims at covering as many of those features as possible. 
+This project aims at covering as many of those features and improvements as possible. 
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will work on:
@@ -482,14 +480,15 @@ Under the supervision of their mentors, the GSoC student will work on:
 
 #### Languages and skills
 
-All code will be in Python, with compatibility for Py2 and Py3 and using Qt4 as the image rendering library. 
+All code will be in Python, with compatibility for Py2 and Py3 and using Qt4 as
+the image rendering library.
 
 Skills required:
 
 * Excellent Python programming skills
 * Experience on Object Oriented Programming in Python 
-* familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
-* familiarity with Qt4 drawing system (QGraphicsScenes)
+* familiarity with tree related algorithms (i.e. tree traversing)
+* familiarity with Qt4 drawing system (QGraphicsScene)
 * basic knowledge on web development (HTML/javascript)
 
 #### Difficulty 
