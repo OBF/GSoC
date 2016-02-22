@@ -475,20 +475,21 @@ Under the supervision of their mentors, the GSoC student will work on:
   events.  The implementation should be done on top of the current rendering
   engine, by adding the capability of translating horizontal node links created
   programmatically (i.e. `node1.add_link(node2)`) into visual links in the final
-  tree image. A prototype is iscussed here:
+  tree image. A prototype is discussed here:
   https://github.com/etetoolkit/ete/issues/161
   
-* Improving SVG rendering capabilities that permit easy web
-  integration. Although the creation of a fully-capable web viewer is out of the
-  scope, the creation of annotated SVG images (i.e. node IDs being added to SVG
-  elements) could be used to create basic interactive SVG images.  Currently a
-  experimental static version of ETE based SVG images can be checked
-  [here](http://etetoolkit.org/treeview)
+* Improving SVG rendering capabilities permitting better web
+  integration. Although the implementation of a fully-capable web viewer is out
+  of the scope, the creation of annotated SVG images (i.e. node IDs being added
+  to SVG elements) could be used to produce basic interactive SVG tree
+  images. Currently, a experimental static version of ETE based SVG images exist
+  [here](http://etetoolkit.org/treeview), and could be used as a starting point
+  for development.
     
 * Adding new graphical elements to the collection of
   [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces). Most
-  notably, the addition of branch-length-rulers correctly aligned to tree branches, as
-  well as the creation of specific layouts, would permit the visualization of
+  notably, the addition of branch-length-rulers correctly aligned to tree branches and 
+  the implementation of specific layouts, would permit the visualization of
   calibrated trees. 
 
 #### Languages and skills
