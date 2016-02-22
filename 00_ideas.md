@@ -409,12 +409,13 @@ While several methods allow comparing trees using ETE, no search capabilities
 exist that permit to query tree topologies for specific patterns. The goal of
 this project is to develop a new ETE module that allows querying large
 collections of trees using custom criteria. Searches should be flexible and
-allow for regular-expression-like queries.
+allow for regular-expression-like queries, returning a list of all internal
+nodes in the matching trees where the criteria is fulfilled.
 
 Applications of a framework of this type would enable any user to perform
 complex queries on a variate of data types common in research, such as
-clustering results and phylogenetic trees. This will be **specially relevant** in
-research fields such as **Phylogenomics** (ETE focus), where thousands of
+clustering results and phylogenetic trees. This will be **specially relevant**
+in research fields such as **Phylogenomics** (ETE focus), where thousands of
 phylogenetic trees are being generated and scanned trying search for specific
 evolutionary patterns.
 
@@ -448,7 +449,7 @@ Skills required:
 the student's familiarity with tree related algorithms and Qt4 drawing system.
 
 #### Mentors
-[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alvés](http://github.com/unode), [Francois Serra](http://github.com/fransua)
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alves](http://github.com/unode), [Francois Serra](http://github.com/fransua)
 
 ### Extend tree visualization capabilities
 
@@ -461,23 +462,34 @@ following features are currently missing and commonly requested by users. Mainly
 
 * Plotting horizontal links between branches (useful to, for instance, display [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
 * Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112) 
-* Creating interactive SVG images (Web integration)
-* and [other requests](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
+* Improving SVG rendering (Web integration)
 
 This project aims at covering as many of those features and improvements as
-possible. Student can choose to focus on one or several of those.
+possible, but the student can choose to focus on only one. 
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will work on:
 
 * Implementing a new rendering layer for visualizing
-  [Horizontal Gene Transfer (HGT)](https://en.wikipedia.org/wiki/Horizontal_gene_transfer) events. Prototype discussed here:
+  [Horizontal Gene Transfer (HGT)](https://en.wikipedia.org/wiki/Horizontal_gene_transfer)
+  events.  The implementation should be done on top of the current rendering
+  engine, by adding the capability of translating horizontal node links created
+  programmatically (i.e. `node1.add_link(node2)`) into visual links in the final
+  tree image. A prototype is iscussed here:
   https://github.com/etetoolkit/ete/issues/161
-* Improving SVG rendering capabilities that permit web integration
-  (i.e. association of javascript events to the svg elements)
-* Adding new graphical elements to the collection of [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces)
-* Improving general performance of the drawing engine.
-* Addressing [feature-requests and issues](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing) related with tree drawing at his/her choice. 
+  
+* Improving SVG rendering capabilities that permit easy web
+  integration. Although the creation of a fully-capable web viewer is out of the
+  scope, the creation of annotated SVG images (i.e. node IDs being added to SVG
+  elements) could be used to create basic interactive SVG images.  Currently a
+  experimental static version of ETE based SVG images can be checked
+  [here](http://etetoolkit.org/treeview)
+    
+* Adding new graphical elements to the collection of
+  [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces). Most
+  notably, the addition of branch-length-rulers correctly aligned to tree branches, as
+  well as the creation of specific layouts, would permit the visualization of
+  calibrated trees. 
 
 #### Languages and skills
 
@@ -488,8 +500,8 @@ Skills required:
 
 * Excellent Python programming skills
 * Experience on Object Oriented Programming in Python 
-* familiarity with tree related algorithms (i.e. tree traversing)
-* familiarity with Qt4 drawing system (QGraphicsScene)
+* Familiarity with tree related algorithms (i.e. tree traversing)
+* Familiarity with Qt4 drawing system (QGraphicsScene)
 * basic knowledge on web development (HTML/javascript)
 
 #### Difficulty 
@@ -498,7 +510,7 @@ Skills required:
 student's capabilities and the tasks selected.
 
 #### Mentors
-[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alvés](http://github.com/unode), [Francois Serra](http://github.com/fransua)
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alves](http://github.com/unode), [Francois Serra](http://github.com/fransua)
 
 
 
