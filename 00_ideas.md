@@ -391,7 +391,6 @@ plus. Biological knowledge is not required.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
-
 ## ETE Toolkit
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and visualization of trees, with a
@@ -399,7 +398,7 @@ focus on the analysis of phylogenic trees.
 
 
 * [Mailing lists](https://groups.google.com/forum/#!forum/etetoolkit)
-* Source code browser for [etetoolkit](https://github.com/etetoolkit/ete)
+* [Source code](https://github.com/etetoolkit/ete)
 
 ### Tree searching using regular-expression-like queries
 
@@ -462,7 +461,7 @@ following features are currently missing and commonly requested by users. Mainly
 * Plotting horizontal links between branches (useful to, for instance, display [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
 * Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112) 
 * Creating interactive SVG images (Web integration)
-* and [other](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
+* and [other requests](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
 
 This project aims at covering as many of those features and improvements as possible. 
 
