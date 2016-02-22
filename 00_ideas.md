@@ -390,3 +390,115 @@ plus. Biological knowledge is not required.
 
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
+
+
+## ETE Toolkit
+
+* [Mailing lists](https://groups.google.com/forum/#!forum/etetoolkit)
+* Source code browser for [etetoolkit](https://github.com/etetoolkit/ete)
+
+### Regular-expression-like queries for tree structures and visual tree comparison
+
+#### Rationale
+
+While several methods allow comparing trees using ETE, no search capabilities
+exist that permit to query tree topologies for specific patterns.
+
+The goal of this project is to develop a new ETE module that allows querying
+large collections of trees using custom criteria. Searches should be flexible
+and allow for regular-expression-like queries.
+
+Optional goal: Matches and differences between trees and queries could further be
+visualized using ETE's rendering engine, which will involve the creation of
+custom visualization layouts.
+
+The applications of a framework of this type would enable any user to perform
+complex queries on a variate of data types common in research, such as
+clustering results and phylogenetic trees.
+
+The application of tree pattern search is specially relevant in research fields
+such as Phylogenomics (ETE focus), where thousands of phylogenetic trees are
+being generated and scanned in search for specific evolutionary patterns.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will:
+
+* Implement a system for searching within ETE Tree structures. 
+* Develop a vocabulary of queries that permit regular-expression-like queries. 
+* Integrate the framework as a new ETE module, including unitests and documentation. 
+* Optional: Develop a visualization framework based on ETE's tree rendering engine to
+  display tree matches and differences.
+ 
+#### Languages and skills
+
+All code should be written in Python, with compatibility for Py2 and Py3.
+
+Skills required:
+
+* Good Python programming skills
+* Experience on Object Oriented Programming in Python 
+* Familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
+* Optional (for addressing visualization): familiarity of Qt4 drawing system (QGraphicsScenes)
+
+#### Difficulty 
+
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
+the student's familiarity with tree related algorithms and Qt4 drawing system.
+
+#### Mentors
+Jaime Huerta-Cepas, Renato Alvés, Francois Serra
+
+### Extend tree visualization capabilities
+
+#### Rationale
+
+Tree visualization with ETE allows for advanced customizing of rectangular and
+circular tree images, and it is currently use to represent
+[many types](http://etetoolkit.org/gallery/) of biological results. However, the
+following features are currently missing and commonly requested by users. Mainly: 
+
+* Plotting horizontal links between branches (useful to, for instance, display [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
+* Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112) 
+* Creating interactive SVG images (Web integration)
+* and [other](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
+
+This project aims at covering as many of those features as possible. 
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will work on:
+
+* Implementing a new rendering layer for visualizing
+  [Horizontal Gene Transfer (HGT)](https://en.wikipedia.org/wiki/Horizontal_gene_transfer) events. Prototype discussed here:
+  https://github.com/etetoolkit/ete/issues/161
+
+* Improving SVG rendering capabilities that permit web integration
+  (i.e. association of javascript events to the svg elements)
+
+* Adding new graphical elements to the collection of [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces)
+
+* Improving general performance of the drawing engine.
+
+* Addressing [feature-requests and issues](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing) related with tree drawing at his/her choice. 
+
+#### Languages and skills
+
+All code will be in Python, with compatibility for Py2 and Py3 and using Qt4 as the image rendering library. 
+
+Skills required:
+
+* Excellent Python programming skills
+* Experience on Object Oriented Programming in Python 
+* familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
+* familiarity with Qt4 drawing system (QGraphicsScenes)
+* basic knowledge on web development (HTML/javascript)
+
+#### Difficulty 
+
+<span class="difficult">difficult</span> to <span class="hard">hard</span>, depending on
+the student's familiarity with tree related algorithms and Qt4 drawing system.
+
+#### Mentors
+Jaime Huerta-Cepas, Renato Alvés, Francois Serra
+
+
+
