@@ -470,14 +470,10 @@ Under the supervision of their mentors, the GSoC student will work on:
 * Implementing a new rendering layer for visualizing
   [Horizontal Gene Transfer (HGT)](https://en.wikipedia.org/wiki/Horizontal_gene_transfer) events. Prototype discussed here:
   https://github.com/etetoolkit/ete/issues/161
-
 * Improving SVG rendering capabilities that permit web integration
   (i.e. association of javascript events to the svg elements)
-
 * Adding new graphical elements to the collection of [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces)
-
 * Improving general performance of the drawing engine.
-
 * Addressing [feature-requests and issues](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing) related with tree drawing at his/her choice. 
 
 #### Languages and skills
