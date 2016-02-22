@@ -394,10 +394,9 @@ plus. Biological knowledge is not required.
 ## ETE Toolkit
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and visualization of trees, with a
-focus on the analysis of phylogenic trees. 
+focus on the analysis of [phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree). 
 
-
-* [Mailing lists](https://groups.google.com/forum/#!forum/etetoolkit)
+* [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
 * [Source code](https://github.com/etetoolkit/ete)
 
 ### Tree searching using regular-expression-like queries
@@ -412,9 +411,9 @@ allow for regular-expression-like queries.
 
 Applications of a framework of this type would enable any user to perform
 complex queries on a variate of data types common in research, such as
-clustering results and phylogenetic trees. This will be specially relevant in
-research fields such as Phylogenomics (ETE focus), where thousands of
-phylogenetic trees are being generated and scanned in search for specific
+clustering results and phylogenetic trees. This will be **specially relevant** in
+research fields such as **Phylogenomics** (ETE focus), where thousands of
+phylogenetic trees are being generated and scanned trying search for specific
 evolutionary patterns.
 
 Optional goal: Matches and differences between trees and queries could further be
@@ -463,7 +462,8 @@ following features are currently missing and commonly requested by users. Mainly
 * Creating interactive SVG images (Web integration)
 * and [other requests](https://github.com/etetoolkit/ete/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adrawing)
 
-This project aims at covering as many of those features and improvements as possible. 
+This project aims at covering as many of those features and improvements as
+possible. Student can choose to focus on one or several of those.
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will work on:
