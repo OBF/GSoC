@@ -394,6 +394,10 @@ plus. Biological knowledge is not required.
 
 ## ETE Toolkit
 
+[ETE](http://etetoolkit.org) is a Python framework for the analysis and visualization of trees, with a
+focus on the analysis of phylogenic trees. 
+
+
 * [Mailing lists](https://groups.google.com/forum/#!forum/etetoolkit)
 * Source code browser for [etetoolkit](https://github.com/etetoolkit/ete)
 
@@ -490,8 +494,8 @@ Skills required:
 
 #### Difficulty 
 
-<span class="difficult">difficult</span> to <span class="hard">hard</span>, depending on
-the student's familiarity with tree related algorithms and Qt4 drawing system.
+<span class="medium">difficult</span> to <span class="very-hard">very hard</span>, depending on
+student's capabilities and the selected tasks.
 
 #### Mentors
 Jaime Huerta-Cepas, Renato Alvés, Francois Serra
