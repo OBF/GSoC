@@ -455,16 +455,17 @@ Skills required:
 #### Rationale
 
 Tree visualization with ETE allows for advanced customizing of rectangular and
-circular tree images, and it is currently use to represent
-[many types](http://etetoolkit.org/gallery/) of biological results. However, the
-following features are currently missing and commonly requested by users. Mainly: 
+circular tree images, being used to display 
+[different types](http://etetoolkit.org/gallery/) of biological results. However, the
+following features are currently missing and commonly requested by users:
 
-* Plotting horizontal links between branches (useful to, for instance, display [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
-* Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112) 
+* Plotting horizontal links between branches (useful to, for instance, display
+  [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
+* Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112)
 * Improving SVG rendering (Web integration)
 
-This project aims at covering as many of those features and improvements as
-possible, but the student can choose to focus on only one. 
+This project aims at covering as many of those features as possible, but the
+student could choose to focus on only one.
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will work on:
