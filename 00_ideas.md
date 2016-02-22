@@ -405,7 +405,7 @@ visualization of trees, commonly used for the analysis of
 
 #### Rationale
 
-While several methods allow comparing trees using ETE, no search capabilities
+Although several methods allow comparing trees using ETE, no search capabilities
 exist that permit to query tree topologies for specific patterns. The goal of
 this project is to develop a new ETE module that allows querying large
 collections of trees using custom criteria. Searches should be flexible and
@@ -462,7 +462,7 @@ following features are currently missing and commonly requested by users:
 * Plotting horizontal links between branches (useful to, for instance, display
   [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
 * Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112)
-* Improving SVG rendering (Web integration)
+* Improving SVG rendering (better web integration of tree images)
 
 This project aims at covering as many of those features as possible, but the
 student could choose to focus on only one.
@@ -475,8 +475,8 @@ Under the supervision of their mentors, the GSoC student will work on:
   events.  The implementation should be done on top of the current rendering
   engine, by adding the capability of translating horizontal node links created
   programmatically (i.e. `node1.add_link(node2)`) into visual links in the final
-  tree image. A prototype is discussed here:
-  https://github.com/etetoolkit/ete/issues/161
+  tree image. A prototype is discussed [here](https://github.com/etetoolkit/ete/issues/161). 
+  
   
 * Improving SVG rendering capabilities permitting better web
   integration. Although the implementation of a fully-capable web viewer is out
