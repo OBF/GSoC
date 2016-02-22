@@ -41,6 +41,10 @@ BioSQL
 BioLib
 : [biolib-dev@lists.open-bio.org](mailto:biolib-dev@lists.open-bio.org)
 
+ETE Toolkit
+: [etetoolkit-dev@googlegroups.com](mailto:etetoolkit-dev@googlegroups.com)
+
+
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
 taken care of!
