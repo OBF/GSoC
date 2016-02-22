@@ -494,7 +494,7 @@ Skills required:
 
 #### Difficulty 
 
-<span class="medium">difficult</span> to <span class="very-hard">very hard</span>, depending on
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
 student's capabilities and the selected tasks.
 
 #### Mentors
