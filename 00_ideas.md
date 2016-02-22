@@ -448,7 +448,7 @@ Skills required:
 the student's familiarity with tree related algorithms and Qt4 drawing system.
 
 #### Mentors
-Jaime Huerta-Cepas, Renato Alvés, Francois Serra
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alvés](http://github.com/unode), [Francois Serra](http://github.com/fransua)
 
 ### Extend tree visualization capabilities
 
@@ -498,7 +498,7 @@ Skills required:
 student's capabilities and the selected tasks.
 
 #### Mentors
-Jaime Huerta-Cepas, Renato Alvés, Francois Serra
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alvés](http://github.com/unode), [Francois Serra](http://github.com/fransua)
 
 
 
