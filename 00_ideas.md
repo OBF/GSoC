@@ -390,3 +390,127 @@ plus. Biological knowledge is not required.
 
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
+
+## ETE Toolkit
+
+[ETE](http://etetoolkit.org) is a Python framework for the analysis and
+visualization of trees, commonly used for the analysis of
+[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and in other research areas. 
+
+
+* [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
+* [Source code](https://github.com/etetoolkit/ete)
+
+### Tree searching using regular-expression-like queries
+
+#### Rationale
+
+Although several methods allow comparing trees using ETE, no search capabilities
+exist that permit to query tree topologies for specific patterns. The goal of
+this project is to develop a new ETE module that allows querying large
+collections of trees using custom criteria. Searches should be flexible and
+allow for regular-expression-like queries, returning a list of all internal
+nodes in the matching trees where the criteria is fulfilled.
+
+Applications of the framework would enable any user to perform
+complex queries on a variate of tree-like data in research, such as
+clustering results and phylogenetic trees. This is **specially relevant**
+in the **Phylogenomics**  field (ETE focus), where thousands of
+phylogenetic trees are being generated and scanned for specific
+evolutionary patterns.
+
+Optional goal: Matches and differences between trees and queries could further be
+visualized using ETE's rendering engine, which will involve the creation of
+custom visualization layouts.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will:
+
+* Implement a system for searching within ETE Tree structures. 
+* Develop a vocabulary of queries that permit regular-expression-like queries. 
+* Integrate the framework as a new ETE module, including unitests and documentation. 
+* Optional: Develop a visualization framework based on ETE's tree rendering engine to
+  display tree matches and differences.
+ 
+#### Languages and skills
+
+All code should be written in Python, with compatibility for Py2 and Py3.
+
+Skills required:
+
+* Good Python programming skills
+* Experience on Object Oriented Programming in Python 
+* Familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
+* Optional (for addressing visualization): familiarity of Qt4 drawing system (QGraphicsScenes)
+
+#### Difficulty 
+
+<span class="medium">medium</span>
+
+#### Mentors
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alves](http://github.com/unode), [Francois Serra](http://github.com/fransua)
+
+### Extend tree visualization capabilities
+
+#### Rationale
+
+Tree visualization with ETE allows for advanced customizing of rectangular and
+circular tree images, being used to display 
+[different types](http://etetoolkit.org/gallery/) of biological results. However, the
+following features are currently missing and commonly requested by users:
+
+* Plotting horizontal links between branches (useful to, for instance, display
+  [Horizontal Gene Transfers](https://en.wikipedia.org/wiki/Horizontal_gene_transfer))
+* Drawing [time-calibrated trees](https://github.com/etetoolkit/ete/issues/112)
+* Improving SVG rendering (better web integration of tree images)
+
+This project aims at covering as many of those features as possible, but the
+student could choose to focus on only one.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will work on:
+
+* Implementing a new rendering layer for visualizing
+  [Horizontal Gene Transfer (HGT)](https://en.wikipedia.org/wiki/Horizontal_gene_transfer)
+  events.  The implementation should be done on top of the current rendering
+  engine, by adding the capability of translating horizontal node links created
+  programmatically (i.e. `node1.add_link(node2)`) into visual links in the final
+  tree image. A prototype is discussed [here](https://github.com/etetoolkit/ete/issues/161). 
+  
+  
+* Improving SVG rendering capabilities permitting better web
+  integration. Although the implementation of a fully-capable web viewer is out
+  of the scope, the creation of annotated SVG images (i.e. node IDs being added
+  to SVG elements) could be used to produce basic interactive SVG tree
+  images. Currently, an experimental static version of ETE based SVG images exist
+  [here](http://etetoolkit.org/treeview), and could be used as a starting point
+  for development.
+    
+* Adding new graphical elements to the collection of
+  [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces). Most
+  notably, the addition of branch-length-rulers which can be correctly aligned to tree branches, and 
+  the implementation of specific layouts. 
+
+#### Languages and skills
+
+All code will be in Python, with compatibility for Py2 and Py3 and using Qt4 as
+the image rendering library.
+
+Skills required:
+
+* Excellent Python programming skills
+* Experience on Object Oriented Programming in Python 
+* Familiarity with tree related algorithms (i.e. tree traversing)
+* Familiarity with Qt4 drawing system (QGraphicsScene)
+* basic knowledge on web development (HTML/javascript)
+
+#### Difficulty 
+
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
+student's capabilities and the tasks selected.
+
+#### Mentors
+[Jaime Huerta-Cepas](http://github.com/jhcepas), [Renato Alves](http://github.com/unode), [Francois Serra](http://github.com/fransua)
+
+
+
