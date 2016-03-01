@@ -307,7 +307,7 @@ available at [http://github.com/bionode](http://github.com/bionode)
 <span class="medium">medium</span>
 
 #### Mentors
-Max Ogden, Mathias Buus, Bruno Vieira, Yannik Wurm
+Max Ogden, Mathias Buus, Bruno Vieira, Yannick Wurm
 
 ## antiSMASH
 
