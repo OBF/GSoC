@@ -44,6 +44,9 @@ BioLib
 ETE Toolkit
 : [etetoolkit-dev@googlegroups.com](mailto:etetoolkit-dev@googlegroups.com)
 
+antiSMASH
+: [gsoc@secondarymetabolites.org](mailto:gsoc@secondarymetabolites.org)
+
 
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
