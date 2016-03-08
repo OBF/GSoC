@@ -391,6 +391,35 @@ plus. Biological knowledge is not required.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
+## GeneNetwork Genome Browser (biodalliance)
+
+[GeneNetwork.org](http://gn2.genenetwork.org/) (GN) is a Web2.0
+environment for genetic analysis in mouse, rat and human. GN ised
+daily by scientists with over a thousand publications citing it.
+
+We want to embed the genome biodiallance browser [http://www.biodalliance.org/)
+
+![Biodalliance](https://sagebionetworks.jira.com/secure/attachment/24449/biodalliance%20widget%20output.png)
+
+into GN and add several new *tracks* for visualizing mapped QTL,
+underlying genotypes and SNP density. 
+
+### Improve the prediction for RiPP clusters
+
+#### Rationale
+
+#### Approach
+
+#### Languages and skill
+
+#### Code
+
+#### Difficulty
+* <span class="medium">medium</span> mostly Javascript, but python and elixir may come in handy
+
+#### Mentors
+[Pjotr Prins](https://github.com/pjotrp), [Karl Broman](https://github.com/kbroman)
+
 ## ETE Toolkit
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and
