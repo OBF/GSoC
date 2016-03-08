@@ -408,8 +408,9 @@ major bioinformatics websites.
 
 #### Rationale
 
-To improve user experience and improve biomedical discovery potential
-we want to add advanced visualisation and embed the state-of-the-art
+To improve user experience and improve biomedical discovery we are
+going to add advanced genome visualisation and embed the
+state-of-the-art
 [biodiallance genome browser](http://www.biodalliance.org/) into GN
 and add several new *tracks* for visualizing mapped QTL, underlying
 genotypes and SNP density.
@@ -420,9 +421,11 @@ genotypes and SNP density.
 
 BioDiallance has good abstractions for tracks and fetching data. We
 will look into fetching data on-the-fly from GN backends through a
-REST interface. Also we will add interaction that when a user [clicks
-on a QTL](http://kbroman.org/qtlcharts/example/iplotScanone.html), for example, the browser can display additional information
-and even initiate some back-end processing.
+REST interface and/or cache locally. Also we will add interaction that
+when a user
+[clicks on a QTL](http://kbroman.org/qtlcharts/example/iplotScanone.html),
+for example, the browser can display additional information and even
+initiate some back-end processing.
 
 We will use continuous
 [open channels](http://www.phoenixframework.org/) between the browser
@@ -442,7 +445,9 @@ and Javascript.  The GN REST interface is written in Elixir.
 * <span class="medium">medium</span> mostly Javascript, but python and elixir may come in handy
 
 #### Mentors
-[Pjotr Prins](https://github.com/pjotrp), [Karl Broman](https://github.com/kbroman)
+
+[Pjotr Prins](https://github.com/pjotrp),
+[Karl Broman](https://github.com/kbroman) and a Biodiallance dev
 
 #### Contact
 
