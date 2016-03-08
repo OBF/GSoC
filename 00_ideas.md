@@ -444,6 +444,12 @@ and Javascript.  The GN REST interface is written in Elixir.
 #### Mentors
 [Pjotr Prins](https://github.com/pjotrp), [Karl Broman](https://github.com/kbroman)
 
+#### Contact
+
+* IRC: `#genenetwork` on [Freenode](http://freenode.net/)
+* [Mailing list GeneNetwork](http://listserv.uthsc.edu/mailman/listinfo/genenetwork-dev)
+* [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
+
 ## ETE Toolkit
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and
