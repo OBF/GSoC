@@ -449,6 +449,7 @@ and Javascript.  The GN REST interface is written in Elixir.
 * IRC: `#genenetwork` on [Freenode](http://freenode.net/)
 * [Mailing list GeneNetwork](http://listserv.uthsc.edu/mailman/listinfo/genenetwork-dev)
 * [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
+* Direct: pjotr.public345 at thebird.nl
 
 ## ETE Toolkit
 
