@@ -109,7 +109,7 @@ Student is required to have a good knowledge of the Java/C++ programming languag
 <span class="medium">medium</span>
 
 #### Mentors
-Evan Floden, Maria Chatzou, Paolo Di Tommaso
+[Evan Floden](https://github.com/skptic), [Maria Chatzou](https://github.com/mariach/), [Paolo Di Tommaso](https://github.com/pditommaso)
 
 ### Nextflow support for Common Workflow Language  
 
@@ -140,7 +140,7 @@ Student is required to have a good knowledge of the Java and/or Groovy programmi
 
 #### Mentors 
 
-Paolo Di Tommaso, Pablo Prieto
+[Paolo Di Tommaso](https://github.com/pditommaso), [Pablo Prieto](https://github.com/pprieto)
 
 ### Nextflow user interface 
 
@@ -181,7 +181,7 @@ knowledge of the Groovy/Java programming languages.
 
 #### Mentors 
 
-Emilio Palumbo, Paolo Di Tommaso
+[Emilio Palumbo](http://github.com/emi80), [Paolo Di Tommaso](http://github.com/pditommaso)
 
 
 ## BioPerl
