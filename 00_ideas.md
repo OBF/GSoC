@@ -395,7 +395,7 @@ plus. Biological knowledge is not required.
 
 [GeneNetwork.org](http://gn2.genenetwork.org/) (GN) is a Web2.0
 environment for genetic analysis in mouse, rat and human (QTL mapping
-and GWAS). GN ised daily by scientists with over a thousand
+and GWAS). GN is used daily by scientists with over a thousand
 publications citing it.
 
 [Biodiallance.org](http://www.biodalliance.org/) is a state-of-the-art
@@ -447,7 +447,7 @@ and Javascript.  The GN REST interface is written in Elixir.
 #### Mentors
 
 [Pjotr Prins](https://github.com/pjotrp),
-[Karl Broman](https://github.com/kbroman) and a Biodiallance dev
+[Karl Broman](https://github.com/kbroman) and the Biodiallance mailing list
 
 #### Contact
 
