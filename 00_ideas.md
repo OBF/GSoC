@@ -446,8 +446,8 @@ and Javascript.  The GN REST interface is written in Elixir.
 
 #### Mentors
 
-[Pjotr Prins](https://github.com/pjotrp),
-[Karl Broman](https://github.com/kbroman) and the [Biodiallance mailing list](https://groups.google.com/forum/#!forum/biodalliance-dev)
+[Pjotr Prins](https://github.com/pjotrp) and
+[Karl Broman](https://github.com/kbroman)
 
 #### Contact
 
