@@ -638,7 +638,7 @@ Skills required:
 So far openSNP allows people to link up their *Fitbit* accounts, thus donating their Activity/Sleep/Weight data
 into the public domain as well. This is achieved by using the Push-API provided by *Fitbit*.
 
-By now there are many more tracking devices around, and many of them (e.g. *Jawbone*, *Misfit*) do offer their own APIs. Adding those accounts as well would broaden the possible data types available on openSNP
+By now there are many more tracking devices around, and many of them (e.g. *Jawbone*, *Misfit*) do offer their own APIs. Similarly apps like *Moves* and many modern phones already do some activity tracking. Adding those accounts and devices as well would broaden the possible data types available on openSNP
 and allow more people to participate in openSNP.
 
 #### Approach
@@ -650,6 +650,7 @@ Under the supervision of their mentors, the GSoC student will work on:
 * Optional: Develop ways to visualize the data collected through the APIs
 
 The student can focus on devices/APIs according their preferences.
+We can provide data from Jawbone, Misfit and Samsung tracking devices.
 
 #### Languages and skills
 
@@ -660,6 +661,7 @@ Skills required:
 * Ruby programming skills
 * Familiarity with Ruby on Rails
 * Familiarity with APIs, OAuth and Push-APIs a big plus
+* Interest & experience in Quantified Self also a big plus
 
 #### Difficulty
 
@@ -675,12 +677,14 @@ student's capabilities and the tasks selected.
 
 openSNP allows people to annotate their own genetic data sets by adding phenotypes to their profiles. So people can for example share their hair and eye colour or height but also medically relevant data, for example whether they have certain diseases or not. So far the whole system is set up as a loose collection of free-text forms, where people enter the name of the trait and their variation for that trait. While effective in getting many people to enter their data, this makes re-using the data very painful.
 
-In addition to this free-text field openSNP should offer a survey-based system to enter standardized phenotypes. The survey system should allow grouping related questions and instead of free-text should only allow pre-defined answers.
+In addition to this free-text field openSNP should offer a survey-based system to enter standardized phenotypes. The survey system should allow grouping related questions and instead of free-text should only allow pre-defined answers, for example as radio-buttons or checkboxes. Optionally the system should be set up in a way that pre-defined questioniares can be easily added either through the web interface or file uploads. 
+
+These standardized surveys do not need to be created by the student, we already have some of those and get regular survey-wishes from 3rd party researchers. This is just about the infrastructure.
 
 #### Approach
 Under the supervision of their mentors, the GSoC student will work on:
 
-* Identify the necessary traits for a survey-based phenotype system together with the mentors
+* Identify the necessary characteristics that such a survey-based phenotype system needs, jointly with the mentors
 * Research whether ready-made components for this already exist which could be included into openSNP
 * Either implement existing solutions or write one tailored for the phenotypes
 
