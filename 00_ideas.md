@@ -47,19 +47,19 @@ Analogous to the packaging problem, we think that wrapping tools from already es
 
 This project aims to solve part of that by taking [gxargparse](https://github.com/common-workflow-language/gxargparse), a proof of concept for the python tools command line ecosystem.
 
-Internally, gxargparse, masquerading as argparse attempts to find and import the real argparse. 
-It then stores a reference to the code module for the system argparse, and presents the user with all 
+Internally, gxargparse, masquerading as argparse attempts to find and import the real argparse.
+It then stores a reference to the code module for the system argparse, and presents the user with all
 of the functions that stdlib argparse provides. Every function call is passed through the system argparse.
 
-However, gxargparse captures the details of those calls and when a tool definition (Galaxy Tool XML in 
+However, gxargparse captures the details of those calls and when a tool definition (Galaxy Tool XML in
 the case of the original code base) is requested, it builds up the tool definition according to community standards.
 
-Another small proof of concept within the python ecosystem involves the docopt package and 
-[rabixator](https://github.com/stefanristeski/rabixator). Furthermore, other similar instrumentation 
+Another small proof of concept within the python ecosystem involves the docopt package and
+[rabixator](https://github.com/stefanristeski/rabixator). Furthermore, other similar instrumentation
 is being discussed to, for example, explore and optimize the parameter/flag space of i.e, bioinformatic
 aligners with [Teaser](http://dx.doi.org/10.1186/s13059-015-0803-1).
 
-Last but not least, if this approach could be generalized to tools written in other languages such as Java, 
+Last but not least, if this approach could be generalized to tools written in other languages such as Java,
 C, Perl, among others, it would not only ease the migration of (bioinformatics) tools to newer workflow
 systems, but for instance test the quality and robustness of several bioinformatics tools automatically.
 
@@ -81,23 +81,23 @@ systems, but for instance test the quality and robustness of several bioinformat
 
 ## Nextflow
 
-### Nextflow integration with NCBI Sequence Read Archive (SRA) 
+### Nextflow integration with NCBI Sequence Read Archive (SRA)
 
 #### Rationale
 
 Truly reproducible computational analysis relies on the having the exact same software, computational environment and data available. [Nextflow](http://www.nextflow.io/) along with [Docker](https://www.docker.com/) fulfills the software and environment requirements yet the data is kept distinct.
 
-It now common practice that DNA and RNA sequencing data must be made available in the [NCBI Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA). 
+It now common practice that DNA and RNA sequencing data must be made available in the [NCBI Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra) (SRA).
 Integration of the SRA into Nextflow could allow users to reference, pull and analyse their or others read data in programmatic manner.
 As an example, a user of pipeline could specify an SRA Study ID, for example the ID SRP003186 and have the mapping performed exactly as is specified in the study.
 
-#### Approach 
+#### Approach
 
 The suggested approach consist in integrating the NCBI SRA toolkit into Nextflow in such a way that SRA entries can be accessed from a pipeline script extending the Nextflow built-in operators whenever necessary.
 
-#### Languages and skills 
+#### Languages and skills
 
-Student is required to have a good knowledge of the Java/C++ programming languages and some basic skills of NGS data analysis. 
+Student is required to have a good knowledge of the Java/C++ programming languages and some basic skills of NGS data analysis.
 
 #### Code
 
@@ -115,71 +115,71 @@ Student is required to have a good knowledge of the Java/C++ programming languag
 
 #### Rationale
 
-[Nextflow](http://www.nextflow.io/) is a lightweight framework for computational pipelines. It implements a domain specific language (DSL) 
+[Nextflow](http://www.nextflow.io/) is a lightweight framework for computational pipelines. It implements a domain specific language (DSL)
 that simplifies writing parallel and scalable pipelines in a portable manner across different execution platform.    
 
-The [Common Workflow Language](http://commonwl.org/) (CWL) is a community effort to create a standard specification to define and describe 
-data analysis workflows that can be implemented by tools and platforms. 
+The [Common Workflow Language](http://commonwl.org/) (CWL) is a community effort to create a standard specification to define and describe
+data analysis workflows that can be implemented by tools and platforms.
 
-This proposal aims to implement in Nextflow a support for the CWL. This would allow any CWL defined pipeline to be executable 
+This proposal aims to implement in Nextflow a support for the CWL. This would allow any CWL defined pipeline to be executable
 with the Nextflow pipeline framework increasing the interoperability of the tool with other frameworks and platforms.   
 
-####  Approach 
+####  Approach
 
-The approach suggested consists in the implementation of a conversion tool able to parse a CWL pipeline definition 
-and translate it to an equivalent Nextflow DSL script. At a first stage this tool can be prototyped in any programming 
+The approach suggested consists in the implementation of a conversion tool able to parse a CWL pipeline definition
+and translate it to an equivalent Nextflow DSL script. At a first stage this tool can be prototyped in any programming
 language as an independent program. Then it is required to be written in Java/Groovy and to be integrated in the Nextflow codebase.
 
 #### Languages and skills
 Student is required to have a good knowledge of the Java and/or Groovy programming languages and basic concepts of parallel programming and computational workflows.
 
-####  Code 
+####  Code
 
 * [Nextflow source code repository](https://github.com/nextflow-io/nextflow)
 * [Common WL source code repository](https://github.com/common-workflow-language/common-workflow-language)
 
-#### Mentors 
+#### Mentors
 
 [Paolo Di Tommaso](https://github.com/pditommaso), [Pablo Prieto](https://github.com/pprieto)
 
-### Nextflow user interface 
+### Nextflow user interface
 
-#### Rationale 
+#### Rationale
 
-[Nextflow](http://www.nextflow.io/) is a lightweight framework for computational pipelines. It implements a domain specific language (DSL) that 
-simplifies writing parallel and scalable pipelines in a portable manner across different execution platform. 
+[Nextflow](http://www.nextflow.io/) is a lightweight framework for computational pipelines. It implements a domain specific language (DSL) that
+simplifies writing parallel and scalable pipelines in a portable manner across different execution platform.
 
-Nextflowhas been developed as a command line oriented tool because this allows developers a faster prototyping and development 
-cycle and simplify the application deployment process. However end-users may not have the required skills to operate 
-with the *-nix command line required to manage and launch a Nextflow based data analysis workflow. 
+Nextflowhas been developed as a command line oriented tool because this allows developers a faster prototyping and development
+cycle and simplify the application deployment process. However end-users may not have the required skills to operate
+with the *-nix command line required to manage and launch a Nextflow based data analysis workflow.
 
-The proposed idea is to developed a lean web user interface that allows users to launch and monitor the execution a 
+The proposed idea is to developed a lean web user interface that allows users to launch and monitor the execution a
 Nextflow based pipeline.  
 
-#### Approach 
+#### Approach
 
-The suggested approach consist in splitting the project goal in two main work packages. The first requires to implement 
-a REST based API in the Nextflow execution engine that allows a remote application to access the runtime information of a 
-running pipeline (list of submitted tasks, task status, task execution details, etc.)  and to operate with it (pause, 
+The suggested approach consist in splitting the project goal in two main work packages. The first requires to implement
+a REST based API in the Nextflow execution engine that allows a remote application to access the runtime information of a
+running pipeline (list of submitted tasks, task status, task execution details, etc.)  and to operate with it (pause,
 stop, resume execution).
 
-The second package requires to implement a web based dashboard application that would allow a user to connect to a remote 
-Nextflow instance and control its execution status by using the above API. Ideally the dashboard application should 
+The second package requires to implement a web based dashboard application that would allow a user to connect to a remote
+Nextflow instance and control its execution status by using the above API. Ideally the dashboard application should
 self-contained and able to run without requiring a prior installation of external dependencies.  
 
-#### Languages and skills 
+#### Languages and skills
 
-The student is required to have proven ability with Javascript, HTML5, Polymer. Experience with API design and a good 
+The student is required to have proven ability with Javascript, HTML5, Polymer. Experience with API design and a good
 knowledge of the Groovy/Java programming languages.
 
-#### Code 
+#### Code
 
 * [Nextflow source code repository](https://github.com/nextflow-io/nextflow)
 
 #### Difficulty
 <span class="medium">medium</span>
 
-#### Mentors 
+#### Mentors
 
 [Emilio Palumbo](http://github.com/emi80), [Paolo Di Tommaso](http://github.com/pditommaso)
 
@@ -460,7 +460,7 @@ and Javascript.  The GN REST interface is written in Elixir.
 
 [ETE](http://etetoolkit.org) is a Python framework for the analysis and
 visualization of trees, commonly used for the analysis of
-[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and in other research areas. 
+[phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree) and in other research areas.
 
 
 * [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
@@ -491,12 +491,12 @@ custom visualization layouts.
 #### Approach
 Under the supervision of their mentors, the GSoC student will:
 
-* Implement a system for searching within ETE Tree structures. 
-* Develop a vocabulary of queries that permit regular-expression-like queries. 
-* Integrate the framework as a new ETE module, including unitests and documentation. 
+* Implement a system for searching within ETE Tree structures.
+* Develop a vocabulary of queries that permit regular-expression-like queries.
+* Integrate the framework as a new ETE module, including unitests and documentation.
 * Optional: Develop a visualization framework based on ETE's tree rendering engine to
   display tree matches and differences.
- 
+
 #### Languages and skills
 
 All code should be written in Python, with compatibility for Py2 and Py3.
@@ -504,11 +504,11 @@ All code should be written in Python, with compatibility for Py2 and Py3.
 Skills required:
 
 * Good Python programming skills
-* Experience on Object Oriented Programming in Python 
+* Experience on Object Oriented Programming in Python
 * Familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
 * Optional (for addressing visualization): familiarity of Qt4 drawing system (QGraphicsScenes)
 
-#### Difficulty 
+#### Difficulty
 
 <span class="medium">medium</span>
 
@@ -520,7 +520,7 @@ Skills required:
 #### Rationale
 
 Tree visualization with ETE allows for advanced customizing of rectangular and
-circular tree images, being used to display 
+circular tree images, being used to display
 [different types](http://etetoolkit.org/gallery/) of biological results. However, the
 following features are currently missing and commonly requested by users:
 
@@ -540,9 +540,9 @@ Under the supervision of their mentors, the GSoC student will work on:
   events.  The implementation should be done on top of the current rendering
   engine, by adding the capability of translating horizontal node links created
   programmatically (i.e. `node1.add_link(node2)`) into visual links in the final
-  tree image. A prototype is discussed [here](https://github.com/etetoolkit/ete/issues/161). 
-  
-  
+  tree image. A prototype is discussed [here](https://github.com/etetoolkit/ete/issues/161).
+
+
 * Improving SVG rendering capabilities permitting better web
   integration. Although the implementation of a fully-capable web viewer is out
   of the scope, the creation of annotated SVG images (i.e. node IDs being added
@@ -550,11 +550,11 @@ Under the supervision of their mentors, the GSoC student will work on:
   images. Currently, an experimental static version of ETE based SVG images exist
   [here](http://etetoolkit.org/treeview), and could be used as a starting point
   for development.
-    
+
 * Adding new graphical elements to the collection of
   [ETE Faces](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces). Most
-  notably, the addition of branch-length-rulers which can be correctly aligned to tree branches, and 
-  the implementation of specific layouts. 
+  notably, the addition of branch-length-rulers which can be correctly aligned to tree branches, and
+  the implementation of specific layouts.
 
 #### Languages and skills
 
@@ -564,12 +564,12 @@ the image rendering library.
 Skills required:
 
 * Excellent Python programming skills
-* Experience on Object Oriented Programming in Python 
+* Experience on Object Oriented Programming in Python
 * Familiarity with tree related algorithms (i.e. tree traversing)
 * Familiarity with Qt4 drawing system (QGraphicsScene)
 * basic knowledge on web development (HTML/javascript)
 
-#### Difficulty 
+#### Difficulty
 
 <span class="medium">medium</span> to <span class="hard">hard</span>, depending on
 student's capabilities and the tasks selected.
@@ -579,3 +579,156 @@ student's capabilities and the tasks selected.
 
 
 
+## openSNP
+
+[openSNP](https://opensnp.org) is a web platform for people to donate their  
+personal genomics data (e.g. from 23andMe or Ancestry.com), along with phenotypic
+annotations, into the public domain. With over 2500 genotyping data sets it's
+one of the largest repositories of its kind.
+Additionally *openSNP* mines published literature and other databases
+for genotype-phenotype associations.
+
+* [Mailing list](https://groups.google.com/forum/#!forum/snpr-development)
+* [Source code](https://github.com/openSNP/snpr)
+* [Gitter](gitter.im/openSNP/snpr)
+
+### Updating the UI
+
+#### Rationale
+
+So far, openSNP is stuck on an older version of bootstrap and it doesn't make any
+use of responsive layouts. This makes navigating the website hard on small screens
+and also leads to the website not being too accessible in general. Additionally
+the navigation and flow through the website is confusing for people who aren't
+too deep into bioinformatics and human genetics already. As an optional goal this
+could be improved as well.
+
+Help us move openSNP into the 2010s, at least design wise!
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will:
+
+* Integrate a responsive CSS into openSNP  
+* Clean up the UI elements
+* Optional: Improve the UI with laypeople in mind
+
+#### Languages and skills
+
+All code should be written in Ruby, HTML & CSS.
+
+Skills required:
+
+* UI Design
+* HTML/ERB
+* CSS
+* Some interest in human genetics
+
+#### Difficulty
+
+<span class="easy">easy</span> if you're already a UI person, familiar with CSS, Responsive Web Design.
+<span class="medium">medium</span> otherwise.
+
+#### Mentors
+[Bastian Greshake](http://github.com/gedankenstuecke), [Philipp Bayer](http://github.com/PhilippBayer)
+
+### Extending Quantified Self Support
+
+#### Rationale
+
+So far openSNP allows people to link up their *Fitbit* accounts, thus donating their Activity/Sleep/Weight data
+into the public domain as well. This is achieved by using the Push-API provided by *Fitbit*.
+
+By now there are many more tracking devices around, and many of them (e.g. *Jawbone*, *Misfit*) do offer their own APIs. Adding those accounts as well would broaden the possible data types available on openSNP
+and allow more people to participate in openSNP.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will work on:
+
+* Identify some possible Quantified Self devices that offer API Support
+* Test different Gems for integrating them into openSNP
+* Implement one or multiple of those APIs into openSNP, either using existing Gems or writing own ones
+* Optional: Develop ways to visualize the data collected through the APIs
+
+The student can focus on devices/APIs according their preferences.
+
+#### Languages and skills
+
+All code will be in Ruby and implemented into the Rails framework.
+
+Skills required:
+
+* Ruby programming skills
+* Familiarity with Ruby on Rails
+* Familiarity with APIs, OAuth and Push-APIs a big plus
+
+#### Difficulty
+
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
+student's capabilities and the tasks selected.
+
+#### Mentors
+[Bastian Greshake](http://github.com/gedankenstuecke), [Philipp Bayer](http://github.com/PhilippBayer)
+
+### Adding a Survey-Based Phenotype System
+
+#### Rationale
+
+openSNP allows people to annotate their own genetic data sets by adding phenotypes to their profiles. So people can for example share their hair and eye colour or height but also medically relevant data, for example whether they have certain diseases or not. So far the whole system is set up as a loose collection of free-text forms, where people enter the name of the trait and their variation for that trait. While effective in getting many people to enter their data, this makes re-using the data very painful.
+
+In addition to this free-text field openSNP should offer a survey-based system to enter standardized phenotypes. The survey system should allow grouping related questions and instead of free-text should only allow pre-defined answers.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will work on:
+
+* Identify the necessary traits for a survey-based phenotype system together with the mentors
+* Research whether ready-made components for this already exist which could be included into openSNP
+* Either implement existing solutions or write one tailored for the phenotypes
+
+#### Languages and skills
+
+All code will be in Ruby and implemented into the Rails framework.
+
+Skills required:
+
+* Ruby programming skills
+* Familiarity with Ruby on Rails
+
+#### Difficulty
+
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
+student's capabilities.
+
+#### Mentors
+[Bastian Greshake](http://github.com/gedankenstuecke), [Philipp Bayer](http://github.com/PhilippBayer)
+
+### Linking Genotype to Phenotype Data
+
+#### Rationale
+
+openSNP does not only store the uploaded genotyping data but also parses the names of the genetic variants in those data sets to annotate them with further information. Mining primary scientific literature from a couple of sources (SNPedia, Mendeley, PLOS, GWAS catalog, PGP,…) we display links to primary literature as well as to summary pages.
+
+So far this information is not used to link up existing phenotypes on openSNP to the genetic variants. As an example: there might be the phenotype *prostate cancer* on openSNP and additionally there will be some genetic variants where the annotation in literature and external databases includes the keyword *prostate cancer*. Linking the genetic variants to the phenotype to the genotype and vice versa would improve the utility of openSNP for many people.
+
+#### Approach
+Under the supervision of their mentors, the GSoC student will work on:
+
+* Implementing the link for genotype-to-phenotype on the database/backend level
+* Find good ways to visualize those on the web frontend
+
+#### Languages and skills
+
+All code will be in Ruby and implemented into the Rails framework.
+
+Skills required:
+
+* Ruby programming skills
+* Familiarity with Ruby on Rails
+* HTML/ERB for displaying the results on the frontend
+
+#### Difficulty
+
+<span class="medium">medium</span> to <span class="hard">hard</span>, depending on
+student's capabilities.
+
+#### Mentors
+[Bastian Greshake](http://github.com/gedankenstuecke), [Philipp Bayer](http://github.com/PhilippBayer)
