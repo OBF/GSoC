@@ -677,7 +677,7 @@ student's capabilities and the tasks selected.
 
 openSNP allows people to annotate their own genetic data sets by adding phenotypes to their profiles. So people can for example share their hair and eye colour or height but also medically relevant data, for example whether they have certain diseases or not. So far the whole system is set up as a loose collection of free-text forms, where people enter the name of the trait and their variation for that trait. While effective in getting many people to enter their data, this makes re-using the data very painful.
 
-In addition to this free-text field openSNP should offer a survey-based system to enter standardized phenotypes. The survey system should allow grouping related questions and instead of free-text should only allow pre-defined answers, for example as radio-buttons or checkboxes. Optionally the system should be set up in a way that pre-defined questioniares can be easily added either through the web interface or file uploads. 
+In addition to this free-text field openSNP should offer a survey-based system to enter standardized phenotypes. The survey system should allow grouping related questions and instead of free-text should only allow pre-defined answers, for example as radio-buttons or checkboxes. Optionally the system should be set up in a way that pre-defined questioniares can be easily added either through the web interface or file uploads.
 
 These standardized surveys do not need to be created by the student, we already have some of those and get regular survey-wishes from 3rd party researchers. This is just about the infrastructure.
 
