@@ -590,7 +590,7 @@ for genotype-phenotype associations.
 
 * [Mailing list](https://groups.google.com/forum/#!forum/snpr-development)
 * [Source code](https://github.com/openSNP/snpr)
-* [Gitter](gitter.im/openSNP/snpr)
+* [Gitter](https://gitter.im/openSNP/snpr)
 
 ### Updating the UI
 
