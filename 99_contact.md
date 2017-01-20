@@ -14,7 +14,7 @@ include certain information, listed below, under "[When you apply.](../guide/#wh
 Kai Blin [kblin@biosustain.dtu.dk](mailto:kblin@biosustain.dtu.dk) (IRC: kblin | channels: #obf-soc, #gsoc)
 
 #### Backup administrator
-Raoul Bonnal [email](mailto:ilpuccio.febo@gmail.com) (IRC: helius | channels: #obf-soc, #bioruby, #gsoc ) (Skype: ilpuccio)
+NN (Interested in helping out? Email Kai.)
 
 ### Google Plus
 [OBF Summer of Code](https://plus.google.com/communities/103096212020630764091) on G+
@@ -23,30 +23,7 @@ Raoul Bonnal [email](mailto:ilpuccio.febo@gmail.com) (IRC: helius | channels: #o
 For prospective students, the first point of contact should be the mailing list
 of the OBF project you are interested in working with:
 
-BioPerl
-: [bioperl-l@lists.open-bio.org](mailto:bioperl-l@lists.open-bio.org)
-
-BioPython
-: [biopython@lists.open-bio.org](mailto:biopython@lists.open-bio.org)
-
-BioJava
-: [biojava-l@lists.open-bio.org](mailto:biojava-l@lists.open-bio.org)
-
-BioRuby
-: [bioruby@lists.open-bio.org](mailto:bioruby@lists.open-bio.org)
-
-BioSQL
-: [biosql-l@lists.open-bio.org](mailto:biosql-l@lists.open-bio.org)
-
-BioLib
-: [biolib-dev@lists.open-bio.org](mailto:biolib-dev@lists.open-bio.org)
-
-ETE Toolkit
-: [etetoolkit-dev@googlegroups.com](mailto:etetoolkit-dev@googlegroups.com)
-
-antiSMASH
-: [gsoc@secondarymetabolites.org](mailto:gsoc@secondarymetabolites.org)
-
+_Emails will come here once OBF projects have put up project ideas_
 
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
@@ -64,12 +41,6 @@ OBF IRC channels are maintained on [freenode](http://freenode.net/), connect you
 
 Main OBF GSoC Channel
 : `#obf-soc`
-
-BioPerl
-: `#bioperl`
-
-BioRuby
-: `#bioruby`
 
 Some mentors and developers can regularly be found on IRC, see the list of OBF
 projects below for information on which projects have a channel and the name of
