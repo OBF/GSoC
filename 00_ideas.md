@@ -32,9 +32,7 @@ idea in their application.
 
 **Feel free to propose your own entirely new idea.**
 
-## Add your project's ideas here
-
-### GeneNetwork Genome Browser (biodalliance)
+## GeneNetwork Genome Browser (biodalliance)
 
 [GeneNetwork.org](http://gn2.genenetwork.org/) (GN) is a Web2.0
 environment for genetic analysis in mouse, rat and human (QTL mapping
