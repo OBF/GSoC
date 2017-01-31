@@ -23,7 +23,9 @@ NN (Interested in helping out? Email Kai.)
 For prospective students, the first point of contact should be the mailing list
 of the OBF project you are interested in working with:
 
-_Emails will come here once OBF projects have put up project ideas_
+#### GeneNetwork / Biodalliance
+* [Mailing list GeneNetwork](http://listserv.uthsc.edu/mailman/listinfo/genenetwork-dev)
+* [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
 
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
@@ -41,6 +43,9 @@ OBF IRC channels are maintained on [freenode](http://freenode.net/), connect you
 
 Main OBF GSoC Channel
 : `#obf-soc`
+
+GeneNetwork
+: `#genenetwork` on [Freenode](http://freenode.net/)
 
 Some mentors and developers can regularly be found on IRC, see the list of OBF
 projects below for information on which projects have a channel and the name of
