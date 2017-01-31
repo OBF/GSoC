@@ -98,3 +98,87 @@ and Javascript.  The GN REST interface is written in Elixir.
 * [Mailing list GeneNetwork](http://listserv.uthsc.edu/mailman/listinfo/genenetwork-dev)
 * [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
 * Direct: pjotr.public345 at thebird.nl
+
+
+## antiSMASH
+
+[antiSMASH](http://antismash.secondarymetabolites.org) is a tool to mine the
+genomes of micro-organisms for biologically interesting gene clusters, so-called
+secondary metabolites, to help find new antibiotics. It is a python-based  open
+source tool that is developed at the Technical University of Denmark and Wageningen
+University.
+
+Project ideas around antiSMASH range from very close to applied biology to more
+general software engineering projects.
+
+### Improve gene cluster visualization (SVGene)
+
+#### Rationale
+
+antiSMASH generates a static HTML page report with prediction results for analysis runs.
+This is the main UI used by the experimental biologists. To give an overview of the gene
+cluster layout, antiSMASH uses the [SVGene](https://github.com/kblin/svgene) JavaScript library
+to render gene cluster arrows as vector graphics. So far, this is a static SVG, with some
+tooltip boxes added to provide the user with extra context:
+
+![antiSMASH gene cluster](http://antismash.secondarymetabolites.org/static/images/panel1.jpg)
+
+To further improve the user experience, zooming and panning should be implemented. Once
+zoomed in, additional details can be displayed as well.
+
+#### Approach
+
+antiSMASH renders gene clusters using the [SVGene](https://github.com/kblin/svgene)
+JavaScript library, which in turn is built on top of [D3.js](https://d3js.org/).
+D3.js supports controls for pan and zoom that should be used for SVGene.
+Gene cluster data for the HTML page is loaded from a JavaScript file included in the static
+web page. Additional details should be displayed on a bigger zoom level if available, possibly
+on separate tracks.
+
+#### Languages and skill
+SVGene is written in JavaScript and making heavy use of the [D3.js](https://d3js.org/)
+library for drawing the SVG primitives.
+Some Python knowledge might make it easier to extend antiSMASH's precalculated output,
+but is not required, as mock inputs can be used for the project.
+
+#### Code
+* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
+* [SVGene on github](https://github.com/kblin/svgene)
+
+#### Difficulty
+* <span class="easy">easy</span> with previous knowledge of D3.js
+* <span class="medium">medium</span> otherwise
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), Tilmann Weber
+
+
+### SeqRecord access abstraction layer
+
+#### Rationale
+Internally, antiSMASH uses BioPython SeqRecord objects to handle the data. A lot
+of the annotations are in custom feature entries or in free-text qualifiers of
+"gene" or "CDS" features. Code for handling this access is duplicated in parts
+of the code base. Additionally, directly using the SeqRecord object is a bit
+fragile.
+
+#### Approach
+Code for accessing the antiSMASH-specific features/qualifiers should be hidden
+behind an API layer that unifies the access. The new abstraction layer should
+then be utilized to reduce the code duplication and fagility of acessing the
+SeqRecord object special fields.
+
+#### Languages and skill
+antiSMASH is written in Python 2.7. Knowledge of unit testing in Python are a
+plus. Biological knowledge is not required.
+
+#### Code
+* [Initial implementation of the abstraction
+  library](https://github.com/kblin/python-secmet)
+* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
+
+#### Difficulty
+<span class="easy">easy</span>
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), Tilmann Weber
