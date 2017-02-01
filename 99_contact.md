@@ -41,6 +41,9 @@ overly much about picking the right OBF project at the outset. If you are
 unsure, simply make your best guess, and other members of the email list will
 help you to find the best organization to suit your idea.
 
+#### OpenMS
+* [Mailing list OpenMS](https://lists.sourceforge.net/lists/listinfo/open-ms-general)
+
 ### IRC - Internet Relay Chat
 
 OBF IRC channels are maintained on [freenode](http://freenode.net/), connect your IRC client to `chat.freenode.net`.
