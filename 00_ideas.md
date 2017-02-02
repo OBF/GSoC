@@ -183,6 +183,7 @@ plus. Biological knowledge is not required.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
+
 ## OpenMS
 
 [OpenMS](www.openms.de) is an open-source software C++ library for LC/MS data management and analyses. It offers an infrastructure for the rapid development of mass spectrometry related software. OpenMS is free software available under the three clause BSD license and runs under Windows, MacOSX and Linux. The source code is hosted publicly available on [GitHub](https://github.com/OpenMS/OpenMS/).
@@ -226,3 +227,41 @@ Pseudocode and reference implementations can be provided and found in the public
 
 #### Mentors
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+
+
+## Common Workflow Language reference implementation (cwltool)
+
+[cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL. It is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
+
+#### Rationale
+
+The goal of the project is to enhance cross platform compatibility and usability of cwltool, specifically by migrating to Py2+3 and adding Microsoft Windows support
+
+* Python 3 support for [schema-salad](http://www.commonwl.org/v1.0/SchemaSalad.html) (rules for preprocessing, structural validation, and link checking for CWL documents) and cwltool overall
+* Windows support for cwltool, configuring continuous integration to keep it from breaking
+* Resolving some of the [Github issues](https://github.com/common-workflow-language/cwltool/issues) on the way
+
+#### Approach
+
+cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/) to comply with the latest specification. 
+
+#### Languages and skill
+
+cwltool is written and tested for Python 2.7. Python 3 experience, familiarity with unit and continious testing is desired.
+
+#### Code
+
+* [cwltool](https://github.com/common-workflow-language/cwltool)
+
+#### Difficulty
+* <span class="medium">medium</span>
+
+#### Mentors
+
+[Michael R. Crusoe](https://github.com/mr-c), [Anton Khodak](https://github.com/anton-khodak)
+
+#### Contact
+
+* [Gitter](https://gitter.im/common-workflow-language/common-workflow-language)
+* [Mailing list](https://groups.google.com/forum/#!forum/common-workflow-language)
+* [Question & Answer](https://www.biostars.org/t/cwl)
