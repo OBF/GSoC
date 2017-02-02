@@ -31,6 +31,12 @@ of the OBF project you are interested in working with:
 #### antiSMASH
 * [gsoc@secondarymetabolites.org](mailto:gsoc@secondarymetabolites.org)
 
+
+#### OpenMS
+* [Mailing list OpenMS](https://lists.sourceforge.net/lists/listinfo/open-ms-general)
+
+
+
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
 taken care of!

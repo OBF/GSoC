@@ -183,6 +183,52 @@ plus. Biological knowledge is not required.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
+
+## OpenMS
+
+[OpenMS](www.openms.de) is an open-source software C++ library for LC/MS data management and analyses. It offers an infrastructure for the rapid development of mass spectrometry related software. OpenMS is free software available under the three clause BSD license and runs under Windows, MacOSX and Linux. The source code is hosted publicly available on [GitHub](https://github.com/OpenMS/OpenMS/).
+
+### Implement algorithms for the generation of high-resolution isotope patterns
+
+#### Rationale
+
+Mass spectrometry has become one of the bioanalytical tools of choice for many life scientists. Technological advancements in the last years have led to an increase in acquisition speed and resolution. Common tasks, like identifying and quantifying proteins and metabolites from biological or medical samples are regularly performed in different fields of research, industry, and clinical diagnostics.
+
+Modern mass spectrometers are becoming more and more capable of resolving not only the mass of a molecule but also of its naturally occurring variants with different isotopic composition. Simply speaking, if the "isotopic fine structure" is known, the exact chemical formula can be derived and be used to resolve ambiguities in the identification of molecules. 
+
+#### Approach
+
+OpenMS currently includes a theoretical isotope pattern generator that calculates a coarse version of the isotopic structure.
+
+Several papers have been published that describe implementations of a high-resolution isotope pattern algorithm, e.g.:
+[MIDAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880471/) and 
+[Mercury5](https://www.ncbi.nlm.nih.gov/pubmed/21619291)
+
+for which reference implementations are provided by the authors. They could be potentially interesting algorithms that can be validated against a reference implementation.
+
+OpenMS tool developers and users alike would benefit from well-tested, native implementations using the OpenMS library. In the future, this implementation could be used by others to build novel tools or improve existing ones. 
+
+#### Languages and skills
+
+* Intermediate knowledge of C++ and its STL. Knowledge of Boost's Math Library might be of use.
+* Depending on the implemented algorithm, intermediate knowledge of polynomial algebra and mathematical convolutions.
+* Basic knowledge on atom masses and isotopes (can be acquired in the first days).
+* Basic knowledge on mass spectrometry (can be acquired in the first days).
+
+#### Code
+
+Expected outcome:
+The existing implementation for low-resolution data in OpenMS ([IsotopeDistribution]( https://github.com/OpenMS/OpenMS/blob/e2eda7b3ef61dd22dd8f704d7b26db7635ba33e9/src/openms/source/CHEMISTRY/IsotopeDistribution.cpp)) should be extended by at least one algorithm for high-resolution data.
+We suggest the MIDAS and Mercury5 algorithm but are open for suggestions.
+Pseudocode and reference implementations can be provided and found in the publications.
+
+#### Difficulty
+<span class="easy">medium</span>.
+
+#### Mentors
+[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+
+
 ## Common Workflow Language reference implementation (cwltool)
 
 [cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL. It is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
