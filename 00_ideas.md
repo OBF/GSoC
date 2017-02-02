@@ -182,3 +182,39 @@ plus. Biological knowledge is not required.
 
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
+
+## Common Workflow Language reference implementation improvement
+
+[cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL, however it is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
+
+#### Rationale
+
+To improve user experience, make cwltool more portable and usable across platforms and applications, the following outcomes are desired from the GSoC project:
+
+* Python 3 support for [schema-salad](http://www.commonwl.org/v1.0/SchemaSalad.html) (rules for preprocessing, structural validation, and link checking for CWL documents) and cwltool overall
+* Windows support for cwltool, configuring continuous integration to keep it from breaking
+* Resolving some of the [Github issues](https://github.com/common-workflow-language/cwltool/issues) on the way
+
+#### Approach
+
+cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/) to comply with the latest specification. 
+
+#### Languages and skill
+
+cwltool is written and tested for Python 2.7.
+
+#### Code
+
+* [cwltool](https://github.com/common-workflow-language/cwltool)
+
+#### Difficulty
+* <span class="medium">medium</span>
+
+#### Mentors
+
+[Michael R. Crusoe](https://github.com/mr-c), [Anton Khodak](https://github.com/anton-khodak)
+
+#### Contact
+
+* [Gitter](https://gitter.im/common-workflow-language/common-workflow-language)
+* [Mailing list](https://groups.google.com/forum/#!forum/common-workflow-language)
