@@ -11,6 +11,8 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: OBF_news
 theme: minima
 
+include: ['_historic']
+
 # Build settings
 markdown: kramdown
 
