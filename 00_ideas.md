@@ -223,7 +223,7 @@ We suggest the MIDAS and Mercury5 algorithm but are open for suggestions.
 Pseudocode and reference implementations can be provided and found in the publications.
 
 #### Difficulty
-<span class="easy">medium</span>.
+<span class="medium">medium</span>.
 
 #### Mentors
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
