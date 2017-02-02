@@ -183,13 +183,13 @@ plus. Biological knowledge is not required.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
-## Common Workflow Language reference implementation improvement
+## Common Workflow Language reference implementation (cwltool)
 
-[cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL, however it is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
+[cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL. It is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
 
 #### Rationale
 
-To improve user experience, make cwltool more portable and usable across platforms and applications, the following outcomes are desired from the GSoC project:
+The goal of the project is to enhance cross platform compatibility and usability of cwltool, specifically by migrating to Py2+3 and adding Microsoft Windows support
 
 * Python 3 support for [schema-salad](http://www.commonwl.org/v1.0/SchemaSalad.html) (rules for preprocessing, structural validation, and link checking for CWL documents) and cwltool overall
 * Windows support for cwltool, configuring continuous integration to keep it from breaking
@@ -201,7 +201,7 @@ cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltoo
 
 #### Languages and skill
 
-cwltool is written and tested for Python 2.7.
+cwltool is written and tested for Python 2.7. Python 3 experience, familiarity with unit and continious testing is desired.
 
 #### Code
 
@@ -218,3 +218,4 @@ cwltool is written and tested for Python 2.7.
 
 * [Gitter](https://gitter.im/common-workflow-language/common-workflow-language)
 * [Mailing list](https://groups.google.com/forum/#!forum/common-workflow-language)
+* [Question & Answer](https://www.biostars.org/t/cwl)
