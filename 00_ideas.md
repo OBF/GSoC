@@ -238,6 +238,10 @@ workflow system.
 
 ![CWL viewer](https://pbs.twimg.com/media/C3rzBPbWEAAX2rt.png)
 
+(image from
+https://view.commonwl.org/workflows/github.com/common-workflow-language/workflows/tree/master/workflows/lobSTR
+)
+
 ### CWL reference implementation (cwltool)
 
 [cwltool](https://github.com/common-workflow-language/cwltool) is the reference
