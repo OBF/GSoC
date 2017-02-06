@@ -23,7 +23,7 @@ program and additional ways to get in touch with us.
 
 OBF is an umbrella organization which represents many different programming
 languages used in bioinformatics. In addition to working with each of the
-"Bio*" projects (listed below), this year we are also accepting a category of
+"Bio\*" projects (listed below), this year we are also accepting a category of
 "cross-project" ideas that cover multiple programming languages or projects.
 These collaborative ideas are broadly defined and can be thought of as
 "unfinished" — interested students should adapt the ideas to their own
@@ -229,25 +229,49 @@ Pseudocode and reference implementations can be provided and found in the public
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
 
 
-## Common Workflow Language reference implementation (cwltool)
+## Common Workflow Language
 
-[cwltool](https://github.com/common-workflow-language/cwltool) is the reference implementation of the [Common Workflow Language](http://www.commonwl.org/).  cwltool's main purpose is being able to run tools and workflows written in CWL. It is intended to be feature complete and provide comprehensive validation of CWL files as well as provide other tools related to working with CWL.
+The Common Workflow Language standards enable bioinformaticians and other
+researchers to describe their data analysis workflows in a portable,
+interopable, and executable manner without being dependent on a particular
+workflow system.
+
+![CWL viewer](https://pbs.twimg.com/media/C3rzBPbWEAAX2rt.png)
+
+### CWL reference implementation (cwltool)
+
+[cwltool](https://github.com/common-workflow-language/cwltool) is the reference
+implementation of the [Common Workflow Language](http://www.commonwl.org/).
+cwltool's main purpose is demonstrate the majority of the features of CWL by
+executing data analysis tools and workflows described in CWL v1.0 documents.
+
+It is intended to be feature complete and provide comprehensive validation of
+CWL files as well as provide other tools related to working with CWL.
 
 #### Rationale
 
-The goal of the project is to enhance cross platform compatibility and usability of cwltool, specifically by migrating to Py2+3 and adding Microsoft Windows support
+The goal of the project is to enhance cross platform compatibility and
+usability of cwltool, specifically by migrating to Py2+3 and adding Microsoft
+Windows support
 
-* Python 3 support for [schema-salad](http://www.commonwl.org/v1.0/SchemaSalad.html) (rules for preprocessing, structural validation, and link checking for CWL documents) and cwltool overall
-* Windows support for cwltool, configuring continuous integration to keep it from breaking
-* Resolving some of the [Github issues](https://github.com/common-workflow-language/cwltool/issues) on the way
+* Python 3 support for [schema-salad](http://www.commonwl.org/v1.0/SchemaSalad.html)
+  (rules for preprocessing, structural validation, and link checking for CWL
+  documents) and cwltool overall
+* Windows support for cwltool, configuring continuous integration to keep it
+  from breaking
+* Resolving some of the [Github issues](https://github.com/common-workflow-language/cwltool/issues)
+  on the way
 
 #### Approach
 
-cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/) to comply with the latest specification. 
+cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
+to comply with the latest specification. 
 
 #### Languages and skill
 
-cwltool is written and tested for Python 2.7. Python 3 experience, familiarity with unit and continious testing is desired.
+cwltool is written and tested for Python 2.7. Python 3 experience, familiarity
+with unit and continious testing is desired. No background in data intensive
+science is required.
 
 #### Code
 
@@ -259,6 +283,59 @@ cwltool is written and tested for Python 2.7. Python 3 experience, familiarity w
 #### Mentors
 
 [Michael R. Crusoe](https://github.com/mr-c), [Anton Khodak](https://github.com/anton-khodak)
+
+#### Contact
+
+* [Gitter](https://gitter.im/common-workflow-language/common-workflow-language)
+* [Mailing list](https://groups.google.com/forum/#!forum/common-workflow-language)
+* [Question & Answer](https://www.biostars.org/t/cwl)
+
+### Add IO streaming to CWL reference implementation
+
+You can mark parts of a data analysis workflow as supporting streaming IO when
+using the Common Workflow Language via the [`streamable: true` directive
+](http://www.commonwl.org/v1.0/CommandLineTool.html#CommandInputParameter)
+
+#### Rationale
+
+However,  [cwltool](https://github.com/common-workflow-language/cwltool) (the reference
+implementation of the [Common Workflow Language](http://www.commonwl.org/))
+does not implement any streaming IO optimzation and ignores the `streamable`
+flag.
+
+
+In order to add streaming support `cwltool` will also need to be able to
+execute steps simultaneously.
+
+#### Approach
+One of the goals of the reference implementation is to have a simple code base
+to enhance learning and simplify maintenance.
+
+This project will require studying multiple methods of enabling co-execution of
+steps (and enabling streaming IO via unix named FIFOs ("pipes")) and choosing
+the method that produces the most maintable code. Preferably external libraries
+that are well maintained and well documented are used to keep code growth to a
+minimum.
+
+cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
+to comply with the latest specification. 
+
+#### Languages and skill
+
+cwltool is written and tested for Python 2.7. Python 3 experience, familiarity
+with unit and continious testing is desired. No background in data intensive
+science is required.
+
+#### Code
+
+* [cwltool](https://github.com/common-workflow-language/cwltool)
+
+#### Difficulty
+* <span class="medium">medium</span>
+
+#### Mentors
+
+[Michael R. Crusoe](https://github.com/mr-c)
 
 #### Contact
 
