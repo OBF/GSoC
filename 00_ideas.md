@@ -186,15 +186,29 @@ plus. Biological knowledge is not required.
 
 ## OpenMS
 
-[OpenMS](www.openms.de) is an open-source software C++ library for LC/MS data management and analyses. It offers an infrastructure for the rapid development of mass spectrometry related software. OpenMS is free software available under the three clause BSD license and runs under Windows, MacOSX and Linux. The source code is hosted publicly available on [GitHub](https://github.com/OpenMS/OpenMS/).
+[OpenMS](www.openms.de) is an open-source software C++ library for LC/MS data
+management and analyses. It offers an infrastructure for the rapid development
+of mass spectrometry related software. OpenMS is free software available under
+the three clause BSD license and runs under Windows, MacOSX and Linux. The
+source code is hosted publicly available
+on [GitHub](https://github.com/OpenMS/OpenMS/).
 
 ### Implement algorithms for the generation of high-resolution isotope patterns
 
 #### Rationale
 
-Mass spectrometry has become one of the bioanalytical tools of choice for many life scientists. Technological advancements in the last years have led to an increase in acquisition speed and resolution. Common tasks, like identifying and quantifying proteins and metabolites from biological or medical samples are regularly performed in different fields of research, industry, and clinical diagnostics.
+Mass spectrometry has become one of the bioanalytical tools of choice for many
+life scientists. Technological advancements in the last years have led to an
+increase in acquisition speed and resolution. Common tasks, like identifying and
+quantifying proteins and metabolites from biological or medical samples are
+regularly performed in different fields of research, industry, and clinical
+diagnostics.
 
-Modern mass spectrometers are becoming more and more capable of resolving not only the mass of a molecule but also of its naturally occurring variants with different isotopic composition. Simply speaking, if the "isotopic fine structure" is known, the exact chemical formula can be derived and be used to resolve ambiguities in the identification of molecules. 
+Modern mass spectrometers are becoming more and more capable of resolving not
+only the mass of a molecule but also of its naturally occurring variants with
+different isotopic composition. Simply speaking, if the "isotopic fine
+structure" is known, the exact chemical formula can be derived and be used to
+resolve ambiguities in the identification of molecules.
 
 #### Approach
 
@@ -204,9 +218,13 @@ Several papers have been published that describe implementations of a high-resol
 [MIDAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880471/) and 
 [Mercury5](https://www.ncbi.nlm.nih.gov/pubmed/21619291)
 
-for which reference implementations are provided by the authors. They could be potentially interesting algorithms that can be validated against a reference implementation.
+for which reference implementations are provided by the authors. They could be
+potentially interesting algorithms that can be validated against a reference
+implementation.
 
-OpenMS tool developers and users alike would benefit from well-tested, native implementations using the OpenMS library. In the future, this implementation could be used by others to build novel tools or improve existing ones. 
+OpenMS tool developers and users alike would benefit from well-tested, native
+implementations using the OpenMS library. In the future, this implementation
+could be used by others to build novel tools or improve existing ones.
 
 #### Languages and skills
 
@@ -218,7 +236,11 @@ OpenMS tool developers and users alike would benefit from well-tested, native im
 #### Code
 
 Expected outcome:
-The existing implementation for low-resolution data in OpenMS ([IsotopeDistribution]( https://github.com/OpenMS/OpenMS/blob/e2eda7b3ef61dd22dd8f704d7b26db7635ba33e9/src/openms/source/CHEMISTRY/IsotopeDistribution.cpp)) should be extended by at least one algorithm for high-resolution data.
+
+The existing implementation for low-resolution data in OpenMS
+([IsotopeDistribution]( https://github.com/OpenMS/OpenMS/blob/e2eda7b3ef61dd22dd8f704d7b26db7635ba33e9/src/openms/source/CHEMISTRY/IsotopeDistribution.cpp))
+should be extended by at least one algorithm for high-resolution data.
+
 We suggest the MIDAS and Mercury5 algorithm but are open for suggestions.
 Pseudocode and reference implementations can be provided and found in the publications.
 
@@ -348,191 +370,195 @@ science is required.
 * [Question & Answer](https://www.biostars.org/t/cwl)
 
 
+## ETE TOOLKIT
 
-**ABOUT THE ETE TOOLKIT**
-
-The  ETE toolkit is a Python software intended for the integrative reconstruction, analysis and visualization of [phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree). ETE is widely used in research, particularly for large phylogenomic studies (>270 citations, >3000 ETE 3.0 downloads).
+The ETE toolkit is a Python software intended for the integrative
+reconstruction, analysis and visualization
+of [phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree). ETE is
+widely used in research, particularly for large phylogenomic studies (>270
+citations, >3000 ETE 3.0 downloads).
 
 * [Website](http://etetoolkit.org)
-
 * [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
-
 * [Documentation](http://etetoolkit.org/docs/latest/tutorial/index.html) and [cookbook](http://etetoolkit.org/cookbook/)
-
 * [Github](https://github.com/etetoolkit/ete)
-
 * [ETE 3 paper](https://academic.oup.com/mbe/article/33/6/1635/2579822/ETE-3-Reconstruction-Analysis-and-Visualization-of?searchresult=1) 
 
-If interested in any of the following ideas, or you want to propose a new one, please contact early at ete-gsoc@etetoolkit.org
+If interested in any of the following ideas, or you want to propose a new one,
+please contact early at ete-gsoc@etetoolkit.org
 
-**PROJECT IDEAS**
+### ETE-1. Developing a novel format for phylogenomic data**
 
-**1.**** Developing a novel format for phylogenomic data**
+#### Rationale
 
-**Background**
+Phylogenetic trees are usually encoded using the so
+called [Newick format](https://en.wikipedia.org/wiki/Newick_format). While
+convenient, this format has limitations to store metadata associated to the
+different nodes in a tree. Some alternative formats exist (NeXML, PhyloXML,
+Nexus) which are already supported by the ETE toolkit. However, none of those
+formats is optimal to i) encode ETE graphical properties associated to nodes ii)
+store large trees or huge collections of trees iii) access metadata from large
+datasets in an indexed way.
 
-Phylogenetic trees are usually encoded using the so called [Newick format](https://en.wikipedia.org/wiki/Newick_format). While convenient, this format has limitations to store metadata associated to the different nodes in a tree. Some alternative formats exist (NeXML, PhyloXML, Nexus) which are already supported by the ETE toolkit.  However, none of those formats is optimal to i) encode ETE graphical properties associated to nodes ii) store large trees or huge collections of trees iii) access metadata from large datasets in an indexed way.
+In addition, a community of developers specialized in tree visualization
+software is brainstorming about possible ways to make the process of composing
+and sharing figures more portable and transparent. It is expected that this
+project keeps in sync with the
+expected
+[outcome of such meetings](https://github.com/OpenTreeOfLife/treeviz-workshop-2017/wiki#expected-outcomes) and
+provide support for the conventions and tree annotation vocabulary agreed.
 
- 
+#### Goals
 
-In addition, a community of developers specialized in tree visualization software is brainstorming about possible ways to make the process of composing and sharing figures more portable and transparent. It is expected that this project keeps in sync with the expected [outcome of such meetings](https://github.com/OpenTreeOfLife/treeviz-workshop-2017/wiki#expected-outcomes) and provide support for the conventions and tree annotation vocabulary agreed.
+1. Develop a data format capable of storing trees, metadata and graphical
+   features associated to nodes. The following features are ambitioned: Tree
+   structure and node metadata indexing, data compression, possibility of having
+   multiple trees in a file, possibility of exporting in plain text,
+   portability.
+2. Integrate the format into ETE, so annotated ETE trees (including graphical
+   features) can be read, exported and exchanged with ease.
+3. Develop basic converters from most common formats to date: i.e. Newick,
+   Extended Newick and Nexus.
 
-**Goals**
+#### Possible approaches
 
-1. Develop a data format capable of storing trees, metadata and graphical features associated to nodes. The following features are ambitioned: Tree structure and node metadata indexing, data compression, possibility of having multiple trees in a file, possibility of exporting in plain text, portability.
-
-2. Integrate the format into ETE, so annotated ETE trees (including graphical features) can be read, exported and exchanged with ease. 
-
-3. Develop basic converters from most common formats to date: i.e. Newick, Extended Newick and Nexus. 
-
-**Possible approaches**
-
-* Use SQLite: See [this](https://github.com/etetoolkit/ete/blob/master/ete3/ncbi_taxonomy/ncbiquery.py) prototype API implementation currently used to store and query a very large tree
-
-* Use a novel data format based indexing a [tabular tree format](https://github.com/jhcepas/tree_formats/blob/master/tree.ttf)
-
+* Use SQLite:
+  See
+  [this](https://github.com/etetoolkit/ete/blob/master/ete3/ncbi_taxonomy/ncbiquery.py) prototype
+  API implementation currently used to store and query a very large tree
+* Use a novel data format based indexing
+  a
+  [tabular tree format](https://github.com/jhcepas/tree_formats/blob/master/tree.ttf)
   
 
-**Difficulty**
-
+#### Difficulty
 Medium
 
-#### **Languages and skills**
-
+#### Languages and skills
 * Good Python programming skills
-
 * Experience on Object Oriented Programming in Python
 
-**Mentors**
+#### Mentors
+* Jaime Huerta-Cepas (EMBL, Germany)
+* Francois Serra (CNAG-CRG, Spain)
+* Renato Alves (EMBL, Germany)
+* Łukasz Roguski (CNAG-CRG, Spain)
 
-Jaime Huerta-Cepas (EMBL, Germany)
+### ETE-2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs
 
-Francois Serra (CNAG-CRG, Spain)
+#### Raionale 
 
-Renato Alves (EMBL, Germany)
+[ETE-build](http://etetoolkit.org/documentation/ete-build/) is a command line
+tool that provides a unified interface for the reproducible execution of complex
+phylogenetic workflows. Those workflows are composed of several steps that
+require calling multiple third-party programs as well as parsing and processing
+results. At the moment, ETE-build can be used to easily execute those workflows
+with a single command line. All the required tasks are then handled by an
+internal scheduling system, so third party software is executed transparently.
 
-Łukasz Roguski (CNAG-CRG, Spain)
-
-**2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs **
-
-**Background**
-
-[ETE-build](http://etetoolkit.org/documentation/ete-build/) is a command line tool that provides a unified interface for the  reproducible execution of complex phylogenetic workflows. Those workflows are composed of several steps that require calling multiple third-party programs as well as parsing and processing results. At the moment, ETE-build can be used to easily execute those workflows with a single command line. All the required tasks are then handled by an internal scheduling system, so third party software is executed transparently.
-
-**Goals**
+#### Goals
 
 1. Developing a graphical user interface that allows to run workflows and visualize results 
-
 2. Adding windows support (currently only Linux and OSX are officially supported). 
-
 3. Fixing and improving known issues in the scheduling and pipeline system
-
 4. Adding new workflows and application bindings. 
 
-**Difficulty**
-
+#### Difficulty
 Medium
 
-#### **Languages and skills**
-
+#### Languages and skills
 * Good Python programming skills
-
 * Experience on Object Oriented Programming in Python
+* Some tasks will require basic understanding of
+  the
+  [phylogenetic reconstruction](http://www.evolution-textbook.org/content/free/contents/ch27.html#ch27-2) process.
 
-* Some tasks will require basic understanding of the [phylogenetic reconstruction](http://www.evolution-textbook.org/content/free/contents/ch27.html#ch27-2) process. 
+#### Mentors
+* Jaime Huerta-Cepas (EMBL, Germany)
+* Francois Serra (CNAG-CRG, Spain)
+* Renato Alves (EMBL, Germany)
 
-**Mentors**
+### ETE-3. Data visualization: developing a gallery of predefined tree layouts targeting publication ready figures
 
-Jaime Huerta-Cepas (EMBL, Germany)
+#### Rationale
 
-Francois Serra (CNAG-CRG, Spain)
+Although the syntax of ETE’s tree rendering engine is highly flexible and allows
+creating a variety
+of [complex tree visualizations](http://etetoolkit.org/gallery/), this usually
+involves substantial scripting work. Predefined layouts could be provided in the
+form of ETE python scripts, that permit to style trees according to most common
+usages. For instance, the following tree figures could be entirely renderable
+using ETE, but not predefined scripts exist yet for that purpose:
 
-Renato Alves (EMBL, Germany)
+IMAGES
 
-**3. Data visualization: developing a gallery of predefined tree layouts targeting publication ready figures**
-
-**Background**
-
-Although the syntax of ETE’s tree rendering engine is highly flexible and allows creating a variety of [complex tree visualizations](http://etetoolkit.org/gallery/), this usually involves substantial scripting work. Predefined layouts could be provided in the form of ETE python scripts, that permit to style trees according to most common usages. For instance, the following tree figures could be entirely renderable using ETE, but not predefined scripts exist yet for that purpose: 
-
-**Goals**
-
+#### Goals
 * Develop a gallery of layouts in the form of Python scripts that cover most common visualizations in phylogenetics, including 
-
 * Selection of good color schemes
-
 * Deciding what graphical features to show or hide depending on context
-
 * Improve ETE’s rendering system, so multiple layouts can be applied as semantic layers. For instance:
 
-TreeStyle.layout = [block_alignment_layout, color_duplication_nodes_layout, ….] 
+```TreeStyle.layout = [block_alignment_layout, color_duplication_nodes_layout, ….] ```
 
-**Difficulty**
-
+#### Difficulty
 Easy (from a programming point of view, but good graphical designing skills necessary)
 
-#### **Languages and skills**
-
+#### Languages and skills
 * Good Python programming skills
-
 * Experience on Object Oriented Programming in Python
-
 * Good in data visualization
 
-**Mentors** 
+#### Mentors
+* Jaime Huerta-Cepas (EMBL, Germany)
+* Francois Serra (CNAG-CRG, Spain)
+* Renato Alves (EMBL, Germany)
 
-Jaime Huerta-Cepas (EMBL, Germany)
+#### ETE-4. Tree searching using regular-expression-like queries
 
-Francois Serra (CNAG-CRG, Spain)
+#### Rationale
 
-Renato Alves (EMBL, Germany)
+Although several methods allow comparing trees using ETE, no search capabilities
+exist that permit to query tree topologies for specific patterns. The goal of
+this project is to develop a new ETE module that allows querying large
+collections of trees using custom criteria. Searches should be flexible and
+allow for regular-expression-like queries, returning a list of all internal
+nodes in the matching trees where the criteria is fulfilled.
 
-### **4. Tree searching using regular-expression-like queries**
+Applications of the framework would enable any user to perform complex queries
+on a variety of tree-like data in research, such as clustering results and
+phylogenetic trees. This is **specially relevant** in the **Phylogenomics**
+field (ETE focus), where thousands of phylogenetic trees are being generated and
+scanned for specific evolutionary patterns. Based on previous ETE developments
+and last-year GSoC work, a
+prototype [tree-matcher program](https://github.com/etetoolkit/treematcher)
+exists, which provides basic functionality and examples.
 
-#### **Background**
-
-Although several methods allow comparing trees using ETE, no search capabilities exist that permit to query tree topologies for specific patterns. The goal of this project is to develop a new ETE module that allows querying large collections of trees using custom criteria. Searches should be flexible and allow for regular-expression-like queries, returning a list of all internal nodes in the matching trees where the criteria is fulfilled.
-
-Applications of the framework would enable any user to perform complex queries on a variety of tree-like data in research, such as clustering results and phylogenetic trees. This is **specially relevant** in the **Phylogenomics** field (ETE focus), where thousands of phylogenetic trees are being generated and scanned for specific evolutionary patterns. Based on previous ETE developments and last-year GSoC work, a prototype [tree-matcher program](https://github.com/etetoolkit/treematcher) exists, which provides basic functionality and examples. 
-
-#### **Goals**
+#### Goals
 
 * Improve the [tree-matcher](https://github.com/etetoolkit/treematcher/blob/master/test_treematcher.py) module to permit searching for complex patterns (i.e. [allow for complex queries using wildcards](https://github.com/etetoolkit/treematcher/issues/22))  
 
-* Improve and extend the [tree search command line tool](https://github.com/etetoolkit/treematcher/issues/17)
+* Improve and extend
+  the
+  [tree search command line tool](https://github.com/etetoolkit/treematcher/issues/17)
+* Integrate tree-matcher as a new ETE module, including complete unitests and
+  documentation.
+* Optional: Develop a visualization framework based on ETE’s tree rendering
+  engine to display tree matches and differences.
 
-* Integrate tree-matcher as a new ETE module, including complete unitests and documentation.
-
-* Optional: Develop a visualization framework based on ETE’s tree rendering engine to display tree matches and differences.
-
-#### **Difficulty**
-
+#### Difficulty
 Medium
 
-#### **Languages and skills**
-
-All code should be written in Python, with compatibility for Py2 and Py3.
-
-Skills required:
-
+#### Languages and skill
 * Good Python programming skills
-
 * Experience on Object Oriented Programming in Python
-
 * Familiarity with the [Newick Tree format ](https://en.wikipedia.org/wiki/Newick_format)and the concept of phylogenetic gene trees (i.e. see [this](http://biologos.org/blogs/dennis-venema-letters-to-the-duchess/evolution-basics-species-trees-gene-trees-and-incomplete-lineage-sorting/))
-
-* Familiarity with tree related algorithms (i.e. tree traversing, tree comparison)
-
-* Optional (for addressing visualization): familiarity of Qt4 drawing system (QGraphicsScenes)
+* Familiarity with tree related algorithms (i.e. tree traversing, tree
+  comparison)
+* Optional (for addressing visualization): familiarity of Qt4 drawing system
+  (QGraphicsScenes)
 
 #### **Mentors**
-
-Francois Serra (CNAG-CRG, Spain)
-
-Jaime Huerta-Cepas (EMBL, Germany)
-
-Łukasz Roguski (CNAG-CRG, Spain)
-
-Renato Alves (EMBL, Germany)
-
-
+* Francois Serra (CNAG-CRG, Spain)
+* Łukasz Roguski (CNAG-CRG, Spain)
+* Jaime Huerta-Cepas (EMBL, Germany)
+* Renato Alves (EMBL, Germany)
