@@ -433,7 +433,7 @@ provide support for the conventions and tree annotation vocabulary agreed.
   
 
 #### Difficulty
-Medium
+<span class="medium">Medium</span>
 
 #### Languages and skills
 * Good Python programming skills
@@ -469,7 +469,7 @@ internal scheduling system, so third party software is executed transparently.
 4. Adding new workflows and application bindings. 
 
 #### Difficulty
-Medium
+<span class="medium">Medium</span>
 
 #### Languages and skills
 * Good Python programming skills
@@ -515,7 +515,7 @@ using ETE, but not predefined scripts exist yet for that purpose:
 ```TreeStyle.layout = [block_alignment_layout, color_duplication_nodes_layout, ….] ```
 
 #### Difficulty
-Easy (from a programming point of view, but good graphical designing skills necessary)
+<span class="easy">Easy</span> (from a programming point of view, but good graphical designing skills necessary)
 
 #### Languages and skills
 * Good Python programming skills
@@ -564,7 +564,7 @@ exists, which provides basic functionality and examples.
   engine to display tree matches and differences.
 
 #### Difficulty
-Medium
+<span class="medium">Medium</span>
 
 #### Languages and skill
 * Good Python programming skills
