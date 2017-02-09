@@ -388,7 +388,7 @@ citations, >3000 ETE 3.0 downloads).
 If interested in any of the following project ideas, or you want to propose a new one,
 please contact us early, preferably at **ete-gsoc-mentors@googlegroups.com**
 
-### 1. Developing a novel format for phylogenomic data**
+### 1. Developing a novel format for phylogenomic data
 
 #### Rationale
 
