@@ -386,7 +386,6 @@ citations, >3000 ETE 3.0 downloads).
 
 If interested in any of the following ideas, or you want to propose a new one,
 please contact early at ete-gsoc@etetoolkit.org
-
 ### ETE-1. Developing a novel format for phylogenomic data**
 
 #### Rationale
@@ -490,7 +489,7 @@ form of ETE python scripts, that permit to style trees according to most common
 usages. For instance, the following tree figures could be entirely renderable
 using ETE, but not predefined scripts exist yet for that purpose:
 
-IMAGES
+[![alt text](http://etetoolkit.org/static/ete_gallery.png "ete gallery")](http://etetoolkit.org/gallery/)
 
 #### Goals
 * Develop a gallery of layouts in the form of Python scripts that cover most common visualizations in phylogenetics, including 
