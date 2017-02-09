@@ -384,9 +384,11 @@ citations, >3000 ETE 3.0 downloads).
 * [Github](https://github.com/etetoolkit/ete)
 * [ETE 3 paper](https://academic.oup.com/mbe/article/33/6/1635/2579822/ETE-3-Reconstruction-Analysis-and-Visualization-of?searchresult=1) 
 
+### Contact
 If interested in any of the following ideas, or you want to propose a new one,
-please contact early at ete-gsoc@etetoolkit.org
-### ETE-1. Developing a novel format for phylogenomic data**
+please contact early at **ete-gsoc-mentors@googlegroups.com**
+
+### 1. Developing a novel format for phylogenomic data**
 
 #### Rationale
 
@@ -443,7 +445,11 @@ Medium
 * Renato Alves (EMBL, Germany)
 * Łukasz Roguski (CNAG-CRG, Spain)
 
-### ETE-2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs
+#### Contact 
+ete-gsoc-mentors@googlegroups.com
+
+
+### 2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs
 
 #### Raionale 
 
@@ -477,7 +483,11 @@ Medium
 * Francois Serra (CNAG-CRG, Spain)
 * Renato Alves (EMBL, Germany)
 
-### ETE-3. Data visualization: developing a gallery of predefined tree layouts targeting publication ready figures
+#### Contact 
+ete-gsoc-mentors@googlegroups.com
+
+
+### 3. Data visualization: developing a gallery of predefined tree layouts targeting publication ready figures
 
 #### Rationale
 
@@ -512,7 +522,11 @@ Easy (from a programming point of view, but good graphical designing skills nece
 * Francois Serra (CNAG-CRG, Spain)
 * Renato Alves (EMBL, Germany)
 
-#### ETE-4. Tree searching using regular-expression-like queries
+#### Contact 
+ete-gsoc-mentors@googlegroups.com
+
+
+### 4. Tree searching using regular-expression-like queries
 
 #### Rationale
 
@@ -561,3 +575,7 @@ Medium
 * Łukasz Roguski (CNAG-CRG, Spain)
 * Jaime Huerta-Cepas (EMBL, Germany)
 * Renato Alves (EMBL, Germany)
+
+#### Contact 
+ete-gsoc-mentors@googlegroups.com
+
