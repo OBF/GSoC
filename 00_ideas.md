@@ -502,10 +502,15 @@ using ETE, but not predefined scripts exist yet for that purpose:
 [![alt text](http://etetoolkit.org/static/ete_gallery.png "ete gallery")](http://etetoolkit.org/gallery/)
 
 #### Goals
-* Develop a gallery of layouts in the form of Python scripts that cover most common visualizations in phylogenetics, including 
-* Selection of good color schemes
-* Deciding what graphical features to show or hide depending on context
-* Improve ETE’s rendering system, so multiple layouts can be applied as semantic layers. For instance:
+* Develop a gallery of layouts in the form of Python scripts that cover most
+  common visualizations in phylogenetics (i.e. selection of good color schemes,
+  deciding what graphical features to show or hide depending on context)
+* Develop
+  new
+  [Face types](http://etetoolkit.org/docs/latest/reference/reference_treeview.html#faces) as
+  necessary
+* Improve ETE’s rendering system, so multiple layouts can be applied as semantic
+  layers. For instance:
 
 ```TreeStyle.layout = [block_alignment_layout, color_duplication_nodes_layout, ….] ```
 
