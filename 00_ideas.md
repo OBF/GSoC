@@ -379,14 +379,14 @@ widely used in research, particularly for large phylogenomic studies (>270
 citations, >3000 ETE 3.0 downloads).
 
 * [Website](http://etetoolkit.org)
-* [Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
+* [Support Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
 * [Documentation](http://etetoolkit.org/docs/latest/tutorial/index.html) and [cookbook](http://etetoolkit.org/cookbook/)
 * [Github](https://github.com/etetoolkit/ete)
 * [ETE 3 paper](https://academic.oup.com/mbe/article/33/6/1635/2579822/ETE-3-Reconstruction-Analysis-and-Visualization-of?searchresult=1) 
 
-### Contact
-If interested in any of the following ideas, or you want to propose a new one,
-please contact early at **ete-gsoc-mentors@googlegroups.com**
+### GSoC Contact
+If interested in any of the following project ideas, or you want to propose a new one,
+please contact us early, preferably at **ete-gsoc-mentors@googlegroups.com**
 
 ### 1. Developing a novel format for phylogenomic data**
 
