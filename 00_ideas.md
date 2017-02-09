@@ -553,7 +553,7 @@ exists, which provides basic functionality and examples.
 
 #### Goals
 
-* Improve the [tree-matcher](https://github.com/etetoolkit/treematcher/blob/master/test_treematcher.py) module to permit searching for complex patterns (i.e. [allow for complex queries using wildcards](https://github.com/etetoolkit/treematcher/issues/22))  
+* Improve the [tree-matcher](https://github.com/etetoolkit/treematcher/blob/master/treematcher.py) module to permit searching for complex patterns (i.e. [allow for complex queries using wildcards](https://github.com/etetoolkit/treematcher/issues/22))  
 
 * Improve and extend
   the
