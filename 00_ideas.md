@@ -375,7 +375,7 @@ science is required.
 The ETE toolkit is a Python software intended for the integrative
 reconstruction, analysis and visualization
 of [phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree). ETE is
-widely used in research, particularly for large phylogenomic studies (>270
+widely used in the computational biology field, particularly for large phylogenomic studies (>270
 citations, >3000 ETE 3.0 downloads).
 
 * [Website](http://etetoolkit.org)
