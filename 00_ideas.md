@@ -99,62 +99,62 @@ and Javascript.  The GN REST interface is written in Elixir.
 * [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
 * Direct: pjotr.public345 at thebird.nl
 
-## Extending the fastest Dlang SAM/BAM/CRAM parser for scalable compute on ADAM (sambamba)
+## Extending the fastest Dlang SAM/BAM/CRAM parser for ADAM format I/O (sambamba)
 
-In 2014 we created [sambamba](https://github.com/lomereiter/sambamba)
+In 2012 we created [sambamba](https://github.com/lomereiter/sambamba)
 as a Google Summer of Code
 [project](https://opensource.googleblog.com/2015/03/gsoc-project-sambamba-published-in.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+GoogleOpenSourceBlog+%28Google+Open+Source+Blog)
-written in the super fast
-[D programming language](https://dlang.org/). This tool is in active
+written in the [D programming language](https://dlang.org/). This tool is in active
 use in DNA sequencing centers around the world and is an important
-component of analysis pipelines and part of the
-[BioConda](https://github.com/bioconda) and
-[bcbionext-gen](http://bcbio-nextgen.readthedocs.io/en/latest/contents/presentations.html).
-For usage of sambamba read the [docs](http://lomereiter.github.io/sambamba/).
+component of analysis pipelines such as [bcbio-nextgen](http://bcbio-nextgen.readthedocs.io/en/latest/contents/presentations.html).
+It is easily installable from [bioconda](https://github.com/bioconda).
+For usage of `sambamba` read the [docs](http://lomereiter.github.io/sambamba/).
 
 #### Rationale
 
-At this point sambamba can be improved with a number of features and
-bug fixes, see the
-[issue tracker](https://github.com/lomereiter/sambamba/issues).  CRAM
-support can be improved. CRAM is a flexible compression format that is
-getting increasingly used. Also a number of the algorithms can be
-revisited.
+[BAM](http://samtools.github.io/hts-specs/) is the most popular file format for storing
+sequence alignments, but it has some disadvantages (no support for modern light compression, row-based storage).
 
-The most important work, however, would be to start using
-[Adam](https://github.com/bigdatagenomics/adam) as a backend for a
-number of sambamba functions so as to scale out sambamba across
-machines on a compute cluster.
+We believe that [Adam](https://github.com/bigdatagenomics/adam) columnar format needs more adoption: 
+because under the hood it is a widely used [Parquet](http://parquet.apache.org/) format, 
+it can be easily loaded as a [Spark dataframe](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+into Python, R, or Scala, thus providing easy scaling on a cluster even for simple one-off scripts.
+
+The provided BAM → ADAM converter is rather slow, taking about half an hour (8 threads) to 
+convert a 10GB BAM file. This is a barrier for adoption: for comparison, recompressing the same file 
+with sambamba (BAM → BAM) using 8 threads takes only about 5 minutes.
+
+Faster conversion speed is not easily attainable on JVM platform, partly because
+[htsjdk](https://github.com/samtools/htsjdk) BAM reader is single-threaded and is known to be slow. 
+Sambamba, on the other hand, provides a solid base for building a fast converter.
 
 #### Approach
 
-The approach is to start understanding the sambamba code base by
-working on feature requests and bug fixes and by improving CRAM
-support. After completion we will work on ADAM, first by implementing
-flagstat, next by adding other functionalities, possibly plugging
-sambamba itself into the ADAM server, improving functionality of both
-sambamba and ADAM.
+ADAM files can be rather easily read/written with the aid of [parquet-cpp](https://github.com/apache/parquet-cpp) 
+and [avro](https://github.com/apache/avro) C/C++ libraries.
+
+D has great support for interfacing with C and even [some support](https://dlang.org/spec/cpp_interface.html) for C++.
+
+We suggest to begin with adding read support to familiarize with BAM and ADAM formats, sambamba codebase, and all the
+libraries involved. After that the writing codepath can be added. 
+Optionally, filtering in the reader can be then enhanced by leveraging Parquet metadata and columnar structure.
 
 #### Languages and skill
 
-Sambamba is written in D which is great for threading and local
-optimizations. CRAM support is written in C as part of
-[htslib](https://github.com/samtools/htslib). ADAM is written on the
-JVM, so we can opt to use any JVM language (including Scala, Clojure
-and JRuby). The student has to have an interest in using different
-programming languages. The deployment and programming environment will
-be handled by [GNU Guix](https://www.gnu.org/software/guix/) which can
-run on any Linux distribution, including Ubuntu and Fedora.
+The student should have an interest in using different programming languages, but good knowledge of C++ is enough.
+We will provide the student with minimal code to get started.
+
+The deployment and programming environment will be handled by [GNU Guix](https://www.gnu.org/software/guix/) 
+which can run on any Linux distribution, including Ubuntu and Fedora.
 
 #### Code
 
 * [sambamba](https://github.com/lomereiter/sambamba)
-* [htslib](https://github.com/samtools/htslib)
 * [ADAM](https://github.com/bigdatagenomics/adam)
 
 #### Difficulty
 
-* <span class="medium">hard</span>. This project requires hard core hacking.
+* <span class="medium">hard</span>
 
 #### Mentors
 
