@@ -603,9 +603,9 @@ Having a citable publication will encourage scientists to put their
 data in the public domain. It will also encourage data providers to
 offer such services.
 
-For submissions want to create a system similar to what
-[JOSS has](http://joss.theoj.org/about), but not have to rely on
-github-based issue
+For submissions we want to create a system similar to what JOSS
+[has](http://joss.theoj.org/about), but we do not want to have to rely
+on github-based issue
 [trackers](https://github.com/openjournals/joss-reviews/issues).  If
 we create a good system the web server may also be adopted by JOSS
 itself.
@@ -632,8 +632,8 @@ written in Ruby on Rails, so that may be a good
 #### Difficulty
 
 * <span class="medium">medium</span> mostly Ruby or Python for the
-  backend and PureScript and Javascript for the frontend. An
-  understanding of HTML and SQL may come in handy.
+  back-end and PureScript and Javascript for the front-end.
+  Understanding of HTML and SQL may come in handy.
 
 #### Mentors
 
