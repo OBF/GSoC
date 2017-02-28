@@ -215,7 +215,7 @@ resolve ambiguities in the identification of molecules.
 OpenMS currently includes a theoretical isotope pattern generator that calculates a coarse version of the isotopic structure.
 
 Several papers have been published that describe implementations of a high-resolution isotope pattern algorithm, e.g.:
-[MIDAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880471/) and 
+[MIDAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880471/) and
 [Mercury5](https://www.ncbi.nlm.nih.gov/pubmed/21619291)
 
 for which reference implementations are provided by the authors. They could be
@@ -291,7 +291,7 @@ Windows support
 #### Approach
 
 cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
-to comply with the latest specification. 
+to comply with the latest specification.
 
 #### Languages and skill
 
@@ -344,7 +344,7 @@ that are well maintained and well documented are used to keep code growth to a
 minimum.
 
 cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
-to comply with the latest specification. 
+to comply with the latest specification.
 
 #### Languages and skill
 
@@ -382,7 +382,7 @@ citations, >3000 ETE 3.0 downloads).
 * [Support Mailing list](https://groups.google.com/forum/#!forum/etetoolkit)
 * [Documentation](http://etetoolkit.org/docs/latest/tutorial/index.html) and [cookbook](http://etetoolkit.org/cookbook/)
 * [Github](https://github.com/etetoolkit/ete)
-* [ETE 3 paper](https://academic.oup.com/mbe/article/33/6/1635/2579822/ETE-3-Reconstruction-Analysis-and-Visualization-of?searchresult=1) 
+* [ETE 3 paper](https://academic.oup.com/mbe/article/33/6/1635/2579822/ETE-3-Reconstruction-Analysis-and-Visualization-of?searchresult=1)
 
 ### GSoC Contact
 If interested in any of the following project ideas, or you want to propose a new one,
@@ -430,7 +430,7 @@ provide support for the conventions and tree annotation vocabulary agreed.
 * Use a novel data format based indexing
   a
   [tabular tree format](https://github.com/jhcepas/tree_formats/blob/master/tree.ttf)
-  
+
 
 #### Difficulty
 <span class="medium">Medium</span>
@@ -445,13 +445,13 @@ provide support for the conventions and tree annotation vocabulary agreed.
 * Renato Alves (EMBL, Germany)
 * Łukasz Roguski (CNAG-CRG, Spain)
 
-#### Contact 
+#### Contact
 ete-gsoc-mentors@googlegroups.com
 
 
 ### 2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs
 
-#### Raionale 
+#### Raionale
 
 [ETE-build](http://etetoolkit.org/documentation/ete-build/) is a command line
 tool that provides a unified interface for the reproducible execution of complex
@@ -463,10 +463,10 @@ internal scheduling system, so third party software is executed transparently.
 
 #### Goals
 
-1. Developing a graphical user interface that allows to run workflows and visualize results 
-2. Adding windows support (currently only Linux and OSX are officially supported). 
+1. Developing a graphical user interface that allows to run workflows and visualize results
+2. Adding windows support (currently only Linux and OSX are officially supported).
 3. Fixing and improving known issues in the scheduling and pipeline system
-4. Adding new workflows and application bindings. 
+4. Adding new workflows and application bindings.
 
 #### Difficulty
 <span class="medium">Medium</span>
@@ -483,7 +483,7 @@ internal scheduling system, so third party software is executed transparently.
 * Francois Serra (CNAG-CRG, Spain)
 * Renato Alves (EMBL, Germany)
 
-#### Contact 
+#### Contact
 ete-gsoc-mentors@googlegroups.com
 
 
@@ -527,7 +527,7 @@ using ETE, but not predefined scripts exist yet for that purpose:
 * Francois Serra (CNAG-CRG, Spain)
 * Renato Alves (EMBL, Germany)
 
-#### Contact 
+#### Contact
 ete-gsoc-mentors@googlegroups.com
 
 
@@ -553,7 +553,7 @@ exists, which provides basic functionality and examples.
 
 #### Goals
 
-* Improve the [tree-matcher](https://github.com/etetoolkit/treematcher/blob/master/treematcher.py) module to permit searching for complex patterns (i.e. [allow for complex queries using wildcards](https://github.com/etetoolkit/treematcher/issues/22))  
+* Improve the [tree-matcher](https://github.com/etetoolkit/treematcher/blob/master/treematcher.py) module to permit searching for complex patterns (i.e. [allow for complex queries using wildcards](https://github.com/etetoolkit/treematcher/issues/22))
 
 * Improve and extend
   the
@@ -581,6 +581,70 @@ exists, which provides basic functionality and examples.
 * Jaime Huerta-Cepas (EMBL, Germany)
 * Renato Alves (EMBL, Germany)
 
-#### Contact 
+#### Contact
 ete-gsoc-mentors@googlegroups.com
 
+## Web services
+
+### Create submission and publication web server for the 'Journal of Open Data'
+
+#### Rationale
+
+We are creating a Journal of Open Data (JOD) in the vein of the
+[Journal of Open Source Software (JOSS)](http://joss.theoj.org/) of
+which we are editors.
+
+The idea is simple: anyone who has a 'stable' data provider with a
+long living URL can publish the URL with some simple metadata
+(description, authors, license) and receive a DOI. This DOI can be
+cited by others using that data.
+
+Having a citable publication will encourage scientists to put their
+data in the public domain. It will also encourage data providers to
+offer such services.
+
+For submissions want to create a system similar to what
+[JOSS has](http://joss.theoj.org/about), but not have to rely on
+github-based issue
+[trackers](https://github.com/openjournals/joss-reviews/issues).  If
+we create a good system the web server may also be adopted by JOSS
+itself.
+
+#### Approach
+
+We will use a Python or Ruby based frame work, depending on the skills
+of the student. The browser code will be PureScript and
+Javascript. The issue tracker can be implemented as a BLOG style
+tracker with comments. We will need facilities for pre-review, review,
+acceptance and rejection. We will also provide RDF support that can be
+used for data discovery and a SPARQL endpoint.
+
+#### Languages and skill
+
+This requires web programming with a database as a backend. JOSS is
+written in Ruby on Rails, so that may be a good
+[starting point](https://github.com/openjournals/joss).
+
+#### Code
+
+* [JOSS](https://github.com/openjournals/joss)
+
+#### Difficulty
+
+* <span class="medium">medium</span> mostly Ruby or Python for the
+  backend and PureScript and Javascript for the frontend. An
+  understanding of HTML and SQL may come in handy.
+
+#### Mentors
+
+[Joep de Ligt](https://github.com/jdeligt),
+[Pjotr Prins](https://github.com/pjotrp),
+[George Githinji](https://github.com/georgeG) and
+[Arfon Smith](https://github.com/arfon)
+
+#### Contact
+
+* IRC: `#genenetwork` on [Freenode](http://freenode.net/)
+* JOSS [issue tracker](https://github.com/openjournals/joss)
+* The opiniated mailing list for JOSS editors
+* Direct: pjotr.public345 at thebird.nl
