@@ -99,6 +99,68 @@ and Javascript.  The GN REST interface is written in Elixir.
 * [Mailing list Biodalliance](https://groups.google.com/forum/#!forum/biodalliance-dev)
 * Direct: pjotr.public345 at thebird.nl
 
+## Extending the fastest Dlang SAM/BAM/CRAM parser for scalable compute on ADAM (sambamba)
+
+In 2014 we created [sambamba](https://github.com/lomereiter/sambamba)
+as a Google Summer of Code
+[project](https://opensource.googleblog.com/2015/03/gsoc-project-sambamba-published-in.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+GoogleOpenSourceBlog+%28Google+Open+Source+Blog)
+written in the super fast
+[D programming language](https://dlang.org/). This tool is in active
+use in DNA sequencing centers around the world and is an important
+component of analysis pipelines and part of the
+[BioConda](https://github.com/bioconda) and
+[bcbionext-gen](http://bcbio-nextgen.readthedocs.io/en/latest/contents/presentations.html).
+For usage of sambamba read the [docs](http://lomereiter.github.io/sambamba/).
+
+#### Rationale
+
+At this point sambamba can be improved with a number of features and
+bug fixes, see the
+[issue tracker](https://github.com/lomereiter/sambamba/issues).  CRAM
+support can be improved. CRAM is a flexible compression format that is
+getting increasingly used. Also a number of the algorithms can be
+revisited.
+
+The most important work, however, would be to start using
+[Adam](https://github.com/bigdatagenomics/adam) as a backend for a
+number of sambamba functions so as to scale out sambamba across
+machines on a compute cluster.
+
+#### Approach
+
+The approach is to start understanding the sambamba code base by
+working on feature requests and bug fixes and by improving CRAM
+support. After completion we will work on ADAM, first by implementing
+flagstat, next by adding other functionalities, possibly plugging
+sambamba itself into the ADAM server, improving functionality of both
+sambamba and ADAM.
+
+#### Languages and skill
+
+Sambamba is written in D which is great for threading and local
+optimizations. CRAM support is written in C as part of
+[htslib](https://github.com/samtools/htslib). ADAM is written on the
+JVM, so we can opt to use any JVM language (including Scala, Clojure
+and JRuby). The student has to have an interest in using different
+programming languages. The deployment and programming environment will
+be handled by [GNU Guix](https://www.gnu.org/software/guix/) which can
+run on any Linux distribution, including Ubuntu and Fedora.
+
+#### Code
+
+* [sambamba](https://github.com/lomereiter/sambamba)
+* [htslib](https://github.com/samtools/htslib)
+* [ADAM](https://github.com/bigdatagenomics/adam)
+
+#### Difficulty
+
+* <span class="medium">hard</span>. This project requires hard core hacking.
+
+#### Mentors
+
+[Pjotr Prins](https://github.com/pjotrp),
+[Artem Tarasov](https://github.com/lomereiter). We will also ask James
+Bonfield (htslib) and one of the ADAM authors.
 
 ## antiSMASH
 
