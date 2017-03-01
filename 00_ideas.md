@@ -313,6 +313,42 @@ Pseudocode and reference implementations can be provided and found in the public
 #### Mentors
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka](https://github.com/oliveralka)
 
+### Implement algorithms for peptide identification
+
+#### Rationale
+
+In mass spectrometry based proteomics, identifying proteins from biological 
+or clinical samples is a key task.
+
+In the last years, there has been significant progress in peptide identification
+algorithms.
+
+#### Approach
+
+OpenMS mainly relies on external peptide identification engine. 
+It includes a SimpleSearchEngine tool that performs basic peptide identification for mainly educational purposes, .
+
+OpenMS tool developers and users alike would benefit from an improved
+implementation of a peptide search engine in the OpenMS library. In the future, this implementation
+could be used by others to build novel tools or improve existing ones.
+
+#### Languages and skills
+
+* Intermediate knowledge of C++ and its STL.
+* Good knowledge on mass spectrometry.
+
+#### Code
+
+Expected outcome:
+
+The existing implementation should be extended with improved scoring algorithms.
+
+#### Difficulty
+<span class="medium">medium</span>.
+
+#### Mentors
+[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka](https://github.com/oliveralka)
+
 
 ## Common Workflow Language
 
