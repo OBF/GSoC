@@ -154,7 +154,7 @@ which can run on any Linux distribution, including Ubuntu and Fedora.
 
 #### Difficulty
 
-* <span class="medium">hard</span>
+* <span class="hard">hard</span>
 
 #### Mentors
 
