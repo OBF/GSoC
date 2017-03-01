@@ -115,28 +115,28 @@ For usage of `sambamba` read the [docs](http://lomereiter.github.io/sambamba/).
 [BAM](http://samtools.github.io/hts-specs/) is the most popular file format for storing
 sequence alignments, but it has some disadvantages (no support for modern light compression, row-based storage).
 
-We believe that [Adam](https://github.com/bigdatagenomics/adam) columnar format needs more adoption: 
-because under the hood it is a widely used [Parquet](http://parquet.apache.org/) format, 
+We believe that [Adam](https://github.com/bigdatagenomics/adam) columnar format needs more adoption:
+because under the hood it is a widely used [Parquet](http://parquet.apache.org/) format,
 it can be easily loaded as a [Spark dataframe](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 into Python, R, or Scala, thus providing easy scaling on a cluster even for simple one-off scripts.
 
-The provided BAM → ADAM converter is rather slow, taking about half an hour (8 threads) to 
-convert a 10GB BAM file. This is a barrier for adoption: for comparison, recompressing the same file 
+The provided BAM → ADAM converter is rather slow, taking about half an hour (8 threads) to
+convert a 10GB BAM file. This is a barrier for adoption: for comparison, recompressing the same file
 with sambamba (BAM → BAM) using 8 threads takes only about 5 minutes.
 
 Faster conversion speed is not easily attainable on JVM platform, partly because
-[htsjdk](https://github.com/samtools/htsjdk) BAM reader is single-threaded and is known to be slow. 
+[htsjdk](https://github.com/samtools/htsjdk) BAM reader is single-threaded and is known to be slow.
 Sambamba, on the other hand, provides a solid base for building a fast converter.
 
 #### Approach
 
-ADAM files can be rather easily read/written with the aid of [parquet-cpp](https://github.com/apache/parquet-cpp) 
+ADAM files can be rather easily read/written with the aid of [parquet-cpp](https://github.com/apache/parquet-cpp)
 and [avro](https://github.com/apache/avro) C/C++ libraries.
 
 D has great support for interfacing with C and even [some support](https://dlang.org/spec/cpp_interface.html) for C++.
 
 We suggest to begin with adding read support to familiarize with BAM and ADAM formats, sambamba codebase, and all the
-libraries involved. After that the writing codepath can be added. 
+libraries involved. After that the writing codepath can be added.
 Optionally, filtering in the reader can be then enhanced by leveraging Parquet metadata and columnar structure.
 
 #### Languages and skill
@@ -144,7 +144,7 @@ Optionally, filtering in the reader can be then enhanced by leveraging Parquet m
 The student should have an interest in using different programming languages, but good knowledge of C++ is enough.
 We will provide the student with minimal code to get started.
 
-The deployment and programming environment will be handled by [GNU Guix](https://www.gnu.org/software/guix/) 
+The deployment and programming environment will be handled by [GNU Guix](https://www.gnu.org/software/guix/)
 which can run on any Linux distribution, including Ubuntu and Fedora.
 
 #### Code
