@@ -279,6 +279,7 @@ OpenMS currently includes a theoretical isotope pattern generator that calculate
 Several papers have been published that describe implementations of a high-resolution isotope pattern algorithm, e.g.:
 [MIDAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880471/) and
 [Mercury5](https://www.ncbi.nlm.nih.gov/pubmed/21619291)
+[Multidimensional Fourier Transform](http://pubs.acs.org/doi/abs/10.1021/ac500108n), https://github.com/alexandrovteam/ims-cpp/tree/master/ms
 
 for which reference implementations are provided by the authors. They could be
 potentially interesting algorithms that can be validated against a reference
@@ -310,7 +311,7 @@ Pseudocode and reference implementations can be provided and found in the public
 <span class="medium">medium</span>.
 
 #### Mentors
-[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka((https://github.com/oliveralka)]
 
 
 ## Common Workflow Language
