@@ -326,25 +326,25 @@ algorithms.
 #### Approach
 
 OpenMS mainly relies on external peptide identification engine. 
-It includes a SimpleSearchEngine tool that performs basic peptide identification for mainly educational purposes, .
+It includes a SimpleSearchEngine tool that performs basic peptide identification and has been mainly intended for educational purposes.
 
 OpenMS tool developers and users alike would benefit from an improved
 implementation of a peptide search engine in the OpenMS library. In the future, this implementation
-could be used by others to build novel tools or improve existing ones.
+could be used by others to improve algorithms, build novel tools or integrate identification into existing ones.
 
 #### Languages and skills
 
 * Intermediate knowledge of C++ and its STL.
-* Good knowledge on mass spectrometry.
+* Good knowledge of tandem mass spectrometry.
 
 #### Code
 
 Expected outcome:
 
-The existing implementation should be extended with improved scoring algorithms.
+The existing implementation should be extended and improved. Improvement should be benchmarked on publicly available datasets.
 
 #### Difficulty
-<span class="medium">medium</span>.
+<span class="hard">hard</span>.
 
 #### Mentors
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka](https://github.com/oliveralka)
