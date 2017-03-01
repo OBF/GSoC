@@ -311,7 +311,7 @@ Pseudocode and reference implementations can be provided and found in the public
 <span class="medium">medium</span>.
 
 #### Mentors
-[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka((https://github.com/oliveralka)]
+[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer), [Oliver Alka](https://github.com/oliveralka)
 
 
 ## Common Workflow Language
