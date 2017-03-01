@@ -513,6 +513,7 @@ ete-gsoc-mentors@googlegroups.com
 
 ### 2. Improve the usability of the command line tools and develop a Graphical User Interface (GUI) to execute jobs
 
+
 #### Rationale
 
 [ETE-build](http://etetoolkit.org/documentation/ete-build/) is a command line
@@ -645,3 +646,69 @@ exists, which provides basic functionality and examples.
 
 #### Contact
 ete-gsoc-mentors@googlegroups.com
+
+
+## Web services
+
+### Create submission and publication web server for the 'Journal of Open Data'
+
+#### Rationale
+
+We are creating a Journal of Open Data (JOD) in the vein of the
+[Journal of Open Source Software (JOSS)](http://joss.theoj.org/) of
+which we are editors.
+
+The idea is simple: anyone who has a 'stable' data provider with a
+long living URL can publish the URL with some simple metadata
+(description, authors, license) and receive a DOI. This DOI can be
+cited by others using that data.
+
+Having a citable publication will encourage scientists to put their
+data in the public domain. It will also encourage data providers to
+offer such services.
+
+For submissions we want to create a system similar to what JOSS
+[has](http://joss.theoj.org/about), but we do not want to have to rely
+on github-based issue
+[trackers](https://github.com/openjournals/joss-reviews/issues).  If
+we create a good system the web server may also be adopted by JOSS
+itself.
+
+#### Approach
+
+We will use a Python or Ruby based frame work, depending on the skills
+of the student. The browser code will be PureScript and
+Javascript. The issue tracker can be implemented as a BLOG style
+tracker with comments. We will need facilities for pre-review, review,
+acceptance and rejection. We will also provide RDF support that can be
+used for data discovery and a SPARQL endpoint.
+
+#### Languages and skill
+
+This requires web programming with a database as a backend. JOSS is
+written in Ruby on Rails, so that may be a good
+[starting point](https://github.com/openjournals/joss).
+
+#### Code
+
+* [JOSS](https://github.com/openjournals/joss)
+
+#### Difficulty
+
+* <span class="medium">medium</span> mostly Ruby or Python for the
+  back-end and PureScript and Javascript for the front-end.
+  Understanding of HTML and SQL may come in handy.
+
+#### Mentors
+
+[Joep de Ligt](https://github.com/jdeligt),
+[Pjotr Prins](https://github.com/pjotrp),
+[George Githinji](https://github.com/georgeG) and
+[Arfon Smith](https://github.com/arfon)
+
+#### Contact
+
+* IRC: `#genenetwork` on [Freenode](http://freenode.net/)
+* JOSS [issue tracker](https://github.com/openjournals/joss)
+* The opiniated mailing list for JOSS editors
+* Direct: pjotr.public345 at thebird.nl
