@@ -215,11 +215,11 @@ but is not required, as mock inputs can be used for the project.
 [Kai Blin](https://github.com/kblin), Tilmann Weber
 
 
-### SeqRecord access abstraction layer
+### Biopython SeqRecord access abstraction layer for antiSMASH
 
 #### Rationale
-Internally, antiSMASH uses BioPython SeqRecord objects to handle the data. A lot
-of the annotations are in custom feature entries or in free-text qualifiers of
+Internally, antiSMASH uses [Biopython's SeqRecord objects](http://biopython.org/wiki/SeqRecord)
+to handle the data. A lot of the annotations are in custom feature entries or in free-text qualifiers of
 "gene" or "CDS" features. Code for handling this access is duplicated in parts
 of the code base. Additionally, directly using the SeqRecord object is a bit
 fragile.
@@ -231,8 +231,8 @@ then be utilized to reduce the code duplication and fagility of acessing the
 SeqRecord object special fields.
 
 #### Languages and skill
-antiSMASH is written in Python 2.7. Knowledge of unit testing in Python are a
-plus. Biological knowledge is not required.
+antiSMASH is written in Python 2.7 (while Biopython targets Python 2.7 and 3.3 onward).
+Knowledge of unit testing in Python is a plus. Biological knowledge is not required.
 
 #### Code
 * [Initial implementation of the abstraction
