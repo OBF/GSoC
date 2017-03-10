@@ -389,13 +389,13 @@ Windows support
 
 #### Approach
 
-cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
+cwltool uses continuous [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
 to comply with the latest specification.
 
 #### Languages and skill
 
 cwltool is written and tested for Python 2.7. Python 3 experience, familiarity
-with unit and continious testing is desired. No background in data intensive
+with unit and continuous testing is desired. No background in data intensive
 science is required.
 
 #### Code
@@ -442,13 +442,13 @@ the method that produces the most maintable code. Preferably external libraries
 that are well maintained and well documented are used to keep code growth to a
 minimum.
 
-cwltool uses continious [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
+cwltool uses continuous [conformance testing](https://ci.commonwl.org/job/cwltool-conformance/)
 to comply with the latest specification.
 
 #### Languages and skill
 
 cwltool is written and tested for Python 2.7. Python 3 experience, familiarity
-with unit and continious testing is desired. No background in data intensive
+with unit and continuous testing is desired. No background in data intensive
 science is required.
 
 #### Code
