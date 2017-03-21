@@ -364,6 +364,7 @@ https://view.commonwl.org/workflows/github.com/common-workflow-language/workflow
 )
 
 ### CWL reference implementation (cwltool)
+also known as "Common Workflow Language reference implementation modernization"
 
 [cwltool](https://github.com/common-workflow-language/cwltool) is the reference
 implementation of the [Common Workflow Language](http://www.commonwl.org/).
