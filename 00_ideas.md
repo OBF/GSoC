@@ -470,6 +470,68 @@ science is required.
 * [Question & Answer](https://www.biostars.org/t/cwl)
 
 
+## Bionode
+
+### Bionode workflow engine for streamed data analysis (bionode-watermill)
+
+#### Rationale
+
+*This is a continuation of a 2016 GSOC project, which got off to a good
+start, but needs more work!*
+
+Researchers should be able to:
+
+* Perform analyses while data are generated (i.e., with “data streams”);
+* Easily and rapidly update results if input data or analysis
+  approaches/parameters change (with minimal recomputation);
+* Effortlessly change and scale underlying computing platforms while
+  pipeline is running;
+* Easily visualise results.
+
+This is largely impossible because current approaches were developed
+when datasets were simpler and smaller. The student will take
+advantage of recent improvements in generic analysis tools (Node.js
+Streams & asynchronous concurrency) to attain the above objectives.
+
+#### Approach
+The student will create a workflow engine for streamed data analysis
+with concurrent pipelining. Julian Mazzitelli, the developer of
+bionode-watermill will be available for discussions regarding code
+implementation, design patterns of the existing project, and general
+programming aid. Max Ogden and Mathias Buus, top Node.js contributors
+and founders of Dat-data.com, will provide technical help with aspects
+related to streaming and JS.  Bruno Vieira (founder of Bionode.io)
+and Yannick Wurm (lecturer in Bioinformatics at QMUL) will co-supervise. 
+
+Some work on the data structures and programming interfaces for
+commonly used data sources (e.g., NCBI, Uniprot, Ensembl/Biomart)
+and data types (e.g., VCF, BAM, FASTQ) will be required.
+
+The underlying computational architecture architecture should be
+abstracted. This means that analysis code will run identically using
+different traditional high performance computing system (e.g.,
+Torque, SGE) and modern systems (e.g., Hadoop MapReduce).
+
+#### Languages and skill
+JavaScript skills are required. Node.js and some biology knowledge
+is a plus. Difficulty is medium.
+
+#### Difficulty
+<span class="medium">medium</span>
+
+#### Mentors
+Julian Mazzitelli, Max Ogden, Mathias Buus, Bruno Vieira, Yannick Wurm
+
+#### Code
+
+- [bionode-watermill](https://github.com/bionode/bionode-watermill)
+- [bionode/gsoc16](https://github.com/bionode/gsoc16)
+
+#### Contact
+
+- [gitter](https://gitter.im/bionode/bionode)
+
+
 ## ETE TOOLKIT
 
 The ETE toolkit is a Python software intended for the integrative
