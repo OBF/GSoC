@@ -812,3 +812,47 @@ written in Ruby on Rails, so that may be a good
 * JOSS [issue tracker](https://github.com/openjournals/joss)
 * The opiniated mailing list for JOSS editors
 * Direct: pjotr.public345 at thebird.nl
+
+
+## Benchmarking
+
+### Benchmarking scientific packages for general and architecture specific builds (Debian)
+
+#### Rationale
+
+For Debian packages we need to strip optimisation options from upstream
+build system like for instance `-march=native` to make sure that the code
+will run also on those computers who are different from the one the
+package was actually built. There are reports by Debian Science members
+that the effect of those optimisation options is quite low and extra
+compilation on local machines do not result in a sensible gain of speed.
+The task for the student will be to do sensible performance tests of
+packages to get some valuable data to decide whether it makes sense to
+create new means to support users in doing local builds with better
+optimisation. Bonus points for the student if it turns out that optimised
+local builds are sensible to implement an easy way for the user to do so. 
+
+#### Approach
+
+The student will make comparison of real life examples with general
+Debian package and optimised local build. Besides, creating a comparison
+framework could make the result of this project more helpful.
+
+#### Languages and skill
+
+Scientific background, comfortable with linear algebra (atlas, blas), comfortable with gcc and optimisation.
+
+#### Difficulty
+<span class="easy">easy</span>
+
+#### Mentors
+
+Andreas Tille
+
+#### Code
+
+No code base for this proposal.
+
+#### Contact
+
+- [Debian Science list](debian-science@lists.debian.org)
