@@ -501,13 +501,18 @@ implementation, design patterns of the existing project, and general
 programming aid. Max Ogden and Mathias Buus, top Node.js contributors
 and founders of Dat-data.com, will provide technical help with aspects
 related to streaming and JS.  Bruno Vieira (founder of Bionode.io)
-and Yannick Wurm (lecturer in Bioinformatics at QMUL) will co-supervise. 
+and Yannick Wurm (lecturer in Bioinformatics at QMUL) will co-supervise.
+
+As well, the student will incorporate the Common Worklflow Language (CWL)
+specification into the project. This will entail implementing
+interoperability/validation between bionode-watermill's `task` objects and CWL
+documents.
 
 Some work on the data structures and programming interfaces for
 commonly used data sources (e.g., NCBI, Uniprot, Ensembl/Biomart)
 and data types (e.g., VCF, BAM, FASTQ) will be required.
 
-The underlying computational architecture architecture should be
+The underlying computational architecture should be
 abstracted. This means that analysis code will run identically using
 different traditional high performance computing system (e.g.,
 Torque, SGE) and modern systems (e.g., Hadoop MapReduce).
