@@ -19,3 +19,5 @@ markdown: kramdown
 kramdown:
     auto_ids:   true
     toc_levels: 2..3
+sass:
+    sass_dir: assets
