@@ -162,7 +162,7 @@ language.
 #### Rationale
 
 Sambamba already supports multiple file formats. Current work is on
-making sambamba more composable. Instead of having slit sorting,
+making sambamba more composable. Instead of having split sorting,
 filtering and marking steps we will combine them into one run of the
 tool.
 
