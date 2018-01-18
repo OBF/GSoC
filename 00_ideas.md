@@ -233,3 +233,30 @@ science.
 
 We will also ask James Bonfield (htslib) and one of the ADAM authors
 to help mentor.
+
+## GeneNetwork PureScript Genome Browser (partly Biodalliance)
+
+[GeneNetwork.org](http://gn2.genenetwork.org/) (GN) is a Web 2.0 environment for genetic analysis in mouse, rat and human (QTL mapping and GWAS). GN is used daily by scientists with over a thousand publications citing it.
+
+In the context of GeneNetwork we have developed a state-of-the-art embeddable [genetics browser in PureScript](https://github.com/chfi/purescript-genetics-browser), which can be run independently of a database and therefore embedded into publications. PureScript is a purely functional programming language that translates into JavaScript. The current code base was written by Christian Fischer, and started out as a Google Summer of Code project. The original idea of our browser is based on [Biodalliance.org](http://www.biodalliance.org/) (BD) and components thereof can be reused. BD is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications. It supports integration of data from a wide variety of sources, and can load data directly from popular genomics file formats including bigWig, BAM, and VCF. Biodalliance has been adopted by some major bioinformatics websites including, for example, [UK10K](http://www.uk10k.org/dalliance.html).
+
+#### Rationale
+
+To improve user experience and biomedical discovery we are working on advanced genome visualisation and embedding the state-of-the-art [Biodalliance genome browser](http://www.biodalliance.org/) into GN with several new *tracks* for visualizing mapped QTL, underlying genotypes and SNP density. We are building on the current tooling to provide a full user experience and interactive tracks that can be embedded in online scientific journals. Example: ![Biodalliance](https://sagebionetworks.jira.com/secure/attachment/24449/biodalliance%20widget%20output.png)
+
+#### Approach
+The student will get acquainted with PureScript and community before GSoC starts. The work plan will target porting a few existing tracks from BD (e.g. gene track, sequencing reads track) to PureScript to increase insight in how it all hangs together. Thereafter a component will be built to navigate a graph of linked data items, for example using Cytoscape.js. These linked data items may refer to interactions between different elements on different tracks.
+
+#### Languages and skill
+The genetics browser is written in [PureScript](http://www.purescript.org/). A command of JavaScript, to read BD code, is recommended.
+
+#### Code
+* [PureScript browser](https://github.com/chfi/purescript-genetics-browser)
+* [Genenetwork.org](https://github.com/genenetwork)
+* [Biodalliance](https://github.com/dasmoth/dalliance)
+
+#### Difficulty
+* <span class="medium">medium</span> mostly PureScript and JavaScript, but Python and Elixir may come in handy
+
+#### Mentors
+[Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp), [Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
