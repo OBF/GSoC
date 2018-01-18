@@ -318,7 +318,7 @@ Pseudocode and reference implementations can be provided and found in the public
 
 #### Rationale
 
-In mass spectrometry based proteomics, identifying proteins from biological 
+In mass spectrometry based proteomics, identifying proteins from biological
 or clinical samples is a key task.
 
 In the last years, there has been significant progress in peptide identification
@@ -326,7 +326,7 @@ algorithms.
 
 #### Approach
 
-OpenMS mainly relies on external peptide identification engine. 
+OpenMS mainly relies on external peptide identification engine.
 It includes a SimpleSearchEngine tool that performs basic peptide identification and has been mainly intended for educational purposes.
 
 OpenMS tool developers and users alike would benefit from an improved
