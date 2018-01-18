@@ -116,7 +116,7 @@ OpenMS currently includes a very simple expectation-maximization algorithm to fi
 score distributions (of a single search engine score). There are issues with such a simple approach: numerical instabilities, bad quality of fit, no user feedback, etc.
 
 Several papers have been published that describe implementations of more elaborate methods, e.g.:
-[PeptideProphet](https://www.ncbi.nlm.nih.gov/pubmed/12403597) (and its extensions) as well as 
+[PeptideProphet](https://www.ncbi.nlm.nih.gov/pubmed/12403597) (and its extensions) as well as
 [curveFDP](http://pubs.acs.org/doi/abs/10.1021/ac902892j)
 
 A good review with pseudocode for PeptideProphet can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3489532/).
@@ -144,3 +144,92 @@ hopefully better performing implementation (e.g. based on the suggested referenc
 
 #### Mentors
 [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+
+## Taking the <i>fastest sequence transforming software in the world</i> to the next level
+
+In 2012 we created [sambamba](https://github.com/biod/sambamba) as the
+fastest software that could parse and transform different file formats
+as coming out of a sequencer. Sambamba is used today as time critical
+software for analysing all types of DNA data, for example in the
+context of plant research and human disease diagnostics. Sequencing is
+a rapidly growing effort involving more and more researchers - we want
+to make sambamba even faster and support columnar data storage such as
+provided by [Parquet](http://parquet.apache.org/) - similar to what
+Google uses for large data. Sambamba is written in D and C++. D is a
+perfect fit for writting performant code in a high-level programming
+language.
+
+#### Rationale
+
+Sambamba already supports multiple file formats. Current work is on
+making sambamba more composable. Instead of having slit sorting,
+filtering and marking steps we will combine them into one run of the
+tool.
+
+[BAM](http://samtools.github.io/hts-specs/) is the most popular file
+format for storing sequence alignments, but it has some disadvantages
+(no support for modern light compression, row-based storage). CRAM is
+another format supported by Sambamba. CRAM files have higher
+compression, but are slower in processing.
+
+[Adam](https://github.com/bigdatagenomics/adam) or Parquet columnar
+format can give both high compression and fast processing.  It can be
+also be used as a
+[Spark dataframe](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+into Python, R, or Scala, thus providing easy scaling.
+
+The provided BAM → ADAM converter is rather slow, taking about half an
+hour (8 threads) to convert a 10GB BAM file. This is a barrier for
+adoption: for comparison, recompressing the same file with sambamba
+(BAM → BAM) using 8 threads takes only about 5 minutes.
+
+Faster conversion speed is not easily attainable on JVM platform,
+partly because [htsjdk](https://github.com/samtools/htsjdk) BAM reader
+is single-threaded and is known to be slow.  Sambamba, on the other
+hand, provides a solid base for building a fast converter.
+
+#### Approach
+
+ADAM files can be rather easily read/written with the aid of
+[parquet-cpp](https://github.com/apache/parquet-cpp) and
+[avro](https://github.com/apache/avro) C/C++ libraries.
+
+D has great support for interfacing with C and even
+[some support](https://dlang.org/spec/cpp_interface.html) for C++.
+
+First create D read support to familiarize with BAM and ADAM formats,
+sambamba codebase, and all the libraries involved. After that the
+writing codepath can be added.  Optionally, filtering in the reader
+can be then enhanced by leveraging Parquet metadata and columnar
+structure.
+
+#### Languages and skill
+
+The student should have an interest in using different programming
+languages and functional programming techniques, but good knowledge of
+C++ or similar is enough.
+
+The deployment and programming environment will be handled by the
+functional package manager
+[GNU Guix](https://www.gnu.org/software/guix/) which can run on any
+Linux distribution, including Ubuntu and Fedora.
+
+#### Code
+
+* [sambamba](https://github.com/biod/sambamba)
+* [ADAM](https://github.com/bigdatagenomics/adam)
+
+#### Difficulty
+
+* This is <span class="hard">challenging</span> project for someone
+who wants to be a hard core coder! Successfully completing this
+project will give a lot of credibility when looking for a job in
+science.
+
+#### Mentors
+
+[Pjotr Prins](https://github.com/pjotrp),
+[Artem Tarasov](https://github.com/lomereiter).
+
+We will also ask James Bonfield (htslib) and one of the ADAM authors
+to help mentor.
