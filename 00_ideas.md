@@ -143,7 +143,33 @@ hopefully better performing implementation (e.g. based on the suggested referenc
 <span class="easy">medium</span>.
 
 #### Mentors
-[Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+[Julianus Pfeuffer](https://github.com/jpfeuffer), [Timo Sachsenberg](https://github.com/timosachsenberg), [Oliver Alka](https://github.com/oliveralka)
+
+### Improve Visualization of Spectra and Analysis Results in GUI Tool (TOPPView)
+
+#### Rationale
+Mass spectrometry has become one of the bioanalytical tools of choice for many life scientists. For the analysis of individual spectra, visualization is the key to perform and validate annotations and optimize data processing workflows. 
+
+#### Approach
+The OpenMS visualization tool TOPPView offers a wide range of possibilities to visualize raw data and analysis results. In this GSoC project, we intend to improve TOPPView improve overall user experience by adding requested features, e.g., introducing a visualization widget for protein sequence coverage from identification results, adding visualization of chromatograms, and an improved spectrum comparison widget.
+OpenMS tool developers and users alike would benefit from these improvements.
+
+#### Languages and skills
+* Intermediate knowledge of C++ and its STL.
+* Basic knowledge of Qt and Qt Widgets (Qt4 and Qt5).
+* Interest or experience in working on GUI implementations
+* Basic knowledge of mass spectrometric terms and concepts (can be acquired in the first days).
+
+#### Code
+Expected outcome:
+The TOPPView implementation should be extended to improve the the general user experience. This could include the creation of widgets for the visualization of chromatograms, an improved spectrum comparison and annotation facility, and a viewer for protein coverage.
+
+#### Difficulty
+<span class="easy">medium</span>.
+
+#### Mentors
+[Oliver Alka](https://github.com/oliveralka), [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
+
 
 ## Taking the <i>fastest sequence transforming software in the world</i> to the next level
 
