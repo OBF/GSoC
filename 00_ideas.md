@@ -156,7 +156,7 @@ a rapidly growing effort involving more and more researchers - we want
 to make sambamba even faster and support columnar data storage such as
 provided by [Parquet](http://parquet.apache.org/) - similar to what
 Google uses for large data. Sambamba is written in D and C++. D is a
-perfect fit for writting performant code in a high-level programming
+perfect fit for writing performance code in a high-level programming
 language.
 
 #### Rationale
@@ -175,12 +175,12 @@ compression, but are slower in processing.
 [Adam](https://github.com/bigdatagenomics/adam) or Parquet columnar
 format can give both high compression and fast processing.  It can be
 also be used as a
-[Spark dataframe](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+[Spark data-frame](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 into Python, R, or Scala, thus providing easy scaling.
 
 The provided BAM → ADAM converter is rather slow, taking about half an
 hour (8 threads) to convert a 10GB BAM file. This is a barrier for
-adoption: for comparison, recompressing the same file with sambamba
+adoption: for comparison, re-compressing the same file with sambamba
 (BAM → BAM) using 8 threads takes only about 5 minutes.
 
 Faster conversion speed is not easily attainable on JVM platform,
@@ -198,8 +198,8 @@ D has great support for interfacing with C and even
 [some support](https://dlang.org/spec/cpp_interface.html) for C++.
 
 First create D read support to familiarize with BAM and ADAM formats,
-sambamba codebase, and all the libraries involved. After that the
-writing codepath can be added.  Optionally, filtering in the reader
+sambamba code base, and all the libraries involved. After that the
+writing code path can be added.  Optionally, filtering in the reader
 can be then enhanced by leveraging Parquet metadata and columnar
 structure.
 
@@ -260,3 +260,104 @@ The genetics browser is written in [PureScript](http://www.purescript.org/). A c
 
 #### Mentors
 [Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp), [Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
+
+
+## Web services
+
+### Add block chains and hyperledger support for the 'Journal of Open Data Publications'
+
+#### Rationale
+
+We are working on the next generation of scientific publications. The
+publication workflow will be the engine behind our new journal 'The
+Journal of Data Publications for the Web' (or similar). Unlike
+existing publication workflows ours delivers machine readable
+"journal" "linked-data" publications. We understand the publication
+as an aggregation of versioned and addressable nanopublications that
+coexist with the human narrative.  Instead of the publication
+requiring curation and semantic annotation as a post publication
+activity, we are delivering a publication that is to be born semantic
+and thus interoperable with the web of data. More importantly, we
+understand that publications are assets being created thought the
+research life cycle; in order to keep a reliable track of assets and
+transactions we are using Hyperledger, in order to facilitate and
+encourage data exchange (reuse) and deliver addressable content we are
+using the IPFS. In this way we are "notarizing" the assets beyond the
+DOI in a decentralized P2P environment that ensures preservation and
+allows us to account for everything that happens to the assets via
+smart contracts.  Our publications are not limited to a narrative with
+metadata, e.g.  paper-authors-tittle-abstract with the understanding
+that machine procesability means layout processing. Over a simple UI
+meant for authors to describe their work, we are generating linked
+data and doing semantic mark up; also, we are making it simple for the
+authors to declare the map of relations for their assets, i.e.,
+manuscripts.
+
+The publications have extensible distributed scholarly compounds,
+DISCOs, thus generating for each publication a map of resources. Our
+system goes beyond github because we don't rely on trackers for the
+review or post publication process; instead, we consider the value in
+the review and post publication as part of the map of resources and
+also, more importantly, as part of the derivative assets created
+pivoting on the original publication. Our P2P layer generates
+consensus tokes for all activities derived from the publication
+-e.g. review, editorial, post publication, followups, updates.
+
+#### Approach
+
+We use a Python based frame work (flask). We are using IPFS for
+distributed file storage. The work plan should include a work package
+for creating a simple submission system for providing a data link to
+IPFS storage with a description. This information will be stored in
+block chains using hyperledger and updated on modification. We already
+have some prototypes in place. The student will execute the following
+
+1. Get acquainted with hyperledger and IPFS (before GSoC!)
+2. Update the YAJ code to allow submission of information (expand
+   on existing simple issue tracker)
+3. Embed the current hyperledger prototype in the yaj code base
+4. Submit and publish publications through IPFS and hyperledger
+5. Introduce a 'token' mechanism that people can give credit, e.g.,
+   generate a citation
+6. Simulate publications and generating tokens
+7. Show stats page for citations belonging to a publication
+
+In all, the idea is to create a working example of the mechanism of
+distributed storage of publications, distributed and reproducible
+tracking and access, distributed tokens for usage 'credit' and finally
+metrics for how well a publication is doing. This principles will
+later, probably after GSoC, be extended to other credits, e.g. for
+review, for using a piece of data or software etc.
+
+As this is a complex project that can be filled in in multiple ways,
+the student is encouraged to write the work plan in close association
+with below mentors. Don't wait until the last week.
+
+#### Languages and skill
+
+Requires Python web programming with an elastic search database and
+hyperledger as a back-end. Some JavaScript may be necessary.
+
+#### Code
+
+* [JOSS](https://github.com/openjournals/joss)
+* [Hyperledger]
+* [IPFS]
+* [Alex link]
+
+#### Difficulty
+
+* <span class="medium">medium</span> mostly Python for the
+  back-end and PureScript and JavaScript for the front-end.
+  Understanding of HTML and SQL may come in handy.
+
+#### Mentors
+
+[Alexander Garcia](https://github.com/alexgarciac),
+[Pjotr Prins](https://github.com/pjotrp),
+[Arfon Smith](https://github.com/arfon)
+
+#### Contact
+
+* IRC: `#genenetwork` on [Freenode](http://freenode.net/)
+* Direct: alexgarciac at gmail
