@@ -1,6 +1,13 @@
 ---
 # frontmatter for main.scss, just the dashes needed
 ---
+
+$content-width: 1024px;
+
+html, body {
+    overflow-x: hidden;
+}
+
 @import "minima";
 
 .easy {
@@ -26,4 +33,17 @@
             list-style-type: disc;
         }
     }
+}
+
+.page-content h2 {
+    margin-left: -9999rem;
+    padding-left: 9999rem;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.page-content h3 {
+    margin-right: -9999rem;
+    padding-left: 20px;
+    padding-right: 9999rem;
+    background: rgba(0, 0, 0, 0.13);
 }
