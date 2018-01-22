@@ -648,3 +648,65 @@ There is also a fair amount of flexibility with this project to allow the studen
 * Provide a resume with a list of skills. 2 pages maximum.
 * Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
 * If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
+
+
+## PHP Validator Migration and Ontology Integration for Stemformatics
+
+Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
+
+#### Rationale
+
+The Stemformatics PHP validator was initially built 6 years ago in PHP as a stand alone application. It helps validate the samples that are annotated (described) by the biologist in Stemformatics. It needs to be migrated over to a Pylons/Pyramid Python web framework.
+
+There is also an opportunity to work with the front end user interface. Stemformatics will need to allow users to annotate large volumes of metadata while still providing an ontology/validation system. Eg. 1500 samples need to be annotated in Stemformatics. These samples need to be annotated against a controlled vocabulary called an ontology.
+
+If you like to work closely with clients and you are interested in building front-end, optimised solutions for complex processes, this is your project.
+
+
+#### Mentors
+
+[Isha Nagpal](https://bitbucket.org/ishanagpal/)
+
+
+#### Difficulty
+
+Medium
+
+#### Goals
+
+The primary goals are to:
+* Migrate PHP code to a Stemformatics Pylons/Pyramid web framework
+* Create unit tests and regression tests
+* Provide a continuous integration environment via Jenkins or Travis
+* Provide documentation around this work
+* Provide ideas and a potential prototype around the front end user interface to account for large sample annotations
+* Prototype a web application with the ideas provided previously
+
+
+There is also a fair amount of flexibility with this project to allow the student to inject their own ideas and introduce new features and functionality.
+
+#### Skills/Prerequisites
+
+* Basic knowlege of PHP/Python/Javascript/CSS
+* Ability to work independently and to report to a group and discuss theories and results
+* Good analytical skills
+* Working with git would be an advantage
+
+
+#### Student Benefits
+
+* We aim to ensure that each student gets a great learning experience tailored to their ability, interest and experience. You can read about it in our “[Commitment to Students](https://docs.google.com/document/d/1rs9IpTfJHpaQ95RLs78tiR70fBXZ-u51h0dxFF6ddac/edit?usp=sharing)” document.
+* Hands on experience in providing a major change to a web-based application that is used around the world.
+* Practical experience in Python, PHP, Javascript and CSS for a software project that is used around the world
+* Gain understanding of how real-world software is developed and how priorities are established
+* Improving your oral and written communication skills in a team environment
+* Potential opportunities to give presentations about the project to a wider audience
+
+#### How to Apply
+
+* Provide a cover letter that explains why your skills would be a good fit. If you don’t have the skills, explain why you would like to learn those skills. 2 pages maximum.
+* Provide a resume with a list of skills. 2 pages maximum.
+* Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
+* If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
+
+
