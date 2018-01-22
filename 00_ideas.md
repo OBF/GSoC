@@ -591,8 +591,9 @@ into a CWL/CWL workflow spec one, of which then other tools can run it.
 
 - [gitter](https://gitter.im/bionode/bionode)
 
+## Stemformatics
 
-## ISCANDAR integration Student Project for Stemformatics
+### ISCANDAR integration Student Project for Stemformatics
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
 
@@ -650,7 +651,7 @@ There is also a fair amount of flexibility with this project to allow the studen
 * If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
 
 
-## PHP Validator Migration and Ontology Integration for Stemformatics
+### PHP Validator Migration and Ontology Integration for Stemformatics
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
 
