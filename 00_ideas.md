@@ -499,3 +499,89 @@ There is also a fair amount of flexibility with this project to allow the studen
 * Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
 * If you have any questions, please ask us here - [https://gitter.im/biojs/biojs](https://gitter.im/biojs/biojs)
 
+## Bionode
+
+### Bionode workflow engine for streamed data analysis (bionode-watermill)
+
+This project was started in 2016, continued in 2017, and looking for another
+committed student! **The student will have a certain amount of developer
+freedom in implementing project features, and will play a large role in
+bringing this project to 1.0.**
+
+#### Rationale
+
+Researchers should be able to:
+
+* Perform analyses while data are generated (i.e. with "data streams");
+* Easily and rapidly update results if input data or analysis
+  approaches/parameters/tools change (with minimal recomputation);
+* Effortlessly change and scale underlying computing platforms while pipeline
+  is running;
+* Easily visualise results (e.g., interactive shell into working directory of a
+  pipeline step, RStudio remote access).
+
+This is difficult because current approaches were developed when datasets were
+simpler and smaller. The student will take advantage of recent improvements in
+generic analysis tools (Node.js Streams & asynchronous concurrency) to attain
+the above objectives, as well as the recently completed CWL specifications.
+
+See [NGS Workflows](https://jmazz.me/blog/NGS-Workflows) for a summary of other
+workflow engines, illustrating some concerns bionode-watermill was built to
+address.
+
+#### Approach
+
+The student will create a workflow engine for streamed data analysis with
+concurrent pipelining. Julian Mazzitelli, the developer of bionode-watermill
+will be available for discussions regarding code implementation, design
+patterns of the existing project, and general programming aid. Max Ogden and
+Mathias Buus, top Node.js contributors and founders of Dat-data.com, will
+provide technical help with aspects related to streaming and JS. Bruno Vieira
+(founder of Bionode.io) will co-supervise.
+
+The student will incorporate the Common Worklflow Language (CWL) specification
+into the project. This will entail implementing interoperability/validation
+between bionode-watermill's `task` objects and CWL documents.
+
+Some work on the data structures and programming interfaces for
+commonly used data sources (e.g., NCBI, Uniprot, Ensembl/Biomart)
+and data types (e.g., VCF, BAM, FASTQ) will be required.
+
+The underlying computational architecture should be abstracted. This means that
+analysis code will run identically using different traditional high performance
+computing system (e.g., Torque, SGE) and modern systems (e.g., Hadoop
+MapReduce). This could also be achieved by mapping the watermill pipeline spec
+into a CWL/CWL workflow spec one, of which then other tools can run it.
+
+#### Languages and skill
+
+- JavaScript is a requirement (ES6, Promises, Observables is an asset)
+- ReduxJS is an asset (the codebase is implemented with redux and sagas)
+- Node.js core APIs (streams, files, http) is an asset
+- Some biology knowledge is a plus (e.g. undergraduate biology courses, basic
+  understanding of next generation sequencing pipelines)
+
+#### Code
+
+- [bionode-watermill](https://github.com/bionode/bionode-watermill)
+- [bionode/gsoc16](https://github.com/bionode/gsoc16)
+- [bionode/gsoc17](https://github.com/bionode/gsoc17)
+
+#### Difficulty
+
+<span class="medium">medium</span>
+
+#### Mentors
+
+[Julian Mazzitelli][thejmazz], [Bruno Vieira][bmpvieira], [Max Ogden][maxogden], [Mathias Buus][mafintosh]
+
+[thejmazz]: https://github.com/thejmazz
+[maxogden]: https://github.com/maxogden
+[mafintosh]: https://github.com/mafintosh
+[bmpvieira]: https://github.com/bmpvieira
+
+
+#### Contact
+
+- [gitter](https://gitter.im/bionode/bionode)
+
