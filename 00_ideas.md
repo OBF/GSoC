@@ -592,8 +592,6 @@ into a CWL/CWL workflow spec one, of which then other tools can run it.
 - [gitter](https://gitter.im/bionode/bionode)
 
 
-
-
 ## ISCANDAR integration Student Project for Stemformatics
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
