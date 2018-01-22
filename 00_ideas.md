@@ -784,4 +784,56 @@ There is also a fair amount of flexibility with this project to allow the studen
 * Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
 * If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
 
+## antiSMASH
+
+[antiSMASH](http://antismash.secondarymetabolites.org) is a tool to mine the
+genomes of micro-organisms for biologically interesting gene clusters, so-called
+secondary metabolites, to help find new antibiotics. It is a python-based  open
+source tool that is developed at the Technical University of Denmark and Wageningen
+University.
+
+Project ideas around antiSMASH range from very close to applied biology to more
+general software engineering projects.
+
+### Improve gene cluster visualization (SVGene)
+
+#### Rationale
+
+antiSMASH generates a static HTML page report with prediction results for analysis runs.
+This is the main UI used by the experimental biologists. To give an overview of the gene
+cluster layout, antiSMASH uses the [SVGene](https://github.com/kblin/svgene) JavaScript library
+to render gene cluster arrows as vector graphics. So far, this is a static SVG, with some
+tooltip boxes added to provide the user with extra context.
+
+SVGene is limited in multiple aspects:
+* It can't deal with [introns](https://en.wikipedia.org/wiki/Intron) because it initially written for Bacteria.
+* It would be nice to support zooming for large gene clusters.
+* It doesn't deal well with multiple overlapping cluster border features
+
+#### Approach
+
+antiSMASH renders gene clusters using the [SVGene](https://github.com/kblin/svgene)
+JavaScript library, which in turn is built on top of [D3.js](https://d3js.org/).
+D3.js supports controls for pan and zoom that should be used for SVGene.
+Gene cluster data for the HTML page is loaded from a JavaScript file included in the static
+web page. Additional details should be displayed on a bigger zoom level if available, possibly
+on separate tracks.
+
+#### Languages and skill
+
+SVGene is written in JavaScript and making heavy use of the [D3.js](https://d3js.org/)
+library for drawing the SVG primitives.
+Some Python knowledge might make it easier to extend antiSMASH's precalculated output,
+but is not required, as mock inputs can be used for the project.
+
+#### Code
+* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
+* [SVGene on github](https://github.com/kblin/svgene)
+
+#### Difficulty
+* {% include difficulty.html difficulty="easy" %} with previous knowledge of D3.js
+* {% include difficulty.html difficulty="medium" %} otherwise
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), Simon Shaw
 
