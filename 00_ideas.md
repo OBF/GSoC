@@ -593,7 +593,7 @@ into a CWL/CWL workflow spec one, of which then other tools can run it.
 
 ## Stemformatics
 
-### ISCANDAR integration Student Project for Stemformatics
+### ISCANDAR integration Student Project
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
 
@@ -725,7 +725,7 @@ student to inject their own ideas and introduce new features and functionality.
   https://gitter.im/stemformatics/Lobby
 
 
-### PHP Validator Migration and Ontology Integration for Stemformatics
+### PHP Validator Migration and Ontology Integration
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
 
