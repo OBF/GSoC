@@ -671,7 +671,7 @@ If you like to work closely with clients and you are interested in building fron
 
 #### Difficulty
 
-Medium
+{% include difficulty.html difficulty="medium" %}
 
 #### Goals
 
