@@ -651,6 +651,80 @@ There is also a fair amount of flexibility with this project to allow the studen
 * If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
 
 
+### S4M Module Development on HPCs
+
+Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
+
+#### Rationale
+
+Stemformatics has a large amount of datasets that biologists can benchmark
+against their own datasets. To process these datasets though our pipeline,
+Stemformatics has created the S4M framework. S4M is written in shell in a POSIX
+compliant way.
+
+The S4M framework consists of a series of modules that run bioinformatics
+software to process these datasets. Stemformatics would like to expand the
+modules to make them more automated, faster and more integrated with the main
+Stemformatics website and Data Portal.
+
+If you like to work on the backend and want to learn hardcore command line
+skills, this is your project.
+
+
+#### Mentors
+
+[Othmar Korn](https://bitbucket.org/uqokorn/)
+
+
+#### Difficulty
+
+{% include difficulty.html difficulty="hard" %}
+
+#### Goals
+
+The primary goal is to add to the number of modules in S4M. Usually there are
+one off scripts that have already been run on datasets that need to be made more
+generic to fit into the S4M  architecture.
+
+There is also a fair amount of flexibility with this project to allow the
+student to inject their own ideas and introduce new features and functionality.
+
+#### Skills/Prerequisites
+
+* Basic knowledge of Linux, vim and bash scripting
+* Ability to work independently and to report to a group and discuss theories
+  and results
+* Good analytical skills
+* Working with git would be an advantage
+
+#### Student Benefits
+
+* We aim to ensure that each student gets a great learning experience tailored
+  to their ability, interest and experience. You can read about it in our
+  “[Commitment to
+  Students](https://docs.google.com/document/d/1rs9IpTfJHpaQ95RLs78tiR70fBXZ-u51h0dxFF6ddac/edit?usp=sharing)”
+  document.
+* Hands on experience in providing command line, pipeline and module development
+* Practical experience in Linux, vim and bash scripting for a software project
+  that is used around the world
+* Gain understanding of how real-world software is developed and how priorities
+  are established
+* Improving your oral and written communication skills in a team environment
+* Potential opportunities to give presentations about the project to a wider
+  audience
+
+#### How to Apply
+
+* Provide a cover letter that explains why your skills would be a good fit. If
+  you don’t have the skills, explain why you would like to learn those skills. 2
+  pages maximum.
+* Provide a resume with a list of skills. 2 pages maximum.
+* Provide links to any code you might have contributed to eg. github, bitbucket
+  repos/commits
+* If you have any questions, please ask us here -
+  https://gitter.im/stemformatics/Lobby
+
+
 ### PHP Validator Migration and Ontology Integration for Stemformatics
 
 Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
