@@ -286,3 +286,57 @@ The genetics browser is written in [PureScript](http://www.purescript.org/). A c
 
 #### Mentors
 [Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp), [Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
+
+## Frontend Website Student Project for BioJS
+
+BioJS is a library of over one hundred JavaScript components enabling developers to visualize and process data using current web technologies. BioJS makes it easy for them to integrate their visualizations into their own website or web application. BioJS is a community that spans multiple countries and multiple high profile bioinformatics organisations.
+
+#### Rationale
+
+At the moment, BioJS has 2 websites that we would like to merge into one, [http://biojs.io](http://biojs.io)[http://biojs.net](http://biojs.net). We would like to redesign the website but also retain some of the look and feel of previous websites. The final design should be consistent across the individual pages.
+As BioJS is international in nature, optimising the front end experience to ensure a good user experience and responsiveness is key.
+An example of the new design of a landing page is in this issue tracker: https://github.com/biojs/organisation/issues/4
+If you like like to work on the middleware and front end development of an international, respected open source data visualisation bioinformatics code, this is your project.
+
+#### Mentors
+
+[Dennis Schwartz](https://github.com/DennisSchwartz),
+[Yo Yehudi](https://github.com/yochannah),
+[Rowland Mosbergen](https://github.com/rowlandm)
+
+#### Difficulty
+
+Medium
+
+#### Goals
+
+The primary goal is to:
+
+* Create a new website front end landing page for BioJS
+* Redesign the BioJS library page [http://biojs.io](http://biojs.io) to improve speed for an international audience
+* Work with a flexible middleware web framework to house the new website front end and provide extensibility in the future
+* Create pages to provide help and tutorials for the BioJS community
+
+There is also a fair amount of flexibility with this project to allow the student to inject their own ideas and introduce new features and functionality.
+
+#### Skills/Prerequisites
+
+* Basic knowledge of Javascript/CSS
+* Ability to work independently and to report to a group and discuss theories and results
+* Good analytical skills
+* Basic git skills required as working with github is mandatory
+
+#### Student Benefits
+
+* We aim to ensure that each student gets a great learning experience tailored to their ability, interest and experience.
+* Hands on experience in providing a major change to a web-based application that is used around the world.
+* Practical experience in Javascript and CSS for a software project that is used around the world
+* Gain understanding of how real-world software is developed and how priorities are established
+* Improving your oral and written communication skills in a team environment
+
+#### How to Apply
+
+* Provide a cover letter that explains why your skills would be a good fit. If you don’t have the skills, explain why you would like to learn those skills. 2 pages maximum.
+* Provide a resume with a list of skills. 2 pages maximum.
+* Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
+* If you have any questions, please ask us here - [https://gitter.im/biojs/biojs](https://gitter.im/biojs/biojs)
