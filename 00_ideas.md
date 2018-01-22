@@ -585,3 +585,62 @@ into a CWL/CWL workflow spec one, of which then other tools can run it.
 
 - [gitter](https://gitter.im/bionode/bionode)
 
+
+
+
+## ISCANDAR integration Student Project for Stemformatics
+
+Stemformatics is an online portal that allows stem cell biologists to visually analyse and explore interesting datasets quickly and easily. It is a worldwide resource for collaborators in Australia, North America, Asia and Europe.
+
+#### Rationale
+
+One of the next big data visualisation challenges in biology is single cell RNASeq. Previously, RNASeq samples numbered in the 10s and sometimes 100s of samples. Now single cell RNASeq is in the 100s and 1000s of samples.
+
+ISCANDAR is a stand alone tool for bioinformaticians to create an interactive single cell RNASeq report for biologists that was created in the Wells Lab and can be hosted inside Stemformatics. Currently to access a private ISCANDAR report relies on a separate username and password.
+
+Stemformatics would like to be able to host private ISCANDAR and other types of reports as well as integrate the functionality of ISCANDAR into Stemformatics. Careful attention will be needed to make the integrated functionality look, feel and respond similarly to the rest of Stemformatics.
+
+If you like to work on integrating and optimising applications for the web in a field that is very hot right now, this is your project.
+
+
+#### Mentors
+
+[Jarny Choi](https://github.com/jarny)
+
+#### Difficulty
+
+Hard
+
+#### Goals
+The primary goals are to:
+
+* Provide an authentication between Apache and Pyramid (Python) web framework to host private reports without a .htaccess password
+* Create a good user experience that allows people to use the functionality of ISCANDAR that is integrated into Stemformatics
+* Make changes to the middleware that controls how genes and datasets are accessed
+* Make changes to the database to allow for these changes
+* Make changes to ensure the responsiveness of the integrated functionality is high
+
+There is also a fair amount of flexibility with this project to allow the student to inject their own ideas and introduce new features and functionality.
+
+#### Skills/Prerequisites
+
+* Basic knowledge of Python/Javascript/CSS
+* Ability to work independently and to report to a group and discuss theories and results
+* Good analytical skills
+* Working with git would be an advantage
+
+#### Student Benefits
+
+* We aim to ensure that each student gets a great learning experience tailored to their ability, interest and experience. You can read about it in our “Commitment to Students” document.
+* Hands on experience in providing a major change to a web-based application that is used around the world.
+* Practical experience in Apache, Python,  Javascript and CSS for a software project that is used around the world
+* Potential to have your application used by others around the world who work in bioinformatics
+* Gain understanding of how real-world software is developed and how priorities are established
+* Improving your oral and written communication skills in a team environment
+
+#### How to Apply
+
+* Provide a cover letter that explains why your skills would be a good fit. If you don’t have the skills, explain why you would like to learn those skills. 2 pages maximum.
+* Provide a resume with a list of skills. 2 pages maximum.
+* Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
+* If you have any questions, please ask us here - https://gitter.im/stemformatics/Lobby
