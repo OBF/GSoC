@@ -32,9 +32,11 @@ idea in their application.
 
 **Feel free to propose your own entirely new idea.**
 
-## Integration of CWL support into StackStorm automation framework
+## Common Workflow Language
 
-### Rationale
+### Integration of CWL support into StackStorm automation framework
+
+#### Rationale
 
 The needs of a DNA sequencing centre are several and varied: from heavy High Performance Computing (HPC) workloads over sample tracking via Laboratory Information Management Systems (LIMS) to the automation of common data and centre management tasks.
 
@@ -44,7 +46,7 @@ We at the [University of Melbourne Centre for Cancer Research (UMCCR)][umccr] em
 
 We would love to see the integration of the data analysis pipelines with the rest of our data/centre management pipelines and tasks. This would allow us to automate and streamline the whole data lifecycle and data governance, from generation on the sequencing machines over heavy computing on HPC/cloud environments to final dissemination and archival tasks, including full data provenance.
 
-### Approach
+#### Approach
 
 StackStorm is a powerful open-source platform that provides an event-driven, integrated automation solution for several aspects of an organisational infrastructure. It already supports several workflow systems and can wire together tools, services and workflows. The Arteria project is already publishing convenience tasks and workflows for sequencing centres based on this powerful platform.
 
@@ -52,7 +54,7 @@ The [Common Workflow Language](http://www.commonwl.org/user_guide/) (CWL) is gai
 
 We propose the combination of both systems: the integration of CWL support into the StackStorm automation platform.
 
-### Steps
+#### Steps
 
 * Investigate existing workflow integrations (ActionChain, Mistral, CloudSlang) as template for CWL integration
 * Investigate jinja integration (see existing integrations) to dynamically configure CWL templates
@@ -60,7 +62,7 @@ We propose the combination of both systems: the integration of CWL support into 
 * Start with Cromwell as workflow execution engine/cwl_runner
 * (advanced) investigate workflow engine integration/interfacing (use of GA4GH WES API)
 
-#### Questions about StackStorm
+##### Questions about StackStorm
 * How does it model the compute and storage resources?
     * It doesn't, you just define: triggers, actions and rules.
       * So we'll need to embed a complete workflow system, invoked via cwl-runner or WES.
@@ -70,17 +72,17 @@ We propose the combination of both systems: the integration of CWL support into 
 * Can a user dynamically add new workflows, or is it more static like AirFlow?
     * The user can define so-called "packs" which bundle the aforementioned triggers/actions/rules. Examples of packs contributed by the community: https://github.com/StackStorm-Exchange. Then the pack can just be installed, don't have much experience with AirFlow, but I would say that this aspect would be similar to Galaxy installing tool/workflow XMLs.
 
-### Language and skills
+#### Language and skills
 
 * Python
 * Common Workflow Language
 * YAML
 
-### Difficulty
+#### Difficulty
 
 Medium
 
-### Mentors
+#### Mentors
 
 Florian Reisinger, Oliver Hofmann, Michael Crusoe, Anton Khodak, Roman Valls Guimera
 
@@ -171,7 +173,9 @@ The TOPPView implementation should be extended to improve the the general user e
 [Oliver Alka](https://github.com/oliveralka), [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
 
 
-## Taking the <i>fastest sequence transforming software in the world</i> to the next level
+## Sambamba
+
+### Taking the <i>fastest sequence transforming software in the world</i> to the next level
 
 In 2012 we created [sambamba](https://github.com/biod/sambamba) as the
 fastest software that could parse and transform different file formats
@@ -389,7 +393,9 @@ hyperledger as a back-end. Some JavaScript may be necessary.
 * Direct: alexgarciac at gmail
 
 
-## Backend Website Student Project for BioJS
+## BioJS
+
+### Backend Website Student Project for BioJS
 
 
 BioJS is a library of over one hundred JavaScript components enabling developers to visualize and process data using current web technologies. BioJS makes it easy for them to integrate their visualizations into their own website or web application. BioJS is a community that spans multiple countries and multiple high profile bioinformatics organisations.
@@ -445,7 +451,7 @@ There is also a fair amount of flexibility with this project to allow the studen
 * If you have any questions, please ask us here - https://gitter.im/biojs/biojs
 
 
-## Frontend Website Student Project for BioJS
+### Frontend Website Student Project for BioJS
 
 BioJS is a library of over one hundred JavaScript components enabling developers to visualize and process data using current web technologies. BioJS makes it easy for them to integrate their visualizations into their own website or web application. BioJS is a community that spans multiple countries and multiple high profile bioinformatics organisations.
 
