@@ -80,7 +80,7 @@ We propose the combination of both systems: the integration of CWL support into 
 
 #### Difficulty
 
-Medium
+{% include difficulty.html difficulty="medium" %}
 
 #### Mentors
 
@@ -142,7 +142,7 @@ The existing implementation for posterior error probability estimation in OpenMS
 hopefully better performing implementation (e.g. based on the suggested references) by combining different scores of a search engine, using semi-supervised, semi-parametric or dynamically adapting fitting algorithms. Additionally user feedback could be improved to tell users about the quality of fit.
 
 #### Difficulty
-<span class="easy">medium</span>.
+{% include difficulty.html difficulty="medium" %}
 
 #### Mentors
 [Julianus Pfeuffer](https://github.com/jpfeuffer), [Timo Sachsenberg](https://github.com/timosachsenberg), [Oliver Alka](https://github.com/oliveralka)
@@ -167,7 +167,7 @@ Expected outcome:
 The TOPPView implementation should be extended to improve the the general user experience. This could include the creation of widgets for the visualization of chromatograms, an improved spectrum comparison and annotation facility, and a viewer for protein coverage.
 
 #### Difficulty
-<span class="easy">medium</span>.
+{% include difficulty.html difficulty="medium" %}
 
 #### Mentors
 [Oliver Alka](https://github.com/oliveralka), [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
@@ -251,7 +251,7 @@ Linux distribution, including Ubuntu and Fedora.
 
 #### Difficulty
 
-* This is <span class="hard">challenging</span> project for someone
+This is {% include difficulty.html difficulty="hard" text="challenging" %} project for someone
 who wants to be a hard core coder! Successfully completing this
 project will give a lot of credibility when looking for a job in
 science.
@@ -286,7 +286,7 @@ The genetics browser is written in [PureScript](http://www.purescript.org/). A c
 * [Biodalliance](https://github.com/dasmoth/dalliance)
 
 #### Difficulty
-* <span class="medium">medium</span> mostly PureScript and JavaScript, but Python and Elixir may come in handy
+{% include difficulty.html difficulty="medium" %} mostly PureScript and JavaScript, but Python and Elixir may come in handy
 
 #### Mentors
 [Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp), [Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
@@ -377,9 +377,9 @@ hyperledger as a back-end. Some JavaScript may be necessary.
 
 #### Difficulty
 
-* <span class="medium">medium</span> mostly Python for the
-  back-end and PureScript and JavaScript for the front-end.
-  Understanding of HTML and SQL may come in handy.
+{% include difficulty.html difficulty="medium" %} mostly Python for the
+back-end and PureScript and JavaScript for the front-end.
+Understanding of HTML and SQL may come in handy.
 
 #### Mentors
 
@@ -415,7 +415,7 @@ If you like like to work on the middleware/backend development of an internation
 
 #### Difficulty
 
-Medium
+{% include difficulty.html difficulty="medium" %}
 
 #### Goals
 The primary goal is to:
@@ -470,7 +470,7 @@ If you like like to work on the middleware and front end development of an inter
 
 #### Difficulty
 
-Medium
+{% include difficulty.html difficulty="medium" %}
 
 #### Goals
 
@@ -575,7 +575,7 @@ into a CWL/CWL workflow spec one, of which then other tools can run it.
 
 #### Difficulty
 
-<span class="medium">medium</span>
+{% include difficulty.html difficulty="medium" %}
 
 #### Mentors
 
@@ -613,7 +613,7 @@ If you like to work on integrating and optimising applications for the web in a 
 
 #### Difficulty
 
-Hard
+{% include difficulty.html difficulty="hard" %}
 
 #### Goals
 The primary goals are to:
