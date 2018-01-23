@@ -837,3 +837,80 @@ but is not required, as mock inputs can be used for the project.
 #### Mentors
 [Kai Blin](https://github.com/kblin), Simon Shaw
 
+## openCOBRA - COBRApy
+
+[openCOBRA](https://opencobra.github.io/) is an open-source, community-developed code base for COnstraint-Based Reconstruction and Analysis as is commonly used in metabolic modeling. A large part of that community is Python based and centered around the [COBRApy package](https://opencobra.github.io/cobrapy) which provides the basis for many other packages within that [community](https://opencobra.github.io/cobrapy/packages). The project ideas presented here show case some of the ways that the tools for the Python community can be improved and cover a diverse set of skills. If you can identify other unmet needs, feel free to contact us and discuss your ideas.
+
+### Publication Ready and Interactive Visualizations
+
+#### Rationale
+
+The genome-scale metabolic models investigated with constraint-based methods are
+large, complex systems. The results of various methods typically contain
+thousands to tens of thousands of values.
+
+Developing a standard visualization tool that carefully highlights the most
+important aspects of the simulation results will help communicate key findings
+in a consistent manner that is easier to understand for everybody. Providing
+high quality plots will further ease the publication process. Working with
+interactive widgets in the browser-based Jupyter notebook will enable
+researchers to dig deep into their data.
+
+#### Approach
+
+The results of various methods present in the community often come in the form
+of [pandas](https://pandas.pydata.org/) data frames. The ability to easily and interactively inspect the visual information in, for example, widgets for the Jupyter notebook would vastly improve common workflows. Afterwards quickly turning those visuals into appealing plots for publication would further help alleviate pain points.
+
+#### Languages and skill
+
+* Familiarity with one or more plotting libraries is a plus.
+* Some knowledge of Javascript in order to work with Jupyter widgets will be
+  required.
+* Some knowledge of pandas and Python coding will be helpful.
+
+#### Code
+
+* [COBRApy](https://github.com/opencobra/cobrapy)
+
+#### Difficulty
+
+* {% include difficulty.html difficulty="easy" %} with previous of plotting in
+  Python and Jupyter notebooks.
+* {% include difficulty.html difficulty="medium" %} otherwise
+
+#### Mentors
+
+[Moritz Beber](https://github.com/Midnighter), [Nikolaus Sonnenschein](https://github.com/phantomas123)
+
+### Method Implementation
+
+#### Rationale
+
+[COBRApy](https://opencobra.github.io/cobrapy) was first published in 2013 and
+since then many new methods have been developed as well as new sub-areas of interest opened up. Examples for new areas include community modeling, thermodynamics-based constraints, and generally more data-driven modeling.
+
+#### Approach
+
+Based on the skill and interest of the applicant the outcome of this project
+will be: addition of methods to the existing [COBRApy package](https://github.com/opencobra/cobrapy), implementation of standalone packages built on top of cobrapy, or enhancement of using experimental data with metabolic models.
+
+#### Languages and skill
+
+* Knowledge in Python programming is a must.
+* Familiarity with constraint-based optimization is a big bonus.
+
+#### Code
+
+* [COBRApy](https://github.com/opencobra/cobrapy)
+* [driven](https://github.com/biosustain/driven)
+
+#### Difficulty
+
+* {% include difficulty.html difficulty="medium" %} With good knowledge of
+  Python and optimization problem formulation.
+* {% include difficulty.html difficulty="hard" text="very hard" %} otherwise
+
+#### Mentors
+
+[Moritz Beber](https://github.com/Midnighter), [Nikolaus Sonnenschein](https://github.com/phantomas123)
+
