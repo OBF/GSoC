@@ -14,7 +14,7 @@ include certain information, listed below, under "[When you apply.](../guide/#wh
 Kai Blin [kblin@biosustain.dtu.dk](mailto:kblin@biosustain.dtu.dk) (IRC: kblin | channels: #obf-soc, #gsoc)
 
 #### Backup administrator
-NN (Interested in helping out? Email Kai.)
+Michael Crusoe
 
 ### Google Plus
 [OBF Summer of Code](https://plus.google.com/communities/103096212020630764091) on G+
