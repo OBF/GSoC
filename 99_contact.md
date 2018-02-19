@@ -35,7 +35,9 @@ of the OBF project you are interested in working with:
 #### OpenMS
 * [Mailing list OpenMS](https://lists.sourceforge.net/lists/listinfo/open-ms-general)
 
-
+#### openCOBRA - COBRApy
+* [Mailing list](http://groups.google.com/group/cobra-pie)
+* [Gitter chat](https://gitter.im/opencobra/cobrapy)
 
 Also, it would be a good idea to CC the organization administrator [Kai
 Blin](mailto:kblin@biosustain.dtu.dk), so he can make sure that you are properly
