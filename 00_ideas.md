@@ -841,6 +841,10 @@ but is not required, as mock inputs can be used for the project.
 
 [openCOBRA](https://opencobra.github.io/) is an open-source, community-developed code base for COnstraint-Based Reconstruction and Analysis as is commonly used in metabolic modeling. A large part of that community is Python based and centered around the [COBRApy package](https://opencobra.github.io/cobrapy) which provides the basis for many other packages within that [community](https://opencobra.github.io/cobrapy/packages). The project ideas presented here show case some of the ways that the tools for the Python community can be improved and cover a diverse set of skills. If you can identify other unmet needs, feel free to contact us and discuss your ideas.
 
+#### Contact
+
+Please get in touch via the [mailing list](http://groups.google.com/group/cobra-pie) and/or our [gitter channel](https://gitter.im/opencobra/cobrapy).
+
 ### Publication Ready and Interactive Visualizations
 
 #### Rationale
@@ -874,9 +878,9 @@ of [pandas](https://pandas.pydata.org/) data frames. The ability to easily and i
 
 #### Difficulty
 
-* {% include difficulty.html difficulty="easy" %} with previous of plotting in
-  Python and Jupyter notebooks.
-* {% include difficulty.html difficulty="medium" %} otherwise
+* {% include difficulty.html difficulty="easy" text="Easy" %} with previous knowledge of plotting in
+  Python and Jupyter notebooks;
+* {% include difficulty.html difficulty="medium" %} otherwise.
 
 #### Mentors
 
@@ -906,9 +910,9 @@ will be: addition of methods to the existing [COBRApy package](https://github.co
 
 #### Difficulty
 
-* {% include difficulty.html difficulty="medium" %} With good knowledge of
-  Python and optimization problem formulation.
-* {% include difficulty.html difficulty="hard" text="very hard" %} otherwise
+* {% include difficulty.html difficulty="medium" text="Medium" %} with good knowledge of
+  Python and optimization problem formulation;
+* {% include difficulty.html difficulty="hard" text="very hard" %} otherwise.
 
 #### Mentors
 
