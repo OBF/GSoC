@@ -84,7 +84,7 @@ We propose the combination of both systems: the integration of CWL support into 
 
 #### Mentors
 
-[Florian Reisinger](http://github.com/reisingerf), [Oliver Hofmann](http://github.com/ohofmann), [Michael Crusoe](http://github.com/mr-c), [Anton Khodak](https://github.com/anton-khodak), [Roman Valls Guimera](http://github.com/brainstorm)
+[Sehrish Kanwal](https://github.com/skanwal), [Florian Reisinger](http://github.com/reisingerf), [Oliver Hofmann](http://github.com/ohofmann), [Michael Crusoe](http://github.com/mr-c), [Anton Khodak](https://github.com/anton-khodak), [Roman Valls Guimera](http://github.com/brainstorm)
 
 
 
