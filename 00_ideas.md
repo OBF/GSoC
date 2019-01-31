@@ -4,7 +4,7 @@ title: Project Ideas
 permalink: /ideas/
 ---
 
-# Google Summer of Code 2018 Project ideas
+# Google Summer of Code 2019 Project ideas
 
 The details of each of our project ideas are listed below, including potential
 mentors. Interested mentors and students should subscribe to the OBF/GSoC
@@ -23,7 +23,7 @@ program and additional ways to get in touch with us.
 
 OBF is an umbrella organization which represents many different programming
 languages used in bioinformatics. In addition to working with each of the
-"Bio\*" projects (listed below), this year we are also accepting a category of
+"Bio\*" projects (listed below) we also accept
 "cross-project" ideas that cover multiple programming languages or projects.
 These collaborative ideas are broadly defined and can be thought of as
 "unfinished" — interested students should adapt the ideas to their own
@@ -150,7 +150,7 @@ hopefully better performing implementation (e.g. based on the suggested referenc
 ### Improve Visualization of Spectra and Analysis Results in GUI Tool (TOPPView)
 
 #### Rationale
-Mass spectrometry has become one of the bioanalytical tools of choice for many life scientists. For the analysis of individual spectra, visualization is the key to perform and validate annotations and optimize data processing workflows. 
+Mass spectrometry has become one of the bioanalytical tools of choice for many life scientists. For the analysis of individual spectra, visualization is the key to perform and validate annotations and optimize data processing workflows.
 
 #### Approach
 The OpenMS visualization tool TOPPView offers a wide range of possibilities to visualize raw data and analysis results. In this GSoC project, we intend to improve TOPPView improve overall user experience by adding requested features, e.g., introducing a visualization widget for protein sequence coverage from identification results, adding visualization of chromatograms, and an improved spectrum comparison widget.
@@ -173,7 +173,53 @@ The TOPPView implementation should be extended to improve the the general user e
 [Oliver Alka](https://github.com/oliveralka), [Timo Sachsenberg](https://github.com/timosachsenberg), [Julianus Pfeuffer](https://github.com/jpfeuffer)
 
 
-## Sambamba
+## Add Variant Graph (VG) support to BioD
+
+BioD is a programming language that has the performance of C/C++ but
+with improved high-level programming constructs for parallel
+computing. In this project we want to add variant graph support that
+can be used for novel algorithms by porting and improving the existing
+[C++ code base](https://github.com/vgteam/vg).
+
+#### Rationale
+
+#### Approach
+
+We'll take the existing [vg code base](https://github.com/vgteam/vg)
+as the starting point. We may use the D redland bindings to hold graphs
+in memory (RDF/semantic web).
+
+#### Languages and skill
+
+The student should have an interest in using different programming
+languages and functional programming techniques, but good knowledge of
+C++ or similar is enough.
+
+The deployment and programming environment will be handled by the
+functional package manager
+[GNU Guix](https://www.gnu.org/software/guix/) which can run on any
+Linux distribution, including Ubuntu and Fedora.
+
+#### Code
+
+* [BioD](https://github.com/biod)
+* [Graph lib](http://librdf.org/)
+* [D redland bindings](https://codereview.stackexchange.com/questions/212017/a-d-wrapper-around-c-library-librdf-code)
+* [D package for semantic web](https://forum.dlang.org/thread/ghyrtlbybyxghnambffl@forum.dlang.org)
+
+#### Difficulty
+
+This is {% include difficulty.html difficulty="hard" text="challenging" %} project for someone
+who wants to be a hard core coder!
+
+#### Mentors
+
+[Pjotr Prins](https://github.com/pjotrp),
+[George Gitinji](https://github.com/george-githinji).
+
+We will also ask Erik Garrison (VG) and Victor Porton (D redland bindings) to help mentor.
+
+## Sambamba + BioD
 
 ### Taking the <i>fastest sequence transforming software in the world</i> to the next level
 
@@ -289,7 +335,9 @@ The genetics browser is written in [PureScript](http://www.purescript.org/). A c
 {% include difficulty.html difficulty="medium" %} mostly PureScript and JavaScript, but Python and Elixir may come in handy
 
 #### Mentors
-[Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp), [Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
+
+[Christian Fischer](https://github.com/chfi/), [Pjotr Prins](https://github.com/pjotrp),
+[Danny Arends](https://github.com/dannyarends) and [Karl Broman](https://github.com/kbroman)
 
 
 ## Web services
@@ -917,4 +965,3 @@ will be: addition of methods to the existing [COBRApy package](https://github.co
 #### Mentors
 
 [Moritz Beber](https://github.com/Midnighter), [Nikolaus Sonnenschein](https://github.com/phantomas123)
-
