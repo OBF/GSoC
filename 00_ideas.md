@@ -443,23 +443,20 @@ Understanding of HTML and SQL may come in handy.
 
 ## BioJS
 
-### Backend Website Student Project for BioJS
+### Create interactive Yeoman generator for BioJS components
 
 
 BioJS is a library of over one hundred JavaScript components enabling developers to visualize and process data using current web technologies. BioJS makes it easy for them to integrate their visualizations into their own website or web application. BioJS is a community that spans multiple countries and multiple high profile bioinformatics organisations.
 
 #### Rationale
+Web standards have moved on a little since the [BioJS slush generator](https://github.com/biojs/slush-biojs) was created (ES2015 support has improved, as has support for WebComponents), so we're in the processes of updating the BioJS standard to version 3.0. We've created a scaffold wrapper tool to update older BioJS components to work as WebComponents, but we still have more features in mind. This task would involve updating the yeoman generator with options to create command-line based tools and brand new tools, as well as clearly documenting the process with tutorials. You can see the [BioJS 3.0 working draft](https://hackmd.io/j8y-Ht9_TP2yaDhYdUeIEQ#) for more information.
 
-At the moment, BioJS has 2 websites that we would like to merge into one, [http://biojs.io](http://biojs.io)[http://biojs.net](http://biojs.net). We would like to merge and redesign the middleware/backend parts of the  two websites for easier maintenance and better performance for our international audience.
-Currently the library at [http://biojs.io](http://biojs.io) is using a separate server to create the metadata to display in the library, and also providing the precomputed visualisations for the examples. We would like to simplify this process to make it easier to maintain.
-We would also like to provide more DevOps infrastructure to ensure deployment of new servers is easier in the future.
-If you like like to work on the middleware/backend development of an international, respected open source data visualisation bioinformatics code, this is your project.
+If you like like to work on the infrastructure of an international, respected open source data visualisation bioinformatics code, this is your project.
 
 #### Mentors
 
-[Dennis Schwartz](https://github.com/DennisSchwartz),
-[Yo Yehudi](https://github.com/yochannah),
-[Rowland Mosbergen](https://github.com/rowlandm)
+- [Sarthak Sehgal](https://github.com/sarthak-sehgal)
+- [Yo Yehudi](https://github.com/yochannah)
 
 #### Difficulty
 
@@ -468,90 +465,32 @@ If you like like to work on the middleware/backend development of an internation
 #### Goals
 The primary goal is to:
 
-* Create a new simplified middleware/backend website for BioJS
-* Redesign the backend of the BioJS library visualisation pages ([http://biojs.io](http://biojs.io)) to improve speed for an international audience and reduce complexity
-* Work with a flexible middleware web framework to interact with the new website front end and provide extensibility in the future
-* Provide DevOps scripts to make deployments of infrastructure easier in the future
-* Ensure that the BioJS website is reliable and maintainable
+* Create a fully-featured BioJS standard-compliant yeoman generator to allow people to generate the starter files for BioJS 3.0 tools easily.
+* Fully documented tutorials for the generator, walking people through creating their first component.
 
 There is also a fair amount of flexibility with this project to allow the student to inject their own ideas and introduce new features and functionality.
 
 #### Skills/Prerequisites
 
-* Basic knowledge of Ansible/Javascript/CSS
+* Basic knowledge of NodeJS/Javascript/HTML/CSS
 * Ability to work independently and to report to a group and discuss theories and results
-* Good analytical skills
 * Basic git skills required as working with github is mandatory
 
 #### Student Benefits
 
 * We aim to ensure that each student gets a great learning experience tailored to their ability, interest and experience.
 * Hands on experience in providing a major change to a web-based application that is used around the world.
-* Practical experience in Ansible, Javascript and CSS for a software project that is used around the world
+* Practical experience in NodeJS, Javascript, HTML and CSS for a software project that is used around the world
 * Gain understanding of how real-world software is developed and how priorities are established
 * Improving your oral and written communication skills in a team environment
 
 #### How to Apply
 
 * Provide a cover letter that explains why your skills would be a good fit. If you don’t have the skills, explain why you would like to learn those skills. 2 pages maximum.
-* Provide a resume with a list of skills. 2 pages maximum.
+* Provide a resume with a list of skills and experience. 2 pages maximum.
+* Provide a breakdown of how you'd run this project - i.e. Features A, B delivered in the first two weeks, Features C, D delivered in later weeks. Show your proposal to mentors for feedback as they may be abe to suggest improvements!
 * Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
 * If you have any questions, please ask us here - https://gitter.im/biojs/biojs
-
-
-### Frontend Website Student Project for BioJS
-
-BioJS is a library of over one hundred JavaScript components enabling developers to visualize and process data using current web technologies. BioJS makes it easy for them to integrate their visualizations into their own website or web application. BioJS is a community that spans multiple countries and multiple high profile bioinformatics organisations.
-
-#### Rationale
-
-At the moment, BioJS has 2 websites that we would like to merge into one, [http://biojs.io](http://biojs.io)[http://biojs.net](http://biojs.net). We would like to redesign the website but also retain some of the look and feel of previous websites. The final design should be consistent across the individual pages.
-As BioJS is international in nature, optimising the front end experience to ensure a good user experience and responsiveness is key.
-An example of the new design of a landing page is in this issue tracker: https://github.com/biojs/organisation/issues/4
-If you like like to work on the middleware and front end development of an international, respected open source data visualisation bioinformatics code, this is your project.
-
-#### Mentors
-
-[Dennis Schwartz](https://github.com/DennisSchwartz),
-[Yo Yehudi](https://github.com/yochannah),
-[Rowland Mosbergen](https://github.com/rowlandm)
-
-#### Difficulty
-
-{% include difficulty.html difficulty="medium" %}
-
-#### Goals
-
-The primary goal is to:
-
-* Create a new website front end landing page for BioJS
-* Redesign the BioJS library page [http://biojs.io](http://biojs.io) to improve speed for an international audience
-* Work with a flexible middleware web framework to house the new website front end and provide extensibility in the future
-* Create pages to provide help and tutorials for the BioJS community
-
-There is also a fair amount of flexibility with this project to allow the student to inject their own ideas and introduce new features and functionality.
-
-#### Skills/Prerequisites
-
-* Basic knowledge of Javascript/CSS
-* Ability to work independently and to report to a group and discuss theories and results
-* Good analytical skills
-* Basic git skills required as working with github is mandatory
-
-#### Student Benefits
-
-* We aim to ensure that each student gets a great learning experience tailored to their ability, interest and experience.
-* Hands on experience in providing a major change to a web-based application that is used around the world.
-* Practical experience in Javascript and CSS for a software project that is used around the world
-* Gain understanding of how real-world software is developed and how priorities are established
-* Improving your oral and written communication skills in a team environment
-
-#### How to Apply
-
-* Provide a cover letter that explains why your skills would be a good fit. If you don’t have the skills, explain why you would like to learn those skills. 2 pages maximum.
-* Provide a resume with a list of skills. 2 pages maximum.
-* Provide links to any code you might have contributed to eg. github, bitbucket repos/commits
-* If you have any questions, please ask us here - [https://gitter.im/biojs/biojs](https://gitter.im/biojs/biojs)
 
 ## Bionode
 
