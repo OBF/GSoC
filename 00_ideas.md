@@ -363,45 +363,94 @@ University.
 Project ideas around antiSMASH range from very close to applied biology to more
 general software engineering projects.
 
-### Improve gene cluster visualization (SVGene)
+### Redesign the antiSMASH submission page using web components and Redux
+
+While antiSMASH can be installed and run as a command line tool, many users interact
+with a cloud instance hosted at https://antismash.secondarymetabolites.org/.
+This cloud instance provides a submission website that should be converted to
+web components.
 
 #### Rationale
 
-antiSMASH generates a static HTML page report with prediction results for analysis runs.
-This is the main UI used by the experimental biologists. To give an overview of the gene
-cluster layout, antiSMASH uses the [SVGene](https://github.com/kblin/svgene) JavaScript library
-to render gene cluster arrows as vector graphics. So far, this is a static SVG, with some
-tooltip boxes added to provide the user with extra context.
+We actuallly run multiple instances of the submission page, depending on whether
+people want to analyse bacterial or fungal sequences, or run the production or
+development version. Those sites are very similar, but differ slightly in what
+features are offered. Currently this causes a lot of code duplication.
 
-SVGene is limited in multiple aspects:
-* It can't deal with [introns](https://en.wikipedia.org/wiki/Intron) because it initially written for Bacteria.
-* It would be nice to support zooming for large gene clusters.
-* It doesn't deal well with multiple overlapping cluster border features
+The goal of this project would be to redo the various submission pages using web
+components to enable re-using the shared components between the different sites.
 
 #### Approach
 
-antiSMASH renders gene clusters using the [SVGene](https://github.com/kblin/svgene)
-JavaScript library, which in turn is built on top of [D3.js](https://d3js.org/).
-D3.js supports controls for pan and zoom that should be used for SVGene.
-Gene cluster data for the HTML page is loaded from a JavaScript file included in the static
-web page. Additional details should be displayed on a bigger zoom level if available, possibly
-on separate tracks.
+Individual components of the submission page should be identified and converted
+into web components using LitElement and Typescript. All of the components
+should be connected using a global event handling library like Redux.
 
-#### Languages and skill
+All components should come with tests and appropriate build infrastructure.
 
-SVGene is written in JavaScript and making heavy use of the [D3.js](https://d3js.org/)
-library for drawing the SVG primitives.
-Some Python knowledge might make it easier to extend antiSMASH's precalculated output,
-but is not required, as mock inputs can be used for the project.
+#### Languages and skills
+* Typescript
+* LitHTML/LitElement
+* Redux
 
 #### Code
-* [antiSMASH on Bitbucket](https://bitbucket.org/antismash/antismash)
-* [SVGene on github](https://github.com/kblin/svgene)
+* [antiSMASH submission UI on github](https://github.com/antismash/bacterial-ui)
 
 #### Difficulty
-* {% include difficulty.html difficulty="easy" %} with previous knowledge of D3.js
-* {% include difficulty.html difficulty="medium" %} otherwise
+* {% include difficulty.html difficulty="easy" %}
 
 #### Mentors
-[Kai Blin](https://github.com/kblin), Simon Shaw
+[Kai Blin](https://github.com/kblin), [Simon Shaw](https://github.com/SJShaw)
 
+
+### Rework the antiSMASH web service infrastructure to be more robust
+
+The antiSMASH web service allows users to submit microbial genomes for analysis.
+Once their analysis job is finished, users are presented with a web page
+displaying the results of the analysis job.
+
+The antiSMASH web service is run on a collection of microservices that
+communicate via a central Redis service, with data provided via a distributed
+file system.
+
+#### Rationale
+
+The antiSMASH webapi service accepts job submissions from the antiSMASH webapp.
+Job data can be uploaded by the user or can be downloaded from a third party
+database. If data needs to be downloaded, the job is passed to a downloader
+service. Once all data is present, the job gets passed to a dispatcher service
+that in turn runs the antiSMASH software from a docker container.
+ Currently this system is a bit fragile, and there are no automated
+integration and end-to-end tests.
+
+The goal of this project is to make the infrastructure more robust, make it
+easier to spin up the complete set of services for testing, and build automated
+integration and end-to-end tests.
+
+#### Approach
+
+End-to-end testing in a microservices setting is a difficult topic. Asa first
+step, this project would evaluate available tools for building test
+environments.
+
+Once a good test framework is identified, end-to-end tests should be built.
+
+Finally, issues identified during the testing concering the robustness of
+the individual services should be fixed to get the overall system into a
+healthier state.
+
+#### Languages and skills
+* Python 3
+* Docker
+* docker-compose
+
+#### Code
+* [antiSMASH webapi](https://github.com/antismash/websmash)
+* [antiSMASH downloader](https://github.com/antismash/downloader)
+* [antiSMASH dispatcher](https://github.com/antismash/dispatcher)
+
+#### Difficulty
+* {% include difficulty.html difficulty="medium" %}
+
+#### Mentors
+[Kai Blin](https://github.com/kblin), [Simon Shaw](https://github.com/SJShaw)
