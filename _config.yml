@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "GSoC" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: OBF_news
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 
 include: ['_historic']
 
