@@ -2,6 +2,7 @@
 layout: page
 title: Project Ideas
 permalink: /ideas/2018-ideas
+exclude: true
 ---
 
 # Google Summer of Code 2018 Project ideas
