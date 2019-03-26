@@ -454,3 +454,62 @@ healthier state.
 
 #### Mentors
 [Kai Blin](https://github.com/kblin), [Simon Shaw](https://github.com/SJShaw)
+
+
+### Extend Common Workflow Language viewer for embedding
+
+The [Common Workflow Language](https://www.commonwl.org/) is a specification for defining analysis workflows and tools, used across bioinformatics and other domains, and implemented by multiple workflow engines. At the core of CWL is a set of **steps** wired together using **inputs** and **outputs**. The [CWL user guide](https://www.commonwl.org/user_guide/) introduces the language.
+
+CWL workflows are commonly [maintained on GitHub](https://github.com/search?l=Common+Workflow+Language&q=cwlVersion&type=Code) and so we have developed the [CWL Viewer](https://view.commonwl.org/) as a way to visualize any CWL workflow from a git repository. The CWL Viewer code started as a student project at the University of Manchester and is now maintained by the [CWL community](https://www.commonwl.org/#Support) and has been used to visualize [more than 7000 workflows](https://view.commonwl.org/workflows).
+
+
+#### Approach
+
+Several suggested additional features and [issues](https://github.com/common-workflow-language/cwlviewer/issues) have been identified for the CWL Viewer. In particular this GSOC project could work on:
+
+* [Embeddable workflow rendering](https://github.com/common-workflow-language/cwlviewer/issues/219)
+* [Visualizing command line tools](https://github.com/common-workflow-language/cwlviewer/issues/184)
+* [Expose schema.org annotations](https://github.com/common-workflow-language/cwlviewer/issues/180)
+* [Suggest related workflows](https://github.com/common-workflow-language/cwlviewer/issues/163)
+* Publish/archive workflows to Zenodo to make DOI (citable workflow)
+* Closer GitHub integration, e.g. add **Release** button
+* Make a ![cwl valid badge](https://img.shields.io/badge/cwl-valid-B5314C.svg?logo=common-workflow-language) using https://shields.io/endpoint or https://badgen.net/docs/https
+
+In addition the GSOC student is likely to find and resolve any related bugs that might need attention in order to fulfill the above. 
+
+CWL has a [thriving open source community](https://gitter.im/common-workflow-language/common-workflow-language), and you will be supported not just by the mentor but also the 
+
+
+#### Code
+
+* [cwlviewer](http://github.com/common-workflow-language/cwlviewer)
+* [cwltool](http://github.com/common-workflow-language/cwltool) 
+
+
+#### Languages and Skills
+
+Essential:
+
+* Java
+* JavaScript
+* HTML/CSS
+* HTTP/REST
+
+Desired:
+
+* Python
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* JSON-LD / schema.org
+* Linked Data / SPARQL
+* YAML
+* CWL / workflows
+* Bioinformatics
+
+#### Difficulty
+
+{% include difficulty.html difficulty="medium" %} students can start with easy tasks like embedding and badges, and move up towards deeper improvements as learning progresses. 
+
+
+#### Mentor
+
+[Stian Soiland-Reyes](https://github.com/stain)
