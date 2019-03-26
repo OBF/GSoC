@@ -513,3 +513,4 @@ Desired:
 #### Mentor
 
 [Stian Soiland-Reyes](https://github.com/stain)
+[Michael R. Crusoe](https://github.com/mr-c)
