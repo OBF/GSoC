@@ -514,3 +514,36 @@ Desired:
 
 [Stian Soiland-Reyes](https://github.com/stain)
 [Michael R. Crusoe](https://github.com/mr-c)
+
+### Bring provenance reporting via Research Objects (CWLProv) to additional CWL compatible workflow engines:
+
+[CWLProv](https://zenodo.org/record/1966881) is a standard-based format for provenance-rich Research Object (RO) generated as a result of a [Common Workflow Language (CWL)](https://www.commonwl.org/) workflow execution. Currently CWLProv RO generation is supported and demonstrated only by the CWL reference implementation (cwltool) that allows users to share the key artefacts associated with a given CWL workflow execution especially a detailed retrospective provenance of what happened. 
+
+#### Possible Approaches:
+Project ideas related to CWLProv include extending the support of CWLProv RO generation to different workflow engines/platforms and improving the existing CWLProv profiles. 
+
+##### CWLProv support across different implementations
+* [toil-cwl-runner](https://toil.readthedocs.io/en/latest/)
+Toil is an open-source Python workflow engine that supports execution of CWL workflows on cloud and High Performance Computing (HPC) environments. The goal is to finish the [work already started](https://github.com/DataBiosphere/toil/issues/2390) so that toil-cwl-runner can generate CWLProv ROs. 
+* [Arvados](https://arvados.org/) & [REANA](https://github.com/reanahub/reana)
+Arvados is a distributed computing platform enabling large scale data analyses with CWL as native language for workflow specification. RE usable ANAlyses (REANA), also a data analysis platform supporting CWL, uses remote compute cloud services to carry out the enactment of computational workflows.  Both of these platforms are excellent candidates for implementing CWLProv support as their CWL support derives from the CWL reference implementation (cwltool). Python experience is necessary.
+* For non-cwltool code-base such as [Cromwell](https://github.com/broadinstitute/cromwell) or [CWLEXEC](https://github.com/broadinstitute/cromwell)
+The third direction is to extend the non-cwltool based Workflow Management System such as Cromwell or CWLEXEC. For Cromwell, Scala experience will be required; for CWLEXEC, Java experience is required. 
+##### Customised [CWLProv profile](https://github.com/common-workflow-language/cwlprov)
+* Slim vs. Complete
+Currently the research objects contain the data artefacts utilised in a given workflow execution leading to redundancy of data if the same analysis is executed various times (or even if the data resides on a remote repository). One approach to handle this issue is post-processing CWLProv ROs to replace large data files with references to stable data repositories, producing a slimmer RO for transfer where individual data items can be retrieved on demand, as well as reducing data duplication across multiple related ROs.
+
+* Handling of provenance profiles of parallely executed processes
+In case of parallel execution of the  processes, devise a mechanism to handle the consolidation of the decentralised provenance information after the workflow execution is complete. This can be done for the existing CWLProv implementation with cwltool or by incorporating this feature in one of the options from the above proposed implementations. 
+
+#### Difficulty: 
+Medium
+
+#### Languages and skills
+* Understanding of CWL specification
+* Good programming skills (Python, Java, or Scala depending on which direction the student goes in from the above). 
+
+#### Mentors
+1. Michael R. Crusoe
+2. Stian Soiland-Reyes
+3. Farah Zaib Khan
