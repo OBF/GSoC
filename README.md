@@ -1,3 +1,5 @@
+See https://www.open-bio.org/events/gsoc/ for OBF GSoC 2020 and beyond!
+
 OBF Google Summer of Code (GSoC)
 ================================
 
