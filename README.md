@@ -1,5 +1,8 @@
 See https://www.open-bio.org/events/gsoc/ for OBF GSoC 2020 and beyond!
 
+Need help with Project Ideas? 
+Kindly visit https://www.open-bio.org/events/gsoc/gsoc-project-ideas/
+
 OBF Google Summer of Code (GSoC)
 ================================
 
