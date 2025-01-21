@@ -10,6 +10,10 @@ This GitHub repository is being used for the Open Bioinformatics Foundation (OBF
 participation in the Google Summer of Code (GSoC) event from 2013 onwards. We'll
 be using the GitHub wiki pages mostly:
 
+ * OBF GSoC 2024 - Did not take part
+ * OBF GSoC 2023 - Did not take part
+ * OBF GSoC 2022 - https://summerofcode.withgoogle.com/archive/2022/organizations/open-bioinformatics-foundation-obf#projects-list
+ * OBF GSoC 2021 - https://summerofcode.withgoogle.com/archive/2021/organizations/6326136019091456#projects-list
  * OBF GSoC 2020 - https://www.open-bio.org/events/gsoc/
  * OBF GSoC 2019 - https://obf.github.io/GSoC/
  * OBF GSoC 2018 - https://obf.github.io/GSoC/ideas/2018-ideas
